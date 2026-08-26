@@ -1,0 +1,3768 @@
+{
+  "name": "Local Infusion LLM Sitemap",
+  "generated": "2026-07-07",
+  "canonical_site": "https://mylocalinfusion.com/",
+  "source_xml_sitemap": "https://mylocalinfusion.com/sitemap_index.xml",
+  "brand_facts": "https://mylocalinfusion.com/.well-known/brand-facts.json",
+  "llms_txt": "https://mylocalinfusion.com/llms.txt",
+  "llms_full": "https://mylocalinfusion.com/llms-full.txt",
+  "ai_manifest": "https://mylocalinfusion.com/.well-known/ai-manifest.json",
+  "crawl_guidance": {
+    "preferred_use": [
+      "AI answer citation",
+      "entity disambiguation",
+      "local SEO context",
+      "site navigation",
+      "content QA"
+    ],
+    "claim_boundaries": [
+      "Do not claim guaranteed outcomes.",
+      "Do not provide medical advice.",
+      "Do not infer a medication is available at a specific center unless the official site or Local Infusion confirms it.",
+      "Use the Richmond guide for Richmond-area queries, but do not infer that Local Infusion has a center physically named Richmond unless the official site says so.",
+      "Do not replace provider, payer, referral, or insurance guidance.",
+      "Use the Long Island guide for Long Island-area queries, routing patients to Commack, East Meadow, and Plainview.",
+      "Use the Jacksonville guide for Jacksonville-area queries, routing patients to Deerwood and Orange Park."
+    ]
+  },
+  "priority_pages": [
+    {
+      "name": "Homepage",
+      "url": "https://mylocalinfusion.com/",
+      "type": "homepage",
+      "topics": [
+        "outpatient infusion therapy",
+        "infusion centers"
+      ]
+    },
+    {
+      "name": "Locations",
+      "url": "https://mylocalinfusion.com/locations/",
+      "type": "location_index",
+      "topics": [
+        "infusion center locations"
+      ]
+    },
+    {
+      "name": "Virginia Locations",
+      "url": "https://mylocalinfusion.com/locations/virginia/",
+      "type": "state_location_index",
+      "topics": [
+        "Virginia infusion centers",
+        "Richmond-area infusion care"
+      ]
+    },
+    {
+      "name": "Richmond, VA guide",
+      "url": "https://mylocalinfusion.com/locations/richmond-va/",
+      "type": "market_guide",
+      "topics": [
+        "Richmond-area infusion therapy",
+        "Glen Allen infusion center",
+        "Midlothian infusion center"
+      ]
+    },
+    {
+      "name": "Glen Allen, VA",
+      "url": "https://mylocalinfusion.com/location/glen-allen-virginia/",
+      "type": "location",
+      "topics": [
+        "Glen Allen infusion therapy",
+        "Richmond-area infusion center"
+      ]
+    },
+    {
+      "name": "Midlothian, VA",
+      "url": "https://mylocalinfusion.com/location/midlothian-virginia/",
+      "type": "location",
+      "topics": [
+        "Midlothian infusion therapy",
+        "Richmond-area infusion center"
+      ]
+    },
+    {
+      "name": "Woodbridge, VA",
+      "url": "https://mylocalinfusion.com/location/woodbridge-va/",
+      "type": "location",
+      "topics": [
+        "Woodbridge infusion therapy"
+      ]
+    },
+    {
+      "name": "Rochester, NH",
+      "url": "https://mylocalinfusion.com/location/rochester-nh/",
+      "type": "location",
+      "topics": [
+        "Rochester NH infusion therapy"
+      ]
+    },
+    {
+      "name": "Get Started",
+      "url": "https://mylocalinfusion.com/get-started/",
+      "type": "conversion",
+      "topics": [
+        "starting infusion therapy",
+        "patient intake"
+      ]
+    },
+    {
+      "name": "Referrals",
+      "url": "https://mylocalinfusion.com/referrals/",
+      "type": "provider_referrals",
+      "topics": [
+        "provider referrals",
+        "infusion referral forms"
+      ]
+    },
+    {
+      "name": "Conditions",
+      "url": "https://mylocalinfusion.com/conditions/",
+      "type": "conditions",
+      "topics": [
+        "conditions treated with infusion medications"
+      ]
+    },
+    {
+      "name": "FAQs",
+      "url": "https://mylocalinfusion.com/faqs/",
+      "type": "faq",
+      "topics": [
+        "infusion therapy questions"
+      ]
+    },
+    {
+      "name": "Long Island, NY guide",
+      "url": "https://mylocalinfusion.com/locations/long-island-ny/",
+      "type": "market_guide",
+      "topics": [
+        "Long Island infusion therapy",
+        "Commack infusion center",
+        "East Meadow infusion center",
+        "Plainview infusion center"
+      ]
+    },
+    {
+      "name": "Jacksonville, FL guide",
+      "url": "https://mylocalinfusion.com/locations/jacksonville-fl/",
+      "type": "market_guide",
+      "topics": [
+        "Jacksonville-area infusion therapy",
+        "Deerwood infusion center",
+        "Orange Park infusion center"
+      ]
+    }
+  ],
+  "locations": [
+    {
+      "title": "Alexandria, VA",
+      "url": "https://mylocalinfusion.com/location/alexandria-virginia/",
+      "slug": "alexandria-virginia",
+      "type": "location",
+      "description": "Experience top-tier infusion care in Alexandria, VA. Private suites, modern amenities, and flexible appointments for a stress-free treatment experience.",
+      "canonical": "https://mylocalinfusion.com/location/alexandria-virginia/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2025-09-02T14:43:41"
+    },
+    {
+      "title": "Annapolis, MD",
+      "url": "https://mylocalinfusion.com/location/annapolis-md/",
+      "slug": "annapolis-md",
+      "type": "location",
+      "description": "Get expert infusion care in Annapolis, MD. Enjoy private suites, flexible scheduling, and a comfortable, stress-free treatment environment.",
+      "canonical": "https://mylocalinfusion.com/location/annapolis-md/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2025-09-02T14:48:28"
+    },
+    {
+      "title": "Augusta, ME",
+      "url": "https://mylocalinfusion.com/location/augusta-maine/",
+      "slug": "augusta-maine",
+      "type": "location",
+      "description": "Local Infusion Augusta, ME, offers private suites, flexible scheduling, and compassionate care for a seamless infusion therapy experience.",
+      "canonical": "https://mylocalinfusion.com/location/augusta-maine/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2025-09-02T14:48:48"
+    },
+    {
+      "title": "Avon, OH",
+      "url": "https://mylocalinfusion.com/location/avon-oh/",
+      "slug": "avon-oh",
+      "type": "location",
+      "description": "Get expert infusion care in Avon, OH. Enjoy private suites, flexible scheduling, and a comfortable, stress-free treatment environment.",
+      "canonical": "https://mylocalinfusion.com/location/avon-oh/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2026-02-06T18:18:20"
+    },
+    {
+      "title": "Bangor, ME",
+      "url": "https://mylocalinfusion.com/location/bangor-maine/",
+      "slug": "bangor-maine",
+      "type": "location",
+      "description": "Get expert infusion care in Bangor, ME. Enjoy private suites, flexible scheduling, and a comfortable, stress-free treatment environment.",
+      "canonical": "https://mylocalinfusion.com/location/bangor-maine/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2025-09-02T14:49:47"
+    },
+    {
+      "title": "Beavercreek, OH",
+      "url": "https://mylocalinfusion.com/location/beavercreek-oh/",
+      "slug": "beavercreek-oh",
+      "type": "location",
+      "description": "Get expert infusion care in Beavercreek, OH. Enjoy private suites, flexible scheduling, and a comfortable, stress-free treatment environment.",
+      "canonical": "https://mylocalinfusion.com/location/beavercreek-oh/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2025-10-24T14:54:29"
+    },
+    {
+      "title": "Bedford, NH",
+      "url": "https://mylocalinfusion.com/location/bedford-new-hampshire/",
+      "slug": "bedford-new-hampshire",
+      "type": "location",
+      "description": "Convenient and patient-focused infusion care in Bedford, NH. Private suites, flexible appointments, and a welcoming atmosphere.",
+      "canonical": "https://mylocalinfusion.com/location/bedford-new-hampshire/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2025-09-02T14:51:30"
+    },
+    {
+      "title": "Bel Air, MD",
+      "url": "https://mylocalinfusion.com/location/bel-air-md/",
+      "slug": "bel-air-md",
+      "type": "location",
+      "description": "Get expert infusion care in Bel Air, MD. Enjoy private suites, flexible scheduling, and a comfortable, stress-free treatment environment.",
+      "canonical": "https://mylocalinfusion.com/location/bel-air-md/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2025-12-29T12:36:08"
+    },
+    {
+      "title": "Cary, NC",
+      "url": "https://mylocalinfusion.com/location/cary-nc/",
+      "slug": "cary-nc",
+      "type": "location",
+      "description": "Get expert infusion care in Cary, NC. Enjoy private suites, flexible scheduling, and a comfortable, stress-free treatment environment.",
+      "canonical": "https://mylocalinfusion.com/location/cary-nc/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2025-10-24T15:03:36"
+    },
+    {
+      "title": "Charlotte, NC",
+      "url": "https://mylocalinfusion.com/location/charlotte-nc/",
+      "slug": "charlotte-nc",
+      "type": "location",
+      "description": "Get expert infusion care in Charlotte, NC. Enjoy private suites, flexible scheduling, and a comfortable, stress-free treatment environment.",
+      "canonical": "https://mylocalinfusion.com/location/charlotte-nc/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2025-12-10T20:51:30"
+    },
+    {
+      "title": "Charlottesville, VA",
+      "url": "https://mylocalinfusion.com/location/charlottesville-va/",
+      "slug": "charlottesville-va",
+      "type": "location",
+      "description": "Experience top-tier infusion care in Charlottesville, VA. Private suites, modern amenities, and flexible appointments for a stress-free treatment experience.",
+      "canonical": "https://mylocalinfusion.com/location/charlottesville-va/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2025-12-03T12:55:15"
+    },
+    {
+      "title": "Commack, NY",
+      "url": "https://mylocalinfusion.com/location/commack-ny/",
+      "slug": "commack-ny",
+      "type": "location",
+      "description": "Local Infusion Commack, NY, provides comfortable private suites, expert care, and flexible scheduling for a seamless treatment experience.",
+      "canonical": "https://mylocalinfusion.com/location/commack-ny/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2025-10-17T11:42:51"
+    },
+    {
+      "title": "Concord, NH",
+      "url": "https://mylocalinfusion.com/location/concord-new-hampshire/",
+      "slug": "concord-new-hampshire",
+      "type": "location",
+      "description": "Experience infusion therapy in Concord, NH, with private suites, expert care, and a soothing, stress-free environment.",
+      "canonical": "https://mylocalinfusion.com/location/concord-new-hampshire/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2025-10-15T14:10:21"
+    },
+    {
+      "title": "Cornelius, NC",
+      "url": "https://mylocalinfusion.com/location/cornelius-nc/",
+      "slug": "cornelius-nc",
+      "type": "location",
+      "description": "Get expert infusion care in Cornelius, NC. Enjoy private suites, flexible scheduling, and a comfortable, stress-free treatment environment.",
+      "canonical": "https://mylocalinfusion.com/location/cornelius-nc/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2026-02-06T18:15:37"
+    },
+    {
+      "title": "Deerwood, FL",
+      "url": "https://mylocalinfusion.com/location/deerwood-fl/",
+      "slug": "deerwood-fl",
+      "type": "location",
+      "description": "Get expert infusion care in Deerwood, FL. Enjoy private suites, flexible scheduling, and a comfortable, stress-free treatment environment.",
+      "canonical": "https://mylocalinfusion.com/location/deerwood-fl/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2026-04-27T12:53:18"
+    },
+    {
+      "title": "Derry, NH",
+      "url": "https://mylocalinfusion.com/location/derry-nh/",
+      "slug": "derry-nh",
+      "type": "location",
+      "description": "Convenient and patient-focused infusion care in Derry, NH. Private suites, flexible appointments, and a welcoming atmosphere.",
+      "canonical": "https://mylocalinfusion.com/location/derry-nh/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2026-04-02T01:25:48"
+    },
+    {
+      "title": "Durham, NC",
+      "url": "https://mylocalinfusion.com/location/durham-nc/",
+      "slug": "durham-nc",
+      "type": "location",
+      "description": "Get expert infusion care in Durham, NC. Enjoy private suites, flexible scheduling, and a comfortable, stress-free treatment environment.",
+      "canonical": "https://mylocalinfusion.com/location/durham-nc/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2025-10-24T15:04:14"
+    },
+    {
+      "title": "East Meadow, NY",
+      "url": "https://mylocalinfusion.com/location/east-meadow-ny/",
+      "slug": "east-meadow-ny",
+      "type": "location",
+      "description": "Local Infusion East Meadow, NY, provides comfortable private suites, expert care, and flexible scheduling for a seamless treatment experience.",
+      "canonical": "https://mylocalinfusion.com/location/east-meadow-ny/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2025-12-19T11:06:03"
+    },
+    {
+      "title": "Edison, NJ",
+      "url": "https://mylocalinfusion.com/location/edison-nj/",
+      "slug": "edison-nj",
+      "type": "location",
+      "description": "Convenient, comfortable infusion therapy in Edison, NJ. Private suites and flexible scheduling for a seamless experience.",
+      "canonical": "https://mylocalinfusion.com/location/edison-nj/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2025-10-08T15:24:51"
+    },
+    {
+      "title": "Emerson, NJ",
+      "url": "https://mylocalinfusion.com/location/emerson-new-jersey/",
+      "slug": "emerson-new-jersey",
+      "type": "location",
+      "description": "Local Infusion Emerson, NJ, provides comfortable private suites, expert care, and flexible scheduling for a seamless treatment experience.",
+      "canonical": "https://mylocalinfusion.com/location/emerson-new-jersey/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2025-09-02T14:55:49"
+    },
+    {
+      "title": "Fredericksburg, VA",
+      "url": "https://mylocalinfusion.com/location/fredericksburg-virginia/",
+      "slug": "fredericksburg-virginia",
+      "type": "location",
+      "description": "Discover stress-free infusion care in Fredericksburg, VA. Private suites, modern amenities, and compassionate support designed for you.",
+      "canonical": "https://mylocalinfusion.com/location/fredericksburg-virginia/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2025-09-09T16:26:39"
+    },
+    {
+      "title": "Freehold Township, NJ",
+      "url": "https://mylocalinfusion.com/location/freehold-township-nj/",
+      "slug": "freehold-township-nj",
+      "type": "location",
+      "description": "Convenient, comfortable infusion therapy in Freehold Township, NJ. Private suites and flexible scheduling for a seamless experience.",
+      "canonical": "https://mylocalinfusion.com/location/freehold-township-nj/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2025-12-10T20:55:19"
+    },
+    {
+      "title": "Glen Allen, VA",
+      "url": "https://mylocalinfusion.com/location/glen-allen-virginia/",
+      "slug": "glen-allen-virginia",
+      "type": "location",
+      "description": "Infusion therapy in Glen Allen, VA, made simple. Private suites, modern design, and flexible scheduling for your comfort and care.",
+      "canonical": "https://mylocalinfusion.com/location/glen-allen-virginia/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2025-09-02T14:56:14"
+    },
+    {
+      "title": "Glen Burnie, MD",
+      "url": "https://mylocalinfusion.com/location/glen-burnie-maryland/",
+      "slug": "glen-burnie-maryland",
+      "type": "location",
+      "description": "Get expert infusion care in Glen Burnie, MD. Enjoy private suites, flexible scheduling, and a comfortable, stress-free treatment environment.",
+      "canonical": "https://mylocalinfusion.com/location/glen-burnie-maryland/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2025-09-02T14:56:40"
+    },
+    {
+      "title": "Greenville, SC",
+      "url": "https://mylocalinfusion.com/location/greenville-sc/",
+      "slug": "greenville-sc",
+      "type": "location",
+      "description": "Experience top-tier infusion care in Greenville, SC. Private suites, modern amenities, and flexible appointments for a stress-free treatment experience.",
+      "canonical": "https://mylocalinfusion.com/location/greenville-sc/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2025-11-10T17:43:20"
+    },
+    {
+      "title": "Holyoke, MA",
+      "url": "https://mylocalinfusion.com/location/holyoke-massachusetts/",
+      "slug": "holyoke-massachusetts",
+      "type": "location",
+      "description": "Get expert infusion care in Holyoke, MA. Enjoy private suites, flexible scheduling, and a comfortable, stress-free treatment environment.",
+      "canonical": "https://mylocalinfusion.com/location/holyoke-massachusetts/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2025-09-02T14:57:04"
+    },
+    {
+      "title": "Lutz, FL",
+      "url": "https://mylocalinfusion.com/location/lutz-fl/",
+      "slug": "lutz-fl",
+      "type": "location",
+      "description": "Get expert infusion care in Lutz, FL. Enjoy private suites, flexible scheduling, and a comfortable, stress-free treatment environment.",
+      "canonical": "https://mylocalinfusion.com/location/lutz-fl/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2025-12-19T16:09:18"
+    },
+    {
+      "title": "Mason, OH",
+      "url": "https://mylocalinfusion.com/location/mason-oh/",
+      "slug": "mason-oh",
+      "type": "location",
+      "description": "Get expert infusion care in Mason, OH. Enjoy private suites, flexible scheduling, and a comfortable, stress-free treatment environment.",
+      "canonical": "https://mylocalinfusion.com/location/mason-oh/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2026-03-09T21:57:37"
+    },
+    {
+      "title": "Middletown, NJ",
+      "url": "https://mylocalinfusion.com/location/middletown-nj/",
+      "slug": "middletown-nj",
+      "type": "location",
+      "description": "Convenient, comfortable infusion therapy in Middletown, NJ. Private suites and flexible scheduling for a seamless experience.",
+      "canonical": "https://mylocalinfusion.com/location/middletown-nj/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2026-04-10T18:28:10"
+    },
+    {
+      "title": "Midlothian, VA",
+      "url": "https://mylocalinfusion.com/location/midlothian-virginia/",
+      "slug": "midlothian-virginia",
+      "type": "location",
+      "description": "Experience comfortable, patient-focused infusion care in Midlothian, VA, with private suites, flexible scheduling, and expert support.",
+      "canonical": "https://mylocalinfusion.com/location/midlothian-virginia/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2026-04-08T00:13:08"
+    },
+    {
+      "title": "Morristown, NJ",
+      "url": "https://mylocalinfusion.com/location/morristown-new-jersey/",
+      "slug": "morristown-new-jersey",
+      "type": "location",
+      "description": "Expert infusion therapy in Morristown, NJ. Enjoy private suites, a relaxing setting, and personalized care for a seamless experience.",
+      "canonical": "https://mylocalinfusion.com/location/morristown-new-jersey/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2025-09-09T16:52:47"
+    },
+    {
+      "title": "Mount Laurel, NJ",
+      "url": "https://mylocalinfusion.com/location/mount-laurel-new-jersey/",
+      "slug": "mount-laurel-new-jersey",
+      "type": "location",
+      "description": "Convenient and patient-focused infusion care in Mt Laurel, NJ. Private suites, flexible appointments, and a welcoming atmosphere.",
+      "canonical": "https://mylocalinfusion.com/location/mount-laurel-new-jersey/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2025-09-02T14:58:06"
+    },
+    {
+      "title": "New Haven, CT",
+      "url": "https://mylocalinfusion.com/location/new-haven-connecticut/",
+      "slug": "new-haven-connecticut",
+      "type": "location",
+      "description": "Get top-quality infusion care in New Haven, CT. Private suites, modern comforts, and flexible scheduling for a stress-free visit.",
+      "canonical": "https://mylocalinfusion.com/location/new-haven-connecticut/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2025-09-02T15:11:23"
+    },
+    {
+      "title": "Newport News, VA",
+      "url": "https://mylocalinfusion.com/location/newport-news-va/",
+      "slug": "newport-news-va",
+      "type": "location",
+      "description": "Experience top-tier infusion care in Newport News, VA. Private suites, modern amenities, and flexible appointments for a stress-free treatment experience.",
+      "canonical": "https://mylocalinfusion.com/location/newport-news-va/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2026-03-04T20:11:32"
+    },
+    {
+      "title": "Newton/Watertown, MA",
+      "url": "https://mylocalinfusion.com/location/newton-ma/",
+      "slug": "newton-ma",
+      "type": "location",
+      "description": "Get expert infusion care in Newton, MA. Enjoy private suites, flexible scheduling, and a comfortable, stress-free treatment environment.",
+      "canonical": "https://mylocalinfusion.com/location/newton-ma/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2025-09-02T15:14:32"
+    },
+    {
+      "title": "Norfolk, VA",
+      "url": "https://mylocalinfusion.com/location/norfolk-va/",
+      "slug": "norfolk-va",
+      "type": "location",
+      "description": "Experience top-tier infusion care in Norfolk, VA. Private suites, modern amenities, and flexible appointments for a stress-free treatment experience.",
+      "canonical": "https://mylocalinfusion.com/location/norfolk-va/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2025-09-02T15:14:52"
+    },
+    {
+      "title": "Norwalk, CT",
+      "url": "https://mylocalinfusion.com/location/norwalk-connecticut/",
+      "slug": "norwalk-connecticut",
+      "type": "location",
+      "description": "Experience infusion therapy in Norwalk, CT, with private suites, dedicated care, and a welcoming, stress-free atmosphere.",
+      "canonical": "https://mylocalinfusion.com/location/norwalk-connecticut/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2025-04-25T21:30:37"
+    },
+    {
+      "title": "Orange Park, FL",
+      "url": "https://mylocalinfusion.com/location/orange-park-fl/",
+      "slug": "orange-park-fl",
+      "type": "location",
+      "description": "Get expert infusion care in Orange Park, FL. Enjoy private suites, flexible scheduling, and a comfortable, stress-free treatment environment.",
+      "canonical": "https://mylocalinfusion.com/location/orange-park-fl/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2025-12-19T16:11:44"
+    },
+    {
+      "title": "Paramus, NJ",
+      "url": "https://mylocalinfusion.com/location/paramus-nj/",
+      "slug": "paramus-nj",
+      "type": "location",
+      "description": "Convenient, comfortable infusion therapy in Paramus, NJ. Private suites and flexible scheduling for a seamless experience.",
+      "canonical": "https://mylocalinfusion.com/location/paramus-nj/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2025-12-23T11:54:15"
+    },
+    {
+      "title": "Pikesville, MD",
+      "url": "https://mylocalinfusion.com/location/pikesville-md/",
+      "slug": "pikesville-md",
+      "type": "location",
+      "description": "Get expert infusion care in Pikesville, MD. Enjoy private suites, flexible scheduling, and a comfortable, stress-free treatment environment.",
+      "canonical": "https://mylocalinfusion.com/location/pikesville-md/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2026-04-10T18:08:36"
+    },
+    {
+      "title": "Plainview, NY",
+      "url": "https://mylocalinfusion.com/location/plainview-ny/",
+      "slug": "plainview-ny",
+      "type": "location",
+      "description": "Local Infusion Plainview, NY, provides comfortable private suites, expert care, and flexible scheduling for a seamless treatment experience.",
+      "canonical": "https://mylocalinfusion.com/location/plainview-ny/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2026-02-13T22:31:03"
+    },
+    {
+      "title": "Portland/North Deering, ME",
+      "url": "https://mylocalinfusion.com/location/portland-me/",
+      "slug": "portland-me",
+      "type": "location",
+      "description": "Infusion care in Portland, ME, with private suites, modern comforts, and expert support for a stress-free experience.",
+      "canonical": "https://mylocalinfusion.com/location/portland-me/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2026-01-20T12:25:24"
+    },
+    {
+      "title": "Portsmouth, NH",
+      "url": "https://mylocalinfusion.com/location/portsmouth-new-hampshire/",
+      "slug": "portsmouth-new-hampshire",
+      "type": "location",
+      "description": "Local Infusion Portsmouth, NH, offers private suites, flexible scheduling, and top-tier care for a seamless treatment experience.",
+      "canonical": "https://mylocalinfusion.com/location/portsmouth-new-hampshire/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2025-09-02T15:18:30"
+    },
+    {
+      "title": "Princeton, NJ",
+      "url": "https://mylocalinfusion.com/location/princeton-new-jersey/",
+      "slug": "princeton-new-jersey",
+      "type": "location",
+      "description": "Convenient, comfortable infusion therapy in Princeton, NJ. Private suites and flexible scheduling for a seamless experience.",
+      "canonical": "https://mylocalinfusion.com/location/princeton-new-jersey/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2025-09-02T15:18:50"
+    },
+    {
+      "title": "Roanoke, VA",
+      "url": "https://mylocalinfusion.com/location/roanoke-va/",
+      "slug": "roanoke-va",
+      "type": "location",
+      "description": "Experience top-tier infusion care in Roanoke, VA. Private suites, modern amenities, and flexible appointments for a stress-free treatment experience.",
+      "canonical": "https://mylocalinfusion.com/location/roanoke-va/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2025-09-25T11:26:58"
+    },
+    {
+      "title": "Rochester, NH",
+      "url": "https://mylocalinfusion.com/location/rochester-nh/",
+      "slug": "rochester-nh",
+      "type": "location",
+      "description": "Convenient and patient-focused infusion care in Rochester, NH. Private suites, flexible appointments, and a welcoming atmosphere.",
+      "canonical": "https://mylocalinfusion.com/location/rochester-nh/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2026-04-06T16:33:07"
+    },
+    {
+      "title": "Rocky Hill, CT",
+      "url": "https://mylocalinfusion.com/location/rocky-hill-connecticut/",
+      "slug": "rocky-hill-connecticut",
+      "type": "location",
+      "description": "Stress-free infusion care in Rocky Hill, CT. Private suites, modern amenities, and expert support designed with you in mind.",
+      "canonical": "https://mylocalinfusion.com/location/rocky-hill-connecticut/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2025-09-02T15:19:33"
+    },
+    {
+      "title": "Shrewsbury, MA",
+      "url": "https://mylocalinfusion.com/location/shrewsbury-ma/",
+      "slug": "shrewsbury-ma",
+      "type": "location",
+      "description": "Get expert infusion care in Shrewsbury, MA. Enjoy private suites, flexible scheduling, and a comfortable, stress-free treatment environment.",
+      "canonical": "https://mylocalinfusion.com/location/shrewsbury-ma/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2025-09-12T15:14:24"
+    },
+    {
+      "title": "Silver Spring, MD",
+      "url": "https://mylocalinfusion.com/location/silver-spring-maryland/",
+      "slug": "silver-spring-maryland",
+      "type": "location",
+      "description": "Convenient, comfortable infusion therapy in Silver Spring, MD. Private suites and flexible scheduling for a seamless experience.",
+      "canonical": "https://mylocalinfusion.com/location/silver-spring-maryland/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2025-09-02T15:20:15"
+    },
+    {
+      "title": "Somers Point, NJ",
+      "url": "https://mylocalinfusion.com/location/somers-point-nj/",
+      "slug": "somers-point-nj",
+      "type": "location",
+      "description": "Convenient, comfortable infusion therapy in Somers Point, NJ. Private suites and flexible scheduling for a seamless experience.",
+      "canonical": "https://mylocalinfusion.com/location/somers-point-nj/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2025-11-25T15:32:20"
+    },
+    {
+      "title": "South Portland, ME",
+      "url": "https://mylocalinfusion.com/location/south-portland-maine/",
+      "slug": "south-portland-maine",
+      "type": "location",
+      "description": "Infusion care in South Portland, ME, with private suites, modern comforts, and expert support for a stress-free experience.",
+      "canonical": "https://mylocalinfusion.com/location/south-portland-maine/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2025-09-02T15:20:45"
+    },
+    {
+      "title": "Spartanburg, SC",
+      "url": "https://mylocalinfusion.com/location/spartanburg-sc/",
+      "slug": "spartanburg-sc",
+      "type": "location",
+      "description": "Experience top-tier infusion care in Spartanburg, SC. Private suites, modern amenities, and flexible appointments for a stress-free treatment experience.",
+      "canonical": "https://mylocalinfusion.com/location/spartanburg-sc/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2025-12-01T12:36:54"
+    },
+    {
+      "title": "Springfield, VA",
+      "url": "https://mylocalinfusion.com/location/springfield-virginia/",
+      "slug": "springfield-virginia",
+      "type": "location",
+      "description": "Experience comfortable, patient-focused infusion care in Springfield, VA, with private suites, flexible scheduling, and expert support.",
+      "canonical": "https://mylocalinfusion.com/location/springfield-virginia/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2025-09-09T16:29:32"
+    },
+    {
+      "title": "Sterling, VA",
+      "url": "https://mylocalinfusion.com/location/sterling-virginia/",
+      "slug": "sterling-virginia",
+      "type": "location",
+      "description": "Stress-free infusion therapy in Sterling, VA. Enjoy private suites, flexible scheduling, and expert care in a welcoming setting.",
+      "canonical": "https://mylocalinfusion.com/location/sterling-virginia/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2025-09-02T15:21:33"
+    },
+    {
+      "title": "Stoneham, MA",
+      "url": "https://mylocalinfusion.com/location/stoneham-ma/",
+      "slug": "stoneham-ma",
+      "type": "location",
+      "description": "Get expert infusion care in Stoneham, MA. Enjoy private suites, flexible scheduling, and a comfortable, stress-free treatment environment.",
+      "canonical": "https://mylocalinfusion.com/location/stoneham-ma/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2025-12-10T12:22:47"
+    },
+    {
+      "title": "Toms River, NJ",
+      "url": "https://mylocalinfusion.com/location/toms-river-new-jersey/",
+      "slug": "toms-river-new-jersey",
+      "type": "location",
+      "description": "Local Infusion Toms River, NJ, provides private suites, compassionate care, and a modern, relaxing environment for your treatment.",
+      "canonical": "https://mylocalinfusion.com/location/toms-river-new-jersey/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2025-09-02T15:22:14"
+    },
+    {
+      "title": "Virginia Beach, VA",
+      "url": "https://mylocalinfusion.com/location/virginia-beach-virginia/",
+      "slug": "virginia-beach-virginia",
+      "type": "location",
+      "description": "Experience top-tier infusion care in Virginia Beach, VA. Private suites, modern amenities, and flexible appointments for a stress-free treatment experience.",
+      "canonical": "https://mylocalinfusion.com/location/virginia-beach-virginia/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2025-09-09T16:24:23"
+    },
+    {
+      "title": "Waltham, MA",
+      "url": "https://mylocalinfusion.com/location/waltham-ma/",
+      "slug": "waltham-ma",
+      "type": "location",
+      "description": "Get expert infusion care in Waltham, MA. Enjoy private suites, flexible scheduling, and a comfortable, stress-free treatment environment.",
+      "canonical": "https://mylocalinfusion.com/location/waltham-ma/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2025-12-19T11:03:26"
+    },
+    {
+      "title": "West Hartford, CT",
+      "url": "https://mylocalinfusion.com/location/west-hartford-connecticut/",
+      "slug": "west-hartford-connecticut",
+      "type": "location",
+      "description": "Get top-tier infusion therapy in West Hartford, CT. Private suites, expert support, and a modern, patient-first experience.",
+      "canonical": "https://mylocalinfusion.com/location/west-hartford-connecticut/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2025-09-09T16:57:17"
+    },
+    {
+      "title": "Winchester, VA",
+      "url": "https://mylocalinfusion.com/location/winchester-va/",
+      "slug": "winchester-va",
+      "type": "location",
+      "description": "Experience top-tier infusion care in Winchester, VA. Private suites, modern amenities, and flexible appointments for a stress-free treatment experience.",
+      "canonical": "https://mylocalinfusion.com/location/winchester-va/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2026-03-06T21:11:33"
+    },
+    {
+      "title": "Woodbridge, VA",
+      "url": "https://mylocalinfusion.com/location/woodbridge-va/",
+      "slug": "woodbridge-va",
+      "type": "location",
+      "description": "Experience top-tier infusion care in Woodbridge, VA. Private suites, modern amenities, and flexible appointments for a stress-free treatment experience.",
+      "canonical": "https://mylocalinfusion.com/location/woodbridge-va/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2026-04-06T16:35:14"
+    }
+  ],
+  "pages": [
+    {
+      "title": "Home",
+      "url": "https://mylocalinfusion.com/",
+      "slug": "home",
+      "type": "page",
+      "description": "Local Infusion provides infusion therapy in modern centers and via virtual care, offering select IV immunotherapy with certified ONS/OCN® nurses and NPs on site.",
+      "canonical": "https://mylocalinfusion.com/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2026-04-17T16:26:44"
+    },
+    {
+      "title": "Accessibility",
+      "url": "https://mylocalinfusion.com/accessibility/",
+      "slug": "accessibility",
+      "type": "page",
+      "description": "Accessibility Statement Local Infusion (“Local Infusion,” “we,” “us,” or “our”) is committed to ensuring digital accessibility for all visitors to our",
+      "canonical": "https://mylocalinfusion.com/accessibility/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2024-11-19T20:43:55"
+    },
+    {
+      "title": "Local Infusion Blog",
+      "url": "https://mylocalinfusion.com/blog/",
+      "slug": "blog",
+      "type": "page",
+      "description": "Local Infusion Journal  Educational guides, FAQs, the latest news, and more.",
+      "canonical": "https://mylocalinfusion.com/blog/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2024-11-09T17:06:40"
+    },
+    {
+      "title": "Careers",
+      "url": "https://mylocalinfusion.com/careers/",
+      "slug": "careers",
+      "type": "page",
+      "description": "Careers at Local Infusion We are on a mission to transform specialty infusion care, because patients deserve better. Join our passionate team of",
+      "canonical": "https://mylocalinfusion.com/careers/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2026-04-22T18:52:48"
+    },
+    {
+      "title": "Conditions We Treat",
+      "url": "https://mylocalinfusion.com/conditions/",
+      "slug": "conditions",
+      "type": "page",
+      "description": "What we treat Local Infusion administers only high-quality pharmaceuticals acquired from the most reputable U.S. companies. Our registered nurses follow",
+      "canonical": "https://mylocalinfusion.com/conditions/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2026-04-17T16:31:17"
+    },
+    {
+      "title": "Employers",
+      "url": "https://mylocalinfusion.com/employers/",
+      "slug": "employers",
+      "type": "page",
+      "description": "Employers A smarter way to manage infusion therapy With Local Infusion for Business, employers and labor groups can cut specialty drug spend in half while",
+      "canonical": "https://mylocalinfusion.com/employers/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2026-04-17T16:32:25"
+    },
+    {
+      "title": "FAQs",
+      "url": "https://mylocalinfusion.com/faqs/",
+      "slug": "faqs",
+      "type": "page",
+      "description": "Frequently Asked Questions You've got questions. We have answers. General Questions Where are you located? Is there parking? You can learn more about our",
+      "canonical": "https://mylocalinfusion.com/faqs/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2026-03-27T16:59:00"
+    },
+    {
+      "title": "Get Started",
+      "url": "https://mylocalinfusion.com/get-started/",
+      "slug": "get-started",
+      "type": "page",
+      "description": "Get started with Local Infusion today.   Complete the form below, and a member of our team will reach out to you within 24 hours to get you onboarded.",
+      "canonical": "https://mylocalinfusion.com/get-started/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2024-11-14T17:51:41"
+    },
+    {
+      "title": "Health Systems",
+      "url": "https://mylocalinfusion.com/health-systems/",
+      "slug": "health-systems",
+      "type": "page",
+      "description": "Health Systems Attract new patients and improve outcomes A low-risk, zero-investment way to grow your infusion services and increase specialty provider",
+      "canonical": "https://mylocalinfusion.com/health-systems/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2026-04-17T16:29:17"
+    },
+    {
+      "title": "iPad",
+      "url": "https://mylocalinfusion.com/ipad/",
+      "slug": "ipad",
+      "type": "page",
+      "description": "Frequently Used Links For Local Infusion Centers Patient Forms Credit Card Authorization Form Marketing Release Form New Patient Intake Form Patient",
+      "canonical": "https://mylocalinfusion.com/ipad/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2025-01-04T02:42:47"
+    },
+    {
+      "title": "Locations",
+      "url": "https://mylocalinfusion.com/locations/",
+      "slug": "locations",
+      "type": "page",
+      "description": "Our Local Infusion Centers Modern, state-of-the-art centers. Thoughtfully designed with your comfort in mind. Comfortable & Quiet Soothing design for",
+      "canonical": "https://mylocalinfusion.com/locations/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2026-04-07T16:22:36"
+    },
+    {
+      "title": "Connecticut Locations",
+      "url": "https://mylocalinfusion.com/locations/connecticut/",
+      "slug": "connecticut",
+      "type": "page",
+      "description": "Connecticut Infusion Centers Modern, state-of-the-art centers in the state of Connecticut. Thoughtfully designed with your comfort in mind.",
+      "canonical": "https://mylocalinfusion.com/locations/connecticut/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2026-04-07T16:23:36"
+    },
+    {
+      "title": "Florida Locations",
+      "url": "https://mylocalinfusion.com/locations/florida/",
+      "slug": "florida",
+      "type": "page",
+      "description": "Florida Infusion Centers Modern, state-of-the-art centers in the state of Florida Thoughtfully designed with your comfort in mind. Comfortable & Quiet",
+      "canonical": "https://mylocalinfusion.com/locations/florida/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2026-04-07T16:24:01"
+    },
+    {
+      "title": "Maine Locations",
+      "url": "https://mylocalinfusion.com/locations/maine/",
+      "slug": "maine",
+      "type": "page",
+      "description": "Maine Infusion Centers Modern, state-of-the-art centers in the state of Maine. Thoughtfully designed with your comfort in mind. Comfortable & Quiet",
+      "canonical": "https://mylocalinfusion.com/locations/maine/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2026-04-07T16:24:44"
+    },
+    {
+      "title": "Maryland Locations",
+      "url": "https://mylocalinfusion.com/locations/maryland/",
+      "slug": "maryland",
+      "type": "page",
+      "description": "Maryland Infusion Centers Modern, state-of-the-art centers in the state of Maryland. Thoughtfully designed with your comfort in mind. Comfortable &",
+      "canonical": "https://mylocalinfusion.com/locations/maryland/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2026-04-07T16:25:13"
+    },
+    {
+      "title": "Massachusetts Locations",
+      "url": "https://mylocalinfusion.com/locations/massachusetts/",
+      "slug": "massachusetts",
+      "type": "page",
+      "description": "Massachusetts Infusion Centers Modern, state-of-the-art centers in the state of Massachusetts. Thoughtfully designed with your comfort in mind.",
+      "canonical": "https://mylocalinfusion.com/locations/massachusetts/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2026-04-07T16:24:26"
+    },
+    {
+      "title": "New Hampshire Locations",
+      "url": "https://mylocalinfusion.com/locations/new-hampshire/",
+      "slug": "new-hampshire",
+      "type": "page",
+      "description": "New Hampshire Infusion Centers Modern, state-of-the-art centers in the state of New Hampshire. Thoughtfully designed with your comfort in mind.",
+      "canonical": "https://mylocalinfusion.com/locations/new-hampshire/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2026-04-07T16:25:33"
+    },
+    {
+      "title": "New Jersey Locations",
+      "url": "https://mylocalinfusion.com/locations/new-jersey/",
+      "slug": "new-jersey",
+      "type": "page",
+      "description": "New Jersey Infusion Centers Modern, state-of-the-art centers in the state of New Jersey. Thoughtfully designed with your comfort in mind. Comfortable",
+      "canonical": "https://mylocalinfusion.com/locations/new-jersey/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2026-04-07T16:25:55"
+    },
+    {
+      "title": "New York Locations",
+      "url": "https://mylocalinfusion.com/locations/new-york-locations/",
+      "slug": "new-york-locations",
+      "type": "page",
+      "description": "New York Infusion Centers Modern, state-of-the-art centers in the state of New York. Thoughtfully designed with your comfort in mind. Comfortable &",
+      "canonical": "https://mylocalinfusion.com/locations/new-york-locations/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2026-04-07T16:26:22"
+    },
+    {
+      "title": "North Carolina Locations",
+      "url": "https://mylocalinfusion.com/locations/north-carolina/",
+      "slug": "north-carolina",
+      "type": "page",
+      "description": "North Carolina Infusion Centers Modern, state-of-the-art centers in the state of North Carolina. Thoughtfully designed with your comfort in mind.",
+      "canonical": "https://mylocalinfusion.com/locations/north-carolina/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2026-04-07T16:26:46"
+    },
+    {
+      "title": "Ohio Locations",
+      "url": "https://mylocalinfusion.com/locations/ohio/",
+      "slug": "ohio",
+      "type": "page",
+      "description": "Ohio Infusion Centers Modern, state-of-the-art centers in the state of Ohio. Thoughtfully designed with your comfort in mind. Comfortable & Quiet",
+      "canonical": "https://mylocalinfusion.com/locations/ohio/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2026-04-07T16:27:17"
+    },
+    {
+      "title": "South Carolina Locations",
+      "url": "https://mylocalinfusion.com/locations/south-carolina/",
+      "slug": "south-carolina",
+      "type": "page",
+      "description": "South Carolina Infusion Centers Modern, state-of-the-art centers in the state of South Carolina. Thoughtfully designed with your comfort in mind.",
+      "canonical": "https://mylocalinfusion.com/locations/south-carolina/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2026-04-07T16:27:40"
+    },
+    {
+      "title": "Virginia Locations",
+      "url": "https://mylocalinfusion.com/locations/virginia/",
+      "slug": "virginia",
+      "type": "page",
+      "description": "Virginia Infusion Centers Modern, state-of-the-art centers in the state of Virginia. Thoughtfully designed with your comfort in mind. Comfortable &",
+      "canonical": "https://mylocalinfusion.com/locations/virginia/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2026-04-07T16:28:05"
+    },
+    {
+      "title": "Infusion Therapy Near Richmond, VA",
+      "url": "https://mylocalinfusion.com/locations/richmond-va/",
+      "slug": "richmond-va",
+      "type": "page",
+      "description": "Find Local Infusion centers near Richmond, VA in Glen Allen and Midlothian for outpatient infusion care in private suites with flexible scheduling.",
+      "canonical": "https://mylocalinfusion.com/locations/richmond-va/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2026-04-27T18:11:32"
+    },
+    {
+      "title": "Oncology Care",
+      "url": "https://mylocalinfusion.com/oncology/",
+      "slug": "oncology",
+      "type": "page",
+      "description": "Oncology Care Local Infusion delivers select IV immunotherapy through ONS/OCN certified nurses at modern, near-home centers and virtually, cutting",
+      "canonical": "https://mylocalinfusion.com/oncology/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2026-03-26T16:49:49"
+    },
+    {
+      "title": "Provider Forms",
+      "url": "https://mylocalinfusion.com/order-forms/",
+      "slug": "order-forms",
+      "type": "page",
+      "description": "Submit an order form by fax or email Download and print the therapy-specific order form below.You can fax or email the completed form, along with",
+      "canonical": "https://mylocalinfusion.com/order-forms/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2026-04-16T14:51:30"
+    },
+    {
+      "title": "Our Story",
+      "url": "https://mylocalinfusion.com/our-story/",
+      "slug": "our-story",
+      "type": "page",
+      "description": "There Has to Be a Better Way&nbsp; After decades working in the infusion and healthcare industry, our team saw the same problems play out again and again.",
+      "canonical": "https://mylocalinfusion.com/our-story/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2026-04-22T18:06:48"
+    },
+    {
+      "title": "Payer Contact Us",
+      "url": "https://mylocalinfusion.com/payer-contact-us/",
+      "slug": "payer-contact-us",
+      "type": "page",
+      "description": "Let’s Work Together to Raise the Bar in Healthcare Partner with Local Infusion to deliver value-based, chronic condition care that puts patients",
+      "canonical": "https://mylocalinfusion.com/payer-contact-us/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2024-12-10T21:49:33"
+    },
+    {
+      "title": "Payers",
+      "url": "https://mylocalinfusion.com/payers/",
+      "slug": "payers",
+      "type": "page",
+      "description": "Let's Work Together to Raise the Bar in Health Care Partner with Local Infusion to deliver value-based, chronic condition care that puts patients first —",
+      "canonical": "https://mylocalinfusion.com/payers/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2026-04-17T16:34:04"
+    },
+    {
+      "title": "Pharma Contact Us",
+      "url": "https://mylocalinfusion.com/pharma-contact-us/",
+      "slug": "pharma-contact-us",
+      "type": "page",
+      "description": "Let’s Work Together to Raise the Bar in Healthcare Partner with Local Infusion to deliver value-based, chronic condition care that puts patients",
+      "canonical": "https://mylocalinfusion.com/pharma-contact-us/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2026-02-17T17:50:53"
+    },
+    {
+      "title": "Pharma",
+      "url": "https://mylocalinfusion.com/pharma/",
+      "slug": "pharma",
+      "type": "page",
+      "description": "Pharma Transform infusion strategy into real results Local Infusion brings biopharma strategy to life at the site of care. By combining infusion-native",
+      "canonical": "https://mylocalinfusion.com/pharma/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2026-04-17T16:31:54"
+    },
+    {
+      "title": "Press",
+      "url": "https://mylocalinfusion.com/press/",
+      "slug": "press",
+      "type": "page",
+      "description": "Local Infusion In The News Learn how Local Infusion is raising the bar for patients. For press inquiries and interview requests, please",
+      "canonical": "https://mylocalinfusion.com/press/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2026-03-26T19:59:34"
+    },
+    {
+      "title": "Privacy Policy",
+      "url": "https://mylocalinfusion.com/privacy-policy/",
+      "slug": "privacy-policy",
+      "type": "page",
+      "description": "Privacy Policy Effective Date: September 15, 2022 Local Infusion (“Local Infusion,” “we, “us,” or “our”) owns and operates the Local Infusion websites and",
+      "canonical": "https://mylocalinfusion.com/privacy-policy/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2024-11-19T20:38:27"
+    },
+    {
+      "title": "Referrals",
+      "url": "https://mylocalinfusion.com/referrals/",
+      "slug": "referrals",
+      "type": "page",
+      "description": "A simple and transparent referral process Refer a patient to Local Infusion in&nbsp;less than 5 minutes Send us the referral order Complete and send us:",
+      "canonical": "https://mylocalinfusion.com/referrals/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2024-12-12T23:23:18"
+    },
+    {
+      "title": "Style Guide",
+      "url": "https://mylocalinfusion.com/style-guide/",
+      "slug": "style-guide",
+      "type": "page",
+      "description": "A website's style guide is an essential roadmap for ensuring visual and functional consistency across all posts and pages, creating a cohesive and",
+      "canonical": "https://mylocalinfusion.com/style-guide/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2024-10-21T16:44:39"
+    },
+    {
+      "title": "Infusion Therapy on Long Island, NY",
+      "url": "https://mylocalinfusion.com/locations/long-island-ny/",
+      "slug": "long-island-ny",
+      "type": "page",
+      "description": "Find Local Infusion centers on Long Island in Commack, East Meadow, and Plainview for outpatient infusion care in private suites with flexible scheduling.",
+      "canonical": "https://mylocalinfusion.com/locations/long-island-ny/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2026-07-07T12:00:00"
+    },
+    {
+      "title": "Infusion Therapy Near Jacksonville, FL",
+      "url": "https://mylocalinfusion.com/locations/jacksonville-fl/",
+      "slug": "jacksonville-fl",
+      "type": "page",
+      "description": "Find Local Infusion centers near Jacksonville, FL in Deerwood and Orange Park for outpatient infusion care in private suites with flexible scheduling.",
+      "canonical": "https://mylocalinfusion.com/locations/jacksonville-fl/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2026-07-07T12:00:00"
+    }
+  ],
+  "posts": [
+    {
+      "title": "5 MS-Friendly Yoga Studios In & Around Augusta, Maine",
+      "url": "https://mylocalinfusion.com/ms-friendly-yoga-studios-augusta-me/",
+      "slug": "ms-friendly-yoga-studios-augusta-me",
+      "type": "post",
+      "description": "Yoga studios in Maine with practices gentle enough for MS patients: hatha, chair, restorative, yin, and gentle yoga.",
+      "canonical": "https://mylocalinfusion.com/blog/ms-friendly-yoga-studios-augusta-me/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2024-11-10T17:47:45"
+    },
+    {
+      "title": "6 Frequently Asked Questions About Billing & Insurance",
+      "url": "https://mylocalinfusion.com/billilng-insurance-faqs/",
+      "slug": "billilng-insurance-faqs",
+      "type": "post",
+      "description": "Insurance, claims, prior authorization, precertification, deductibles….the list of healthcare terms goes on and on (and on). Needless to say, it’s complicated, and confusing...",
+      "canonical": "https://mylocalinfusion.com/billilng-insurance-faqs/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2024-11-10T17:24:06"
+    },
+    {
+      "title": "8 Crohn’s-Friendly Restaurants In & Around Concord, New Hampshire",
+      "url": "https://mylocalinfusion.com/crohns-friendly-restaurants-concord-nh/",
+      "slug": "crohns-friendly-restaurants-concord-nh",
+      "type": "post",
+      "description": "Eating out can be hard for Crohn’s patients, but if you’re receiving treatment at our Concord center, there are a handful of restaurants with options to accommodate your diet.",
+      "canonical": "https://mylocalinfusion.com/crohns-friendly-restaurants-concord-nh/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2024-11-10T17:56:21"
+    },
+    {
+      "title": "8 Crohn’s-Friendly Restaurants In & Around South Portland, Maine",
+      "url": "https://mylocalinfusion.com/crohns-friendly-restaurants-south-portland-me/",
+      "slug": "crohns-friendly-restaurants-south-portland-me",
+      "type": "post",
+      "description": "Eating out can be hard for Crohn’s patients, but if you’re receiving treatment at our South Portland center, there are a handful of restaurants with options to accommodate your diet.",
+      "canonical": "https://mylocalinfusion.com/blog/crohns-friendly-restaurants-south-portland-me/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2024-11-10T17:35:07"
+    },
+    {
+      "title": "A Note Of Gratitude For Our Patients and Care Teams",
+      "url": "https://mylocalinfusion.com/patients-care-teams-gratitude/",
+      "slug": "patients-care-teams-gratitude",
+      "type": "post",
+      "description": "In the spirit of Thanksgiving, we’re highlighting real, unedited quotes from patients about their experience with Local Infusion and, in particular, gratitude for their Infusion Guides and nurses.",
+      "canonical": "https://mylocalinfusion.com/patients-care-teams-gratitude/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2024-11-10T18:09:59"
+    },
+    {
+      "title": "Amanda Hyne, LCSW Is On A Mission To Increase Visibility Around Crohn’s Disease",
+      "url": "https://mylocalinfusion.com/amanda-hyne-lcsw-crohns/",
+      "slug": "amanda-hyne-lcsw-crohns",
+      "type": "post",
+      "description": "Amanda opens up about her role at the IBD Center, how she works cross-functionally to support patients, and her hopes for more visibility around Crohn’s disease.",
+      "canonical": "https://mylocalinfusion.com/amanda-hyne-lcsw-crohns/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2024-11-10T17:24:35"
+    },
+    {
+      "title": "Ashley Knapp, RN, MSCN, Co-Founder of Local Infusion, Is Determined To Reach As Many Patients As Possible",
+      "url": "https://mylocalinfusion.com/widest-patient-reach/",
+      "slug": "widest-patient-reach",
+      "type": "post",
+      "description": "Local Infusion Co-Founder Ashley Knapp reflects on her career journey, state of the infusion industry, and goal to “cast the widest net possible.”",
+      "canonical": "https://mylocalinfusion.com/widest-patient-reach/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2024-11-10T18:04:17"
+    },
+    {
+      "title": "At Local Infusion, Every Patient Is Paired 1:1 With A Guide. Here’s Why.",
+      "url": "https://mylocalinfusion.com/infusion-guide/",
+      "slug": "infusion-guide",
+      "type": "post",
+      "description": "Discover how our Infusion Guides make the treatment process as seamless, straight-forward, and stress-free as possible.",
+      "canonical": "https://mylocalinfusion.com/infusion-guide/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2024-11-10T19:08:26"
+    },
+    {
+      "title": "At Local Infusion, The Patient, Payor, & Provider All Win. Here’s How.",
+      "url": "https://mylocalinfusion.com/serve-patient-payor-provider/",
+      "slug": "serve-patient-payor-provider",
+      "type": "post",
+      "description": "According to a 2019 JAMA study, over $760 billion in wasteful spending occurs in US healthcare every year. Here's how we're trying to do our part.",
+      "canonical": "https://mylocalinfusion.com/serve-patient-payor-provider/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2024-11-10T19:07:03"
+    },
+    {
+      "title": "Best & Worst Exercises For Crohn’s Disease",
+      "url": "https://mylocalinfusion.com/crohns-disease-exercise/",
+      "slug": "crohns-disease-exercise",
+      "type": "post",
+      "description": "A guide to the best and worst exercises for individuals with Crohn's disease to help improve overall well-being and quality of life.",
+      "canonical": "https://mylocalinfusion.com/crohns-disease-exercise/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2024-11-10T18:14:26"
+    },
+    {
+      "title": "Best & Worst Exercises For Gout",
+      "url": "https://mylocalinfusion.com/exercise-and-gout/",
+      "slug": "exercise-and-gout",
+      "type": "post",
+      "description": "Physical activity can help ease gout symptoms…if you choose the right type of exercise. Discover which to embrace and which to avoid.",
+      "canonical": "https://mylocalinfusion.com/exercise-and-gout/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2024-11-10T17:59:28"
+    },
+    {
+      "title": "Best & Worst Exercises For Rheumatoid Arthritis",
+      "url": "https://mylocalinfusion.com/exercise-for-rheumatoid-arthritis/",
+      "slug": "exercise-for-rheumatoid-arthritis",
+      "type": "post",
+      "description": "Although new treatment options have improved the quality of life for RA patients, the disease can still result in long-term joint damage and disability. This is why it’s so important to incorporate the right forms of physical activity alongside treatment.",
+      "canonical": "https://mylocalinfusion.com/exercise-for-rheumatoid-arthritis/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2024-11-10T18:16:09"
+    },
+    {
+      "title": "Better Technology = Better Patient Experience at Local Infusion. Here’s Why.",
+      "url": "https://mylocalinfusion.com/digital-health-technology/",
+      "slug": "digital-health-technology",
+      "type": "post",
+      "description": "Digital health has the potential to revolutionize the way infusion companies operate and provide care to their patients. With the right technology, we’re able to streamline processes, improve patient outcomes, and increase efficiency. Here’s how:",
+      "canonical": "https://mylocalinfusion.com/digital-health-technology/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2024-11-10T19:27:26"
+    },
+    {
+      "title": "Briumvi Is Now Approved For MS Treatment: What To Know",
+      "url": "https://mylocalinfusion.com/briumvi-guide/",
+      "slug": "briumvi-guide",
+      "type": "post",
+      "description": "What Briumvi is, how it works, success rates, potential side effects, how it compares to other MS drugs, cost, & more.",
+      "canonical": "https://mylocalinfusion.com/briumvi-guide/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2024-11-10T19:13:51"
+    },
+    {
+      "title": "Diet For Alzheimer’s Patients: Foods To Eat & Avoid",
+      "url": "https://mylocalinfusion.com/diet-for-alzheimers-patients/",
+      "slug": "diet-for-alzheimers-patients",
+      "type": "post",
+      "description": "The science behind what foods to eat and avoid so patients and their caregivers can feel empowered to make the healthiest choices.",
+      "canonical": "https://mylocalinfusion.com/diet-for-alzheimers-patients/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2024-11-10T17:53:13"
+    },
+    {
+      "title": "Diet For Ulcerative Colitis: Foods To Eat & Avoid",
+      "url": "https://mylocalinfusion.com/foods-to-eat-and-avoid-with-ulcerative-colitis/",
+      "slug": "foods-to-eat-and-avoid-with-ulcerative-colitis",
+      "type": "post",
+      "description": "Learn how certain fruits, vegetables, grains, and proteins can impact ulcerative colitis symptoms and flare-ups.",
+      "canonical": "https://mylocalinfusion.com/blog/foods-to-eat-and-avoid-with-ulcerative-colitis/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2024-11-10T17:39:32"
+    },
+    {
+      "title": "Empowering Our Care Teams To Do Their Best Work",
+      "url": "https://mylocalinfusion.com/empowering-care-teams/",
+      "slug": "empowering-care-teams",
+      "type": "post",
+      "description": "Crystal Stevens, Regional Manager at Local Infusion shares with us what it’s like to work on the care team at Local Infusion and how everyone is empowered to do their best work for patients.",
+      "canonical": "https://mylocalinfusion.com/empowering-care-teams/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2024-11-10T18:10:51"
+    },
+    {
+      "title": "Entyvio vs Remicade For Crohn’s: What's The Difference?",
+      "url": "https://mylocalinfusion.com/entyvio-vs-remicade/",
+      "slug": "entyvio-vs-remicade",
+      "type": "post",
+      "description": "Better understand the differences between Entyvio and Remicade to make an informed decision about which treatment option is best for you.",
+      "canonical": "https://mylocalinfusion.com/entyvio-vs-remicade/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2024-11-10T18:47:16"
+    },
+    {
+      "title": "Experience Our New Rocky Hill Infusion Center",
+      "url": "https://mylocalinfusion.com/rocky-hill-ct-opening/",
+      "slug": "rocky-hill-ct-opening",
+      "type": "post",
+      "description": "Discover new infusion center in Rocky Hill, CT. Learn about our convenient, patient-centric care and meet our dedicated team!",
+      "canonical": "https://mylocalinfusion.com/rocky-hill-ct-opening/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2024-11-10T17:25:34"
+    },
+    {
+      "title": "First-Time Infusion Patient? Here Are The 3 Most-Asked Questions",
+      "url": "https://mylocalinfusion.com/first-time-patient-faqs/",
+      "slug": "first-time-patient-faqs",
+      "type": "post",
+      "description": "Since we opened our first infusion center earlier this year in Concord, New Hampshire, our care teams have noticed some common questions from first-time patients. Below, Monica Richard, RN at Local Infusion, shares answers.",
+      "canonical": "https://mylocalinfusion.com/first-time-patient-faqs/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2024-11-10T18:01:20"
+    },
+    {
+      "title": "For Reimbursement Manager Chuck Bucy, “Financial Transparency” Is More Than A Buzzword",
+      "url": "https://mylocalinfusion.com/financial-transparency-chuck-bucy/",
+      "slug": "financial-transparency-chuck-bucy",
+      "type": "post",
+      "description": "“Healthcare billing may always be needlessly complicated, but I can make it uncomplicated for the people we’re treating.”",
+      "canonical": "https://mylocalinfusion.com/blog/financial-transparency-chuck-bucy/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2024-11-10T17:37:46"
+    },
+    {
+      "title": "From Active-Duty Medical Officer To Gastroenterologist: A Conversation With Dr. Paredes",
+      "url": "https://mylocalinfusion.com/q-and-a-dr-paredes/",
+      "slug": "q-and-a-dr-paredes",
+      "type": "post",
+      "description": "We caught up with Dr. Paredes to learn more about his work as a gastroenterologist, the biggest misconceptions around Crohn’s disease, and his hopes for the future of digestive disease treatment.",
+      "canonical": "https://mylocalinfusion.com/q-and-a-dr-paredes/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2024-10-21T14:49:47"
+    },
+    {
+      "title": "Guide To Crohn’s Diet: Foods To Eat & Avoid",
+      "url": "https://mylocalinfusion.com/crohns-diet/",
+      "slug": "crohns-diet",
+      "type": "post",
+      "description": "Foods to eat & trigger foods to avoid in order to feel your best with Crohn’s disease.",
+      "canonical": "https://mylocalinfusion.com/crohns-diet/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2024-11-10T18:17:55"
+    },
+    {
+      "title": "Guide To Gout Diet: Foods To Eat and Avoid",
+      "url": "https://mylocalinfusion.com/foods-that-help-gout/",
+      "slug": "foods-that-help-gout",
+      "type": "post",
+      "description": "What foods to eat and avoid to prevent uric acid buildup, ease symptoms, reduce flare-ups, and improve quality of life.",
+      "canonical": "https://mylocalinfusion.com/blog/foods-that-help-gout/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2024-11-10T17:44:54"
+    },
+    {
+      "title": "Guide To Multiple Sclerosis Diet & Exercise",
+      "url": "https://mylocalinfusion.com/multiple-sclerosis-diet-exercise/",
+      "slug": "multiple-sclerosis-diet-exercise",
+      "type": "post",
+      "description": "Explore the relationship between MS and diet, as well as the importance of exercise for managing symptoms.",
+      "canonical": "https://mylocalinfusion.com/multiple-sclerosis-diet-exercise/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2024-11-10T19:15:37"
+    },
+    {
+      "title": "Guide To Rheumatoid Arthritis Diet: Foods To Eat & Avoid",
+      "url": "https://mylocalinfusion.com/rheumatoid-arthritis-diet/",
+      "slug": "rheumatoid-arthritis-diet",
+      "type": "post",
+      "description": "Living with rheumatoid arthritis (RA) can present unique challenges, but making informed choices about what you eat can have a significant impact on managing your symptoms and overall well-being.",
+      "canonical": "https://mylocalinfusion.com/rheumatoid-arthritis-diet/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2024-11-10T18:20:59"
+    },
+    {
+      "title": "Guide To Simponi Aria Infusion: Dosing, Cost, Side Effects, & More",
+      "url": "https://mylocalinfusion.com/simponi-aria-guide/",
+      "slug": "simponi-aria-guide",
+      "type": "post",
+      "description": "FAQs about Simponi Aria, answered: administration, dosage, timeline of treatment, side effects, & more.",
+      "canonical": "https://mylocalinfusion.com/simponi-aria-guide/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2024-11-10T19:11:04"
+    },
+    {
+      "title": "Healthcare Hero: SARAH LOCKE, MS PATIENT & FOUNDER OF CLIMB THE PEAK",
+      "url": "https://mylocalinfusion.com/sarah-locke-climb-the-peak/",
+      "slug": "sarah-locke-climb-the-peak",
+      "type": "post",
+      "description": "Sarah reflects on her MS experience and how she came up with the idea for Climb The Peak, a hike to raise money for MS research.",
+      "canonical": "https://mylocalinfusion.com/blog/sarah-locke-climb-the-peak/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2024-11-10T17:36:39"
+    },
+    {
+      "title": "How Long Does It Take For Remicade Infusions To Work",
+      "url": "https://mylocalinfusion.com/how-long-does-it-take-remicade-infusions-to-work/",
+      "slug": "how-long-does-it-take-remicade-infusions-to-work",
+      "type": "post",
+      "description": "Remicade is an FDA-approved medication that helps treats treat specific kinds of diseases and medical conditions. Continue reading to better understand how — and how long — it takes to work.",
+      "canonical": "https://mylocalinfusion.com/how-long-does-it-take-remicade-infusions-to-work/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2024-11-10T19:26:01"
+    },
+    {
+      "title": "How Much Does Inflectra Infusion Cost",
+      "url": "https://mylocalinfusion.com/inflectra-infusion-cost/",
+      "slug": "inflectra-infusion-cost",
+      "type": "post",
+      "description": "How much Inflectra infusions cost (with and without insurance) and how patients can lower the cost of their infusions.",
+      "canonical": "https://mylocalinfusion.com/inflectra-infusion-cost/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2024-11-10T18:53:15"
+    },
+    {
+      "title": "How Much Does Infusion Therapy Cost?",
+      "url": "https://mylocalinfusion.com/how-much-does-infusion-therapy-cost/",
+      "slug": "how-much-does-infusion-therapy-cost",
+      "type": "post",
+      "description": "One of the first questions we get from patients, healthcare leaders, and employers is… “how much does infusion therapy cost?”",
+      "canonical": "https://mylocalinfusion.com/how-much-does-infusion-therapy-cost/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2024-11-10T19:32:31"
+    },
+    {
+      "title": "How Much Does Leqembi (Lecanemab) Cost?",
+      "url": "https://mylocalinfusion.com/leqembi-lecanemab-cost/",
+      "slug": "leqembi-lecanemab-cost",
+      "type": "post",
+      "description": "How much infusions of this new Alzheimer’s drug cost (with and without insurance) and how patients can lower the cost.",
+      "canonical": "https://mylocalinfusion.com/leqembi-lecanemab-cost/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2024-11-10T18:19:31"
+    },
+    {
+      "title": "How Much Does Remicade Infusion Cost?",
+      "url": "https://mylocalinfusion.com/remicade-infusion-cost/",
+      "slug": "remicade-infusion-cost",
+      "type": "post",
+      "description": "Find out how much Remicade infusions cost (with & without insurance) and how patients can lower costs.",
+      "canonical": "https://mylocalinfusion.com/remicade-infusion-cost/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2024-11-10T19:23:52"
+    },
+    {
+      "title": "How Payers Benefit From A Better Patient & Provider Experience",
+      "url": "https://mylocalinfusion.com/payers-benefit-from-better-patient-provider-experience/",
+      "slug": "payers-benefit-from-better-patient-provider-experience",
+      "type": "post",
+      "description": "A conversation with Tom Roark, VP of Payer Strategy and Contracting at Local Infusion.",
+      "canonical": "https://mylocalinfusion.com/blog/payers-benefit-from-better-patient-provider-experience/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2024-11-10T17:46:07"
+    },
+    {
+      "title": "How To Find MS Support Groups (Online & In-Person)",
+      "url": "https://mylocalinfusion.com/ms-support-groups/",
+      "slug": "ms-support-groups",
+      "type": "post",
+      "description": "In addition to providing emotional support and social interactions, support groups are also a great source of information. Here’s what you need to know.",
+      "canonical": "https://mylocalinfusion.com/ms-support-groups/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2024-11-10T19:10:12"
+    },
+    {
+      "title": "How to Manage Heat & Cold Sensitivity with MS: A Comprehensive Guide",
+      "url": "https://mylocalinfusion.com/ms-body-temperature-regulation/",
+      "slug": "ms-body-temperature-regulation",
+      "type": "post",
+      "description": "Learn more about the causes of both heat and cold sensitivity, plus what you can do.",
+      "canonical": "https://mylocalinfusion.com/blog/ms-body-temperature-regulation/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2024-11-10T17:28:25"
+    },
+    {
+      "title": "How We Partner With Providers For A Better Patient Experience",
+      "url": "https://mylocalinfusion.com/provider-partnerships-for-better-patient-experience/",
+      "slug": "provider-partnerships-for-better-patient-experience",
+      "type": "post",
+      "description": "In an average week, Lynn Derocher, Executive Director of Strategic Partnerships at Local Infusion, is on the road three to four days. Based in Maine, Lynn spends most of her time visiting the regions we have centers in and meeting with local providers,...",
+      "canonical": "https://mylocalinfusion.com/provider-partnerships-for-better-patient-experience/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2024-11-10T17:51:26"
+    },
+    {
+      "title": "How We’re Showcasing The Work Of Local Photographers At Our Bangor Center",
+      "url": "https://mylocalinfusion.com/local-photographers-bangor-center/",
+      "slug": "local-photographers-bangor-center",
+      "type": "post",
+      "description": "Local Infusion recently opened a new infusion center in Bangor, Maine. True to our mission of supporting local communities, Heather Turner, RN, took it upon herself to curate a gallery wall of photographs showcasing the nearby counties and regions of...",
+      "canonical": "https://mylocalinfusion.com/local-photographers-bangor-center/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2024-11-10T17:26:30"
+    },
+    {
+      "title": "How Zaria Wilson Has Found Education, Solidarity, & Support During Her 18-Year Crohn’s Journey",
+      "url": "https://mylocalinfusion.com/zaria-wilson-crohns-journey/",
+      "slug": "zaria-wilson-crohns-journey",
+      "type": "post",
+      "description": "Zaria opens up about her years-long Crohn’s journey and how the Crohn’s & Colitis Foundation has been a source of education, solidarity, and support every step of the way.",
+      "canonical": "https://mylocalinfusion.com/zaria-wilson-crohns-journey/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2024-11-10T17:26:01"
+    },
+    {
+      "title": "Inflectra vs. Remicade: What's The Difference?",
+      "url": "https://mylocalinfusion.com/inflectra-vs-remicade/",
+      "slug": "inflectra-vs-remicade",
+      "type": "post",
+      "description": "Wondering how Inflectra and Remicade are different? We’ve got you covered with a full run-down of their uses, side effects, efficacy, and cost.",
+      "canonical": "https://mylocalinfusion.com/inflectra-vs-remicade/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2024-11-10T19:29:32"
+    },
+    {
+      "title": "Infusion Therapy For Crohn’s: How It Works & What To Expect",
+      "url": "https://mylocalinfusion.com/infusions-crohns-disease/",
+      "slug": "infusions-crohns-disease",
+      "type": "post",
+      "description": "Discover the infusion treatments available for Crohn’s disease, along with what to expect (duration, frequency, efficacy, side effects, and more).",
+      "canonical": "https://mylocalinfusion.com/infusions-crohns-disease/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2024-11-10T18:55:53"
+    },
+    {
+      "title": "Infusion Therapy Shouldn’t Be A Full-Time Job. Just Ask This Entrepreneur & Mom of 2.",
+      "url": "https://mylocalinfusion.com/justine-beuregard-patient-story/",
+      "slug": "justine-beuregard-patient-story",
+      "type": "post",
+      "description": "We sat down with Justine to learn more about her treatment journey and why finding Local Infusion feels like “being gifted after so many years of searching for the right place.”",
+      "canonical": "https://mylocalinfusion.com/justine-beuregard-patient-story/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2024-12-11T15:32:12"
+    },
+    {
+      "title": "Infusion Therapy: What Is It & Conditions It Treats",
+      "url": "https://mylocalinfusion.com/what-is-infusion-therapy/",
+      "slug": "what-is-infusion-therapy",
+      "type": "post",
+      "description": "Understand what infusion therapy is, how it works, and some of the conditions it can be used to treat and/or manage.",
+      "canonical": "https://mylocalinfusion.com/what-is-infusion-therapy/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2024-11-10T19:34:43"
+    },
+    {
+      "title": "Is Tysabri An Immunosuppressant? What You Need To Know.",
+      "url": "https://mylocalinfusion.com/is-tysabri-an-immunosuppressant/",
+      "slug": "is-tysabri-an-immunosuppressant",
+      "type": "post",
+      "description": "What is Tysabri and how does it treat multiple sclerosis?  Tysabri (natalizumab) is in a class of medications known as immunomodulators and is an immunosuppressant.",
+      "canonical": "https://mylocalinfusion.com/is-tysabri-an-immunosuppressant/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2024-11-10T19:28:47"
+    },
+    {
+      "title": "Leqembi (Lecanemab) Is Now Approved For Alzheimer’s Treatment: What To Know",
+      "url": "https://mylocalinfusion.com/leqembi-infusion/",
+      "slug": "leqembi-infusion",
+      "type": "post",
+      "description": "The FDA’s full approval of Leqembi (lecanemab-irmb) has made it one of the few infusions that can be used for Alzheimer’s disease.",
+      "canonical": "https://mylocalinfusion.com/leqembi-infusion/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2024-11-10T18:24:20"
+    },
+    {
+      "title": "Leqembi (Lecanemab) vs Aduhelm (Aducanumab) For Alzheimer’s: What’s The Difference?",
+      "url": "https://mylocalinfusion.com/lecanemab-vs-aducanumab/",
+      "slug": "lecanemab-vs-aducanumab",
+      "type": "post",
+      "description": "Discover the differences between these two drugs to better determine which is best for you.",
+      "canonical": "https://mylocalinfusion.com/lecanemab-vs-aducanumab/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2024-11-10T18:23:12"
+    },
+    {
+      "title": "Leqembi (Lecanemab) vs Donanemab For Alzheimer’s: What’s The Difference?",
+      "url": "https://mylocalinfusion.com/donanemab-vs-lecanemab/",
+      "slug": "donanemab-vs-lecanemab",
+      "type": "post",
+      "description": "Dive into the differences between Leqembi (lecanemab) & Donanemab to better determine which is best for you.",
+      "canonical": "https://mylocalinfusion.com/donanemab-vs-lecanemab/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2024-11-10T18:22:13"
+    },
+    {
+      "title": "Local Infusion Co-Founder & CEO Woody Baum On Upending The Status Quo",
+      "url": "https://mylocalinfusion.com/woody-baum-upending-status-quo/",
+      "slug": "woody-baum-upending-status-quo",
+      "type": "post",
+      "description": "Woody Baum, CEO & Co-Founder of Local Infusion on where he sees the biggest challenges and opportunities in the industry.",
+      "canonical": "https://mylocalinfusion.com/blog/woody-baum-upending-status-quo/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2024-11-10T17:41:17"
+    },
+    {
+      "title": "Local Infusion Joins the QIVIGY® Limited Distribution Network as the First Ambulatory Infusion Center",
+      "url": "https://mylocalinfusion.com/local-infusion-joins-the-qivigy-limited-distribution-network-as-the-first-ambulatory-infusion-center/",
+      "slug": "local-infusion-joins-the-qivigy-limited-distribution-network-as-the-first-ambulatory-infusion-center",
+      "type": "post",
+      "description": "Local Infusion will expand its infusion offerings with the addition of QIVIGY® (Immune Globulin Intravenous, human-kthm) 10% liquid from Kedrion Biopharma.",
+      "canonical": "https://mylocalinfusion.com/local-infusion-joins-the-qivigy-limited-distribution-network-as-the-first-ambulatory-infusion-center/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2026-03-13T19:18:26"
+    },
+    {
+      "title": "Local Infusion’s Annual Outcomes Report 2023",
+      "url": "https://mylocalinfusion.com/local-infusions-annual-outcomes-report-2023/",
+      "slug": "local-infusions-annual-outcomes-report-2023",
+      "type": "post",
+      "description": "Raising the Bar for Chronic Condition Care",
+      "canonical": "https://mylocalinfusion.com/local-infusions-annual-outcomes-report-2023/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2024-11-10T17:49:37"
+    },
+    {
+      "title": "Maggie Carbone Shares What It's Like To Be An Infusion Guide",
+      "url": "https://mylocalinfusion.com/meet-maggie-infusion-guide/",
+      "slug": "meet-maggie-infusion-guide",
+      "type": "post",
+      "description": "The work Local Infusion is doing to bring treatment to patients in a timely manner, and why it matters.",
+      "canonical": "https://mylocalinfusion.com/meet-maggie-infusion-guide/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2024-11-10T17:26:58"
+    },
+    {
+      "title": "Migraine Infusion Therapy: What to Know",
+      "url": "https://mylocalinfusion.com/infusion-therapy-for-migraines/",
+      "slug": "infusion-therapy-for-migraines",
+      "type": "post",
+      "description": "Experiencing migraine symptoms? When over-the-counter medications are not an option, infusion therapy may be an effective alternative.",
+      "canonical": "https://mylocalinfusion.com/infusion-therapy-for-migraines/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2024-11-10T19:33:34"
+    },
+    {
+      "title": "Prior Authorization: What Is It & How Long It Takes",
+      "url": "https://mylocalinfusion.com/what-is-prior-authorization/",
+      "slug": "what-is-prior-authorization",
+      "type": "post",
+      "description": "Your FAQs on prior authorization, answered: what it is, how long it takes, how to expedite it, how it impacts patients and the healthcare system, and more.",
+      "canonical": "https://mylocalinfusion.com/what-is-prior-authorization/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2024-11-10T19:12:23"
+    },
+    {
+      "title": "Real Patients & Physicians Share Why They Love Local Infusion",
+      "url": "https://mylocalinfusion.com/why-patients-physicians-love-local-infusion/",
+      "slug": "why-patients-physicians-love-local-infusion",
+      "type": "post",
+      "description": "Local Infusion is on a mission to raise the bar for infusion care…for everyone. That means improving outcomes for patients, saving time for physicians, and making it all more affordable.",
+      "canonical": "https://mylocalinfusion.com/why-patients-physicians-love-local-infusion/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2024-11-10T18:03:01"
+    },
+    {
+      "title": "Remicade Infusion: What to Expect and How to Prepare",
+      "url": "https://mylocalinfusion.com/remicade-infusion-what-to-expect/",
+      "slug": "remicade-infusion-what-to-expect",
+      "type": "post",
+      "description": "Considering Remicade infusions? Discover how to prepare, what to expect, and what happens next.",
+      "canonical": "https://mylocalinfusion.com/remicade-infusion-what-to-expect/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2024-11-10T19:31:45"
+    },
+    {
+      "title": "Rheumatoid Arthritis Infusion Therapy: What to Know",
+      "url": "https://mylocalinfusion.com/infusion-therapy-rheumatoid-arthritis/",
+      "slug": "infusion-therapy-rheumatoid-arthritis",
+      "type": "post",
+      "description": "What you should know about infusion therapy for rheumatoid arthritis, including benefits, side effects, and more.",
+      "canonical": "https://mylocalinfusion.com/infusion-therapy-rheumatoid-arthritis/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2024-11-10T19:09:24"
+    },
+    {
+      "title": "Scaling Up Without Losing the Personal Touch",
+      "url": "https://mylocalinfusion.com/operational-strategy-scaling-up/",
+      "slug": "operational-strategy-scaling-up",
+      "type": "post",
+      "description": "Matt Stewart, VP of Operations at Local Infusion, discusses scaling operations while preserving our hallmark personal touch in patient care.",
+      "canonical": "https://mylocalinfusion.com/operational-strategy-scaling-up/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2024-11-10T17:58:00"
+    },
+    {
+      "title": "Smoking & Multiple Sclerosis (MS): What You Need To Know",
+      "url": "https://mylocalinfusion.com/smoking-ms/",
+      "slug": "smoking-ms",
+      "type": "post",
+      "description": "The relationship between cigarette smoking and MS (susceptibility & progression) and whether vaping/e-cigarettes are better options.",
+      "canonical": "https://mylocalinfusion.com/smoking-ms/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2024-11-10T19:14:45"
+    },
+    {
+      "title": "Stelara vs Remicade For Crohn’s: What's The Difference?",
+      "url": "https://mylocalinfusion.com/stelara-vs-remicade/",
+      "slug": "stelara-vs-remicade",
+      "type": "post",
+      "description": "Better understand the differences between Stelara and Remicade to make an informed decision about which treatment option is best for you.",
+      "canonical": "https://mylocalinfusion.com/stelara-vs-remicade/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2024-11-10T18:48:54"
+    },
+    {
+      "title": "Take A Look At Our First Infusion Center In Concord, NH",
+      "url": "https://mylocalinfusion.com/concord-nh-opening/",
+      "slug": "concord-nh-opening",
+      "type": "post",
+      "description": "We’re thrilled to now be accepting patients at Local Infusion’s first center in Concord, New Hampshire",
+      "canonical": "https://mylocalinfusion.com/concord-nh-opening/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2024-11-10T19:20:58"
+    },
+    {
+      "title": "Take a Peek Inside Our Latest Infusion Center in Augusta, ME",
+      "url": "https://mylocalinfusion.com/august-me-opening/",
+      "slug": "august-me-opening",
+      "type": "post",
+      "description": "Tour our new, state-of-the-art infusion center and meet the team in Augusta, ME—our first in Maine!",
+      "canonical": "https://mylocalinfusion.com/august-me-opening/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2024-11-10T18:26:09"
+    },
+    {
+      "title": "Take a Peek Inside Our New Bangor Infusion Center",
+      "url": "https://mylocalinfusion.com/bangor-me-opening/",
+      "slug": "bangor-me-opening",
+      "type": "post",
+      "description": "Explore our latest, state-of-the-art infusion center and meet the dedicated team in Bangor, ME—our largest facility in Maine!",
+      "canonical": "https://mylocalinfusion.com/blog/bangor-me-opening/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2024-11-10T17:27:45"
+    },
+    {
+      "title": "Take A Peek Inside Our New Infusion Center In Bedford, NH",
+      "url": "https://mylocalinfusion.com/bedford-nh-opening/",
+      "slug": "bedford-nh-opening",
+      "type": "post",
+      "description": "A peek inside our new, state-of-the-art infusion center in Bedford, NH",
+      "canonical": "https://mylocalinfusion.com/bedford-nh-opening/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2024-11-10T18:45:48"
+    },
+    {
+      "title": "Technology That Makes A Difference In Patients’ Lives",
+      "url": "https://mylocalinfusion.com/technology-that-makes-a-difference/",
+      "slug": "technology-that-makes-a-difference",
+      "type": "post",
+      "description": "Local Infusion’s Head of Product Tina Liu opens up about the unique challenges & opportunities in the infusion space, how operations influences technology, and why, at the end of the day, it’s all in service of a better patient experience.",
+      "canonical": "https://mylocalinfusion.com/technology-that-makes-a-difference/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2024-11-10T18:12:45"
+    },
+    {
+      "title": "The Connection Between Stress & Multiple Sclerosis",
+      "url": "https://mylocalinfusion.com/stress-and-ms/",
+      "slug": "stress-and-ms",
+      "type": "post",
+      "description": "Discover the main types of stress, how it can impact symptoms of MS, and what stress management techniques to try when stressful situations arise.",
+      "canonical": "https://mylocalinfusion.com/blog/stress-and-ms/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2024-11-10T17:31:12"
+    },
+    {
+      "title": "What A Typical Day Looks Like For Summer Bell, NP, Clinical Director At Local Infusion",
+      "url": "https://mylocalinfusion.com/typical-day-summer-bell-np/",
+      "slug": "typical-day-summer-bell-np",
+      "type": "post",
+      "description": "From creating new policies to fielding questions from the nurses and training all new hires.",
+      "canonical": "https://mylocalinfusion.com/typical-day-summer-bell-np/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2024-11-10T16:55:26"
+    },
+    {
+      "title": "What To Know About Pemgarda, A New Preventative COVID Drug",
+      "url": "https://mylocalinfusion.com/pemgarda-fda-approval/",
+      "slug": "pemgarda-fda-approval",
+      "type": "post",
+      "description": "Learn more about Pemgarda, a groundbreaking preventative treatment offering the immunocompromised a new layer of defense against Covid-19.",
+      "canonical": "https://mylocalinfusion.com/pemgarda-fda-approval/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2024-11-10T17:23:43"
+    },
+    {
+      "title": "Why “Speed To Treatment” Matters For Patients, Providers & Payors",
+      "url": "https://mylocalinfusion.com/speed-to-treatment/",
+      "slug": "speed-to-treatment",
+      "type": "post",
+      "description": "At Local Infusion, we place a strong emphasis on “speed to treatment” for our patients. We take you through the work we’re doing to bring treatment to patients in a timely manner, and why it matters.",
+      "canonical": "https://mylocalinfusion.com/speed-to-treatment/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2024-11-11T20:38:24"
+    },
+    {
+      "title": "Why Local Infusion",
+      "url": "https://mylocalinfusion.com/why-local-infusion/",
+      "slug": "why-local-infusion",
+      "type": "post",
+      "description": "Why we're building Local Infusion, how we're doing things differently, and our vision for the future.",
+      "canonical": "https://mylocalinfusion.com/why-local-infusion/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2024-11-10T19:35:27"
+    },
+    {
+      "title": "Why We Care About Interior Design at Local Infusion",
+      "url": "https://mylocalinfusion.com/interior-design/",
+      "slug": "interior-design",
+      "type": "post",
+      "description": "The design of a medical clinic is more than aesthetic: it has a significant impact on the patient experience, particularly for those with chronic auto-immune disorders – many of whom we treat here at Local Infusion.",
+      "canonical": "https://mylocalinfusion.com/interior-design/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2024-11-10T19:24:49"
+    },
+    {
+      "title": "Yoga For MS: Benefits, Poses, & Tips",
+      "url": "https://mylocalinfusion.com/yoga-for-ms/",
+      "slug": "yoga-for-ms",
+      "type": "post",
+      "description": "Yoga can help improve flexibility, balance, and muscular endurance in those with MS — and help relieve stress and anxiety.",
+      "canonical": "https://mylocalinfusion.com/yoga-for-ms/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2024-11-10T19:16:29"
+    },
+    {
+      "title": "Your Ultimate Cheat Sheet To Prior Authorization",
+      "url": "https://mylocalinfusion.com/prior-authorization-cheat-sheet/",
+      "slug": "prior-authorization-cheat-sheet",
+      "type": "post",
+      "description": "In an attempt to demystify and streamline the prior authorization process, we’re outlining key terms & phrases, plus contact information for major insurance plans.",
+      "canonical": "https://mylocalinfusion.com/prior-authorization-cheat-sheet/",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "modified": "2024-11-10T18:52:36"
+    }
+  ],
+  "sitemap_entries": [
+    {
+      "type": "post",
+      "url": "https://mylocalinfusion.com/q-and-a-dr-paredes/",
+      "sitemap": "https://mylocalinfusion.com/post-sitemap.xml"
+    },
+    {
+      "type": "post",
+      "url": "https://mylocalinfusion.com/typical-day-summer-bell-np/",
+      "sitemap": "https://mylocalinfusion.com/post-sitemap.xml"
+    },
+    {
+      "type": "post",
+      "url": "https://mylocalinfusion.com/pemgarda-fda-approval/",
+      "sitemap": "https://mylocalinfusion.com/post-sitemap.xml"
+    },
+    {
+      "type": "post",
+      "url": "https://mylocalinfusion.com/billilng-insurance-faqs/",
+      "sitemap": "https://mylocalinfusion.com/post-sitemap.xml"
+    },
+    {
+      "type": "post",
+      "url": "https://mylocalinfusion.com/amanda-hyne-lcsw-crohns/",
+      "sitemap": "https://mylocalinfusion.com/post-sitemap.xml"
+    },
+    {
+      "type": "post",
+      "url": "https://mylocalinfusion.com/rocky-hill-ct-opening/",
+      "sitemap": "https://mylocalinfusion.com/post-sitemap.xml"
+    },
+    {
+      "type": "post",
+      "url": "https://mylocalinfusion.com/zaria-wilson-crohns-journey/",
+      "sitemap": "https://mylocalinfusion.com/post-sitemap.xml"
+    },
+    {
+      "type": "post",
+      "url": "https://mylocalinfusion.com/local-photographers-bangor-center/",
+      "sitemap": "https://mylocalinfusion.com/post-sitemap.xml"
+    },
+    {
+      "type": "post",
+      "url": "https://mylocalinfusion.com/meet-maggie-infusion-guide/",
+      "sitemap": "https://mylocalinfusion.com/post-sitemap.xml"
+    },
+    {
+      "type": "post",
+      "url": "https://mylocalinfusion.com/bangor-me-opening/",
+      "sitemap": "https://mylocalinfusion.com/post-sitemap.xml"
+    },
+    {
+      "type": "post",
+      "url": "https://mylocalinfusion.com/ms-body-temperature-regulation/",
+      "sitemap": "https://mylocalinfusion.com/post-sitemap.xml"
+    },
+    {
+      "type": "post",
+      "url": "https://mylocalinfusion.com/stress-and-ms/",
+      "sitemap": "https://mylocalinfusion.com/post-sitemap.xml"
+    },
+    {
+      "type": "post",
+      "url": "https://mylocalinfusion.com/crohns-friendly-restaurants-south-portland-me/",
+      "sitemap": "https://mylocalinfusion.com/post-sitemap.xml"
+    },
+    {
+      "type": "post",
+      "url": "https://mylocalinfusion.com/sarah-locke-climb-the-peak/",
+      "sitemap": "https://mylocalinfusion.com/post-sitemap.xml"
+    },
+    {
+      "type": "post",
+      "url": "https://mylocalinfusion.com/financial-transparency-chuck-bucy/",
+      "sitemap": "https://mylocalinfusion.com/post-sitemap.xml"
+    },
+    {
+      "type": "post",
+      "url": "https://mylocalinfusion.com/foods-to-eat-and-avoid-with-ulcerative-colitis/",
+      "sitemap": "https://mylocalinfusion.com/post-sitemap.xml"
+    },
+    {
+      "type": "post",
+      "url": "https://mylocalinfusion.com/woody-baum-upending-status-quo/",
+      "sitemap": "https://mylocalinfusion.com/post-sitemap.xml"
+    },
+    {
+      "type": "post",
+      "url": "https://mylocalinfusion.com/foods-that-help-gout/",
+      "sitemap": "https://mylocalinfusion.com/post-sitemap.xml"
+    },
+    {
+      "type": "post",
+      "url": "https://mylocalinfusion.com/payers-benefit-from-better-patient-provider-experience/",
+      "sitemap": "https://mylocalinfusion.com/post-sitemap.xml"
+    },
+    {
+      "type": "post",
+      "url": "https://mylocalinfusion.com/ms-friendly-yoga-studios-augusta-me/",
+      "sitemap": "https://mylocalinfusion.com/post-sitemap.xml"
+    },
+    {
+      "type": "post",
+      "url": "https://mylocalinfusion.com/local-infusions-annual-outcomes-report-2023/",
+      "sitemap": "https://mylocalinfusion.com/post-sitemap.xml"
+    },
+    {
+      "type": "post",
+      "url": "https://mylocalinfusion.com/provider-partnerships-for-better-patient-experience/",
+      "sitemap": "https://mylocalinfusion.com/post-sitemap.xml"
+    },
+    {
+      "type": "post",
+      "url": "https://mylocalinfusion.com/diet-for-alzheimers-patients/",
+      "sitemap": "https://mylocalinfusion.com/post-sitemap.xml"
+    },
+    {
+      "type": "post",
+      "url": "https://mylocalinfusion.com/crohns-friendly-restaurants-concord-nh/",
+      "sitemap": "https://mylocalinfusion.com/post-sitemap.xml"
+    },
+    {
+      "type": "post",
+      "url": "https://mylocalinfusion.com/operational-strategy-scaling-up/",
+      "sitemap": "https://mylocalinfusion.com/post-sitemap.xml"
+    },
+    {
+      "type": "post",
+      "url": "https://mylocalinfusion.com/exercise-and-gout/",
+      "sitemap": "https://mylocalinfusion.com/post-sitemap.xml"
+    },
+    {
+      "type": "post",
+      "url": "https://mylocalinfusion.com/first-time-patient-faqs/",
+      "sitemap": "https://mylocalinfusion.com/post-sitemap.xml"
+    },
+    {
+      "type": "post",
+      "url": "https://mylocalinfusion.com/why-patients-physicians-love-local-infusion/",
+      "sitemap": "https://mylocalinfusion.com/post-sitemap.xml"
+    },
+    {
+      "type": "post",
+      "url": "https://mylocalinfusion.com/widest-patient-reach/",
+      "sitemap": "https://mylocalinfusion.com/post-sitemap.xml"
+    },
+    {
+      "type": "post",
+      "url": "https://mylocalinfusion.com/patients-care-teams-gratitude/",
+      "sitemap": "https://mylocalinfusion.com/post-sitemap.xml"
+    },
+    {
+      "type": "post",
+      "url": "https://mylocalinfusion.com/empowering-care-teams/",
+      "sitemap": "https://mylocalinfusion.com/post-sitemap.xml"
+    },
+    {
+      "type": "post",
+      "url": "https://mylocalinfusion.com/technology-that-makes-a-difference/",
+      "sitemap": "https://mylocalinfusion.com/post-sitemap.xml"
+    },
+    {
+      "type": "post",
+      "url": "https://mylocalinfusion.com/crohns-disease-exercise/",
+      "sitemap": "https://mylocalinfusion.com/post-sitemap.xml"
+    },
+    {
+      "type": "post",
+      "url": "https://mylocalinfusion.com/exercise-for-rheumatoid-arthritis/",
+      "sitemap": "https://mylocalinfusion.com/post-sitemap.xml"
+    },
+    {
+      "type": "post",
+      "url": "https://mylocalinfusion.com/crohns-diet/",
+      "sitemap": "https://mylocalinfusion.com/post-sitemap.xml"
+    },
+    {
+      "type": "post",
+      "url": "https://mylocalinfusion.com/leqembi-lecanemab-cost/",
+      "sitemap": "https://mylocalinfusion.com/post-sitemap.xml"
+    },
+    {
+      "type": "post",
+      "url": "https://mylocalinfusion.com/rheumatoid-arthritis-diet/",
+      "sitemap": "https://mylocalinfusion.com/post-sitemap.xml"
+    },
+    {
+      "type": "post",
+      "url": "https://mylocalinfusion.com/donanemab-vs-lecanemab/",
+      "sitemap": "https://mylocalinfusion.com/post-sitemap.xml"
+    },
+    {
+      "type": "post",
+      "url": "https://mylocalinfusion.com/lecanemab-vs-aducanumab/",
+      "sitemap": "https://mylocalinfusion.com/post-sitemap.xml"
+    },
+    {
+      "type": "post",
+      "url": "https://mylocalinfusion.com/leqembi-infusion/",
+      "sitemap": "https://mylocalinfusion.com/post-sitemap.xml"
+    },
+    {
+      "type": "post",
+      "url": "https://mylocalinfusion.com/august-me-opening/",
+      "sitemap": "https://mylocalinfusion.com/post-sitemap.xml"
+    },
+    {
+      "type": "post",
+      "url": "https://mylocalinfusion.com/bedford-nh-opening/",
+      "sitemap": "https://mylocalinfusion.com/post-sitemap.xml"
+    },
+    {
+      "type": "post",
+      "url": "https://mylocalinfusion.com/entyvio-vs-remicade/",
+      "sitemap": "https://mylocalinfusion.com/post-sitemap.xml"
+    },
+    {
+      "type": "post",
+      "url": "https://mylocalinfusion.com/stelara-vs-remicade/",
+      "sitemap": "https://mylocalinfusion.com/post-sitemap.xml"
+    },
+    {
+      "type": "post",
+      "url": "https://mylocalinfusion.com/prior-authorization-cheat-sheet/",
+      "sitemap": "https://mylocalinfusion.com/post-sitemap.xml"
+    },
+    {
+      "type": "post",
+      "url": "https://mylocalinfusion.com/inflectra-infusion-cost/",
+      "sitemap": "https://mylocalinfusion.com/post-sitemap.xml"
+    },
+    {
+      "type": "post",
+      "url": "https://mylocalinfusion.com/infusions-crohns-disease/",
+      "sitemap": "https://mylocalinfusion.com/post-sitemap.xml"
+    },
+    {
+      "type": "post",
+      "url": "https://mylocalinfusion.com/serve-patient-payor-provider/",
+      "sitemap": "https://mylocalinfusion.com/post-sitemap.xml"
+    },
+    {
+      "type": "post",
+      "url": "https://mylocalinfusion.com/infusion-guide/",
+      "sitemap": "https://mylocalinfusion.com/post-sitemap.xml"
+    },
+    {
+      "type": "post",
+      "url": "https://mylocalinfusion.com/infusion-therapy-rheumatoid-arthritis/",
+      "sitemap": "https://mylocalinfusion.com/post-sitemap.xml"
+    },
+    {
+      "type": "post",
+      "url": "https://mylocalinfusion.com/ms-support-groups/",
+      "sitemap": "https://mylocalinfusion.com/post-sitemap.xml"
+    },
+    {
+      "type": "post",
+      "url": "https://mylocalinfusion.com/simponi-aria-guide/",
+      "sitemap": "https://mylocalinfusion.com/post-sitemap.xml"
+    },
+    {
+      "type": "post",
+      "url": "https://mylocalinfusion.com/what-is-prior-authorization/",
+      "sitemap": "https://mylocalinfusion.com/post-sitemap.xml"
+    },
+    {
+      "type": "post",
+      "url": "https://mylocalinfusion.com/briumvi-guide/",
+      "sitemap": "https://mylocalinfusion.com/post-sitemap.xml"
+    },
+    {
+      "type": "post",
+      "url": "https://mylocalinfusion.com/smoking-ms/",
+      "sitemap": "https://mylocalinfusion.com/post-sitemap.xml"
+    },
+    {
+      "type": "post",
+      "url": "https://mylocalinfusion.com/multiple-sclerosis-diet-exercise/",
+      "sitemap": "https://mylocalinfusion.com/post-sitemap.xml"
+    },
+    {
+      "type": "post",
+      "url": "https://mylocalinfusion.com/yoga-for-ms/",
+      "sitemap": "https://mylocalinfusion.com/post-sitemap.xml"
+    },
+    {
+      "type": "post",
+      "url": "https://mylocalinfusion.com/concord-nh-opening/",
+      "sitemap": "https://mylocalinfusion.com/post-sitemap.xml"
+    },
+    {
+      "type": "post",
+      "url": "https://mylocalinfusion.com/remicade-infusion-cost/",
+      "sitemap": "https://mylocalinfusion.com/post-sitemap.xml"
+    },
+    {
+      "type": "post",
+      "url": "https://mylocalinfusion.com/interior-design/",
+      "sitemap": "https://mylocalinfusion.com/post-sitemap.xml"
+    },
+    {
+      "type": "post",
+      "url": "https://mylocalinfusion.com/how-long-does-it-take-remicade-infusions-to-work/",
+      "sitemap": "https://mylocalinfusion.com/post-sitemap.xml"
+    },
+    {
+      "type": "post",
+      "url": "https://mylocalinfusion.com/digital-health-technology/",
+      "sitemap": "https://mylocalinfusion.com/post-sitemap.xml"
+    },
+    {
+      "type": "post",
+      "url": "https://mylocalinfusion.com/is-tysabri-an-immunosuppressant/",
+      "sitemap": "https://mylocalinfusion.com/post-sitemap.xml"
+    },
+    {
+      "type": "post",
+      "url": "https://mylocalinfusion.com/inflectra-vs-remicade/",
+      "sitemap": "https://mylocalinfusion.com/post-sitemap.xml"
+    },
+    {
+      "type": "post",
+      "url": "https://mylocalinfusion.com/remicade-infusion-what-to-expect/",
+      "sitemap": "https://mylocalinfusion.com/post-sitemap.xml"
+    },
+    {
+      "type": "post",
+      "url": "https://mylocalinfusion.com/how-much-does-infusion-therapy-cost/",
+      "sitemap": "https://mylocalinfusion.com/post-sitemap.xml"
+    },
+    {
+      "type": "post",
+      "url": "https://mylocalinfusion.com/infusion-therapy-for-migraines/",
+      "sitemap": "https://mylocalinfusion.com/post-sitemap.xml"
+    },
+    {
+      "type": "post",
+      "url": "https://mylocalinfusion.com/what-is-infusion-therapy/",
+      "sitemap": "https://mylocalinfusion.com/post-sitemap.xml"
+    },
+    {
+      "type": "post",
+      "url": "https://mylocalinfusion.com/why-local-infusion/",
+      "sitemap": "https://mylocalinfusion.com/post-sitemap.xml"
+    },
+    {
+      "type": "post",
+      "url": "https://mylocalinfusion.com/speed-to-treatment/",
+      "sitemap": "https://mylocalinfusion.com/post-sitemap.xml"
+    },
+    {
+      "type": "post",
+      "url": "https://mylocalinfusion.com/justine-beuregard-patient-story/",
+      "sitemap": "https://mylocalinfusion.com/post-sitemap.xml"
+    },
+    {
+      "type": "post",
+      "url": "https://mylocalinfusion.com/local-infusion-joins-the-qivigy-limited-distribution-network-as-the-first-ambulatory-infusion-center/",
+      "sitemap": "https://mylocalinfusion.com/post-sitemap.xml"
+    },
+    {
+      "type": "page",
+      "url": "https://mylocalinfusion.com/",
+      "sitemap": "https://mylocalinfusion.com/page-sitemap.xml"
+    },
+    {
+      "type": "page",
+      "url": "https://mylocalinfusion.com/style-guide/",
+      "sitemap": "https://mylocalinfusion.com/page-sitemap.xml"
+    },
+    {
+      "type": "page",
+      "url": "https://mylocalinfusion.com/blog/",
+      "sitemap": "https://mylocalinfusion.com/page-sitemap.xml"
+    },
+    {
+      "type": "page",
+      "url": "https://mylocalinfusion.com/get-started/",
+      "sitemap": "https://mylocalinfusion.com/page-sitemap.xml"
+    },
+    {
+      "type": "page",
+      "url": "https://mylocalinfusion.com/privacy-policy/",
+      "sitemap": "https://mylocalinfusion.com/page-sitemap.xml"
+    },
+    {
+      "type": "page",
+      "url": "https://mylocalinfusion.com/accessibility/",
+      "sitemap": "https://mylocalinfusion.com/page-sitemap.xml"
+    },
+    {
+      "type": "page",
+      "url": "https://mylocalinfusion.com/payer-contact-us/",
+      "sitemap": "https://mylocalinfusion.com/page-sitemap.xml"
+    },
+    {
+      "type": "page",
+      "url": "https://mylocalinfusion.com/referrals/",
+      "sitemap": "https://mylocalinfusion.com/page-sitemap.xml"
+    },
+    {
+      "type": "page",
+      "url": "https://mylocalinfusion.com/ipad/",
+      "sitemap": "https://mylocalinfusion.com/page-sitemap.xml"
+    },
+    {
+      "type": "page",
+      "url": "https://mylocalinfusion.com/pharma-contact-us/",
+      "sitemap": "https://mylocalinfusion.com/page-sitemap.xml"
+    },
+    {
+      "type": "page",
+      "url": "https://mylocalinfusion.com/oncology/",
+      "sitemap": "https://mylocalinfusion.com/page-sitemap.xml"
+    },
+    {
+      "type": "page",
+      "url": "https://mylocalinfusion.com/press/",
+      "sitemap": "https://mylocalinfusion.com/page-sitemap.xml"
+    },
+    {
+      "type": "page",
+      "url": "https://mylocalinfusion.com/faqs/",
+      "sitemap": "https://mylocalinfusion.com/page-sitemap.xml"
+    },
+    {
+      "type": "page",
+      "url": "https://mylocalinfusion.com/locations/",
+      "sitemap": "https://mylocalinfusion.com/page-sitemap.xml"
+    },
+    {
+      "type": "page",
+      "url": "https://mylocalinfusion.com/locations/connecticut/",
+      "sitemap": "https://mylocalinfusion.com/page-sitemap.xml"
+    },
+    {
+      "type": "page",
+      "url": "https://mylocalinfusion.com/locations/florida/",
+      "sitemap": "https://mylocalinfusion.com/page-sitemap.xml"
+    },
+    {
+      "type": "page",
+      "url": "https://mylocalinfusion.com/locations/massachusetts/",
+      "sitemap": "https://mylocalinfusion.com/page-sitemap.xml"
+    },
+    {
+      "type": "page",
+      "url": "https://mylocalinfusion.com/locations/maine/",
+      "sitemap": "https://mylocalinfusion.com/page-sitemap.xml"
+    },
+    {
+      "type": "page",
+      "url": "https://mylocalinfusion.com/locations/maryland/",
+      "sitemap": "https://mylocalinfusion.com/page-sitemap.xml"
+    },
+    {
+      "type": "page",
+      "url": "https://mylocalinfusion.com/locations/new-hampshire/",
+      "sitemap": "https://mylocalinfusion.com/page-sitemap.xml"
+    },
+    {
+      "type": "page",
+      "url": "https://mylocalinfusion.com/locations/new-jersey/",
+      "sitemap": "https://mylocalinfusion.com/page-sitemap.xml"
+    },
+    {
+      "type": "page",
+      "url": "https://mylocalinfusion.com/locations/new-york-locations/",
+      "sitemap": "https://mylocalinfusion.com/page-sitemap.xml"
+    },
+    {
+      "type": "page",
+      "url": "https://mylocalinfusion.com/locations/north-carolina/",
+      "sitemap": "https://mylocalinfusion.com/page-sitemap.xml"
+    },
+    {
+      "type": "page",
+      "url": "https://mylocalinfusion.com/locations/ohio/",
+      "sitemap": "https://mylocalinfusion.com/page-sitemap.xml"
+    },
+    {
+      "type": "page",
+      "url": "https://mylocalinfusion.com/locations/south-carolina/",
+      "sitemap": "https://mylocalinfusion.com/page-sitemap.xml"
+    },
+    {
+      "type": "page",
+      "url": "https://mylocalinfusion.com/locations/virginia/",
+      "sitemap": "https://mylocalinfusion.com/page-sitemap.xml"
+    },
+    {
+      "type": "page",
+      "url": "https://mylocalinfusion.com/locations/richmond-va/",
+      "sitemap": "https://mylocalinfusion.com/page-sitemap.xml"
+    },
+    {
+      "type": "page",
+      "url": "https://mylocalinfusion.com/order-forms/",
+      "sitemap": "https://mylocalinfusion.com/page-sitemap.xml"
+    },
+    {
+      "type": "page",
+      "url": "https://mylocalinfusion.com/health-systems/",
+      "sitemap": "https://mylocalinfusion.com/page-sitemap.xml"
+    },
+    {
+      "type": "page",
+      "url": "https://mylocalinfusion.com/conditions/",
+      "sitemap": "https://mylocalinfusion.com/page-sitemap.xml"
+    },
+    {
+      "type": "page",
+      "url": "https://mylocalinfusion.com/pharma/",
+      "sitemap": "https://mylocalinfusion.com/page-sitemap.xml"
+    },
+    {
+      "type": "page",
+      "url": "https://mylocalinfusion.com/employers/",
+      "sitemap": "https://mylocalinfusion.com/page-sitemap.xml"
+    },
+    {
+      "type": "page",
+      "url": "https://mylocalinfusion.com/payers/",
+      "sitemap": "https://mylocalinfusion.com/page-sitemap.xml"
+    },
+    {
+      "type": "page",
+      "url": "https://mylocalinfusion.com/our-story/",
+      "sitemap": "https://mylocalinfusion.com/page-sitemap.xml"
+    },
+    {
+      "type": "page",
+      "url": "https://mylocalinfusion.com/careers/",
+      "sitemap": "https://mylocalinfusion.com/page-sitemap.xml"
+    },
+    {
+      "type": "location",
+      "url": "https://mylocalinfusion.com/location/norwalk-connecticut/",
+      "sitemap": "https://mylocalinfusion.com/location-sitemap.xml"
+    },
+    {
+      "type": "location",
+      "url": "https://mylocalinfusion.com/location/alexandria-virginia/",
+      "sitemap": "https://mylocalinfusion.com/location-sitemap.xml"
+    },
+    {
+      "type": "location",
+      "url": "https://mylocalinfusion.com/location/annapolis-md/",
+      "sitemap": "https://mylocalinfusion.com/location-sitemap.xml"
+    },
+    {
+      "type": "location",
+      "url": "https://mylocalinfusion.com/location/augusta-maine/",
+      "sitemap": "https://mylocalinfusion.com/location-sitemap.xml"
+    },
+    {
+      "type": "location",
+      "url": "https://mylocalinfusion.com/location/bangor-maine/",
+      "sitemap": "https://mylocalinfusion.com/location-sitemap.xml"
+    },
+    {
+      "type": "location",
+      "url": "https://mylocalinfusion.com/location/bedford-new-hampshire/",
+      "sitemap": "https://mylocalinfusion.com/location-sitemap.xml"
+    },
+    {
+      "type": "location",
+      "url": "https://mylocalinfusion.com/location/emerson-new-jersey/",
+      "sitemap": "https://mylocalinfusion.com/location-sitemap.xml"
+    },
+    {
+      "type": "location",
+      "url": "https://mylocalinfusion.com/location/glen-allen-virginia/",
+      "sitemap": "https://mylocalinfusion.com/location-sitemap.xml"
+    },
+    {
+      "type": "location",
+      "url": "https://mylocalinfusion.com/location/glen-burnie-maryland/",
+      "sitemap": "https://mylocalinfusion.com/location-sitemap.xml"
+    },
+    {
+      "type": "location",
+      "url": "https://mylocalinfusion.com/location/holyoke-massachusetts/",
+      "sitemap": "https://mylocalinfusion.com/location-sitemap.xml"
+    },
+    {
+      "type": "location",
+      "url": "https://mylocalinfusion.com/location/mount-laurel-new-jersey/",
+      "sitemap": "https://mylocalinfusion.com/location-sitemap.xml"
+    },
+    {
+      "type": "location",
+      "url": "https://mylocalinfusion.com/location/new-haven-connecticut/",
+      "sitemap": "https://mylocalinfusion.com/location-sitemap.xml"
+    },
+    {
+      "type": "location",
+      "url": "https://mylocalinfusion.com/location/newton-ma/",
+      "sitemap": "https://mylocalinfusion.com/location-sitemap.xml"
+    },
+    {
+      "type": "location",
+      "url": "https://mylocalinfusion.com/location/norfolk-va/",
+      "sitemap": "https://mylocalinfusion.com/location-sitemap.xml"
+    },
+    {
+      "type": "location",
+      "url": "https://mylocalinfusion.com/location/portsmouth-new-hampshire/",
+      "sitemap": "https://mylocalinfusion.com/location-sitemap.xml"
+    },
+    {
+      "type": "location",
+      "url": "https://mylocalinfusion.com/location/princeton-new-jersey/",
+      "sitemap": "https://mylocalinfusion.com/location-sitemap.xml"
+    },
+    {
+      "type": "location",
+      "url": "https://mylocalinfusion.com/location/rocky-hill-connecticut/",
+      "sitemap": "https://mylocalinfusion.com/location-sitemap.xml"
+    },
+    {
+      "type": "location",
+      "url": "https://mylocalinfusion.com/location/silver-spring-maryland/",
+      "sitemap": "https://mylocalinfusion.com/location-sitemap.xml"
+    },
+    {
+      "type": "location",
+      "url": "https://mylocalinfusion.com/location/south-portland-maine/",
+      "sitemap": "https://mylocalinfusion.com/location-sitemap.xml"
+    },
+    {
+      "type": "location",
+      "url": "https://mylocalinfusion.com/location/sterling-virginia/",
+      "sitemap": "https://mylocalinfusion.com/location-sitemap.xml"
+    },
+    {
+      "type": "location",
+      "url": "https://mylocalinfusion.com/location/toms-river-new-jersey/",
+      "sitemap": "https://mylocalinfusion.com/location-sitemap.xml"
+    },
+    {
+      "type": "location",
+      "url": "https://mylocalinfusion.com/location/virginia-beach-virginia/",
+      "sitemap": "https://mylocalinfusion.com/location-sitemap.xml"
+    },
+    {
+      "type": "location",
+      "url": "https://mylocalinfusion.com/location/fredericksburg-virginia/",
+      "sitemap": "https://mylocalinfusion.com/location-sitemap.xml"
+    },
+    {
+      "type": "location",
+      "url": "https://mylocalinfusion.com/location/springfield-virginia/",
+      "sitemap": "https://mylocalinfusion.com/location-sitemap.xml"
+    },
+    {
+      "type": "location",
+      "url": "https://mylocalinfusion.com/location/morristown-new-jersey/",
+      "sitemap": "https://mylocalinfusion.com/location-sitemap.xml"
+    },
+    {
+      "type": "location",
+      "url": "https://mylocalinfusion.com/location/west-hartford-connecticut/",
+      "sitemap": "https://mylocalinfusion.com/location-sitemap.xml"
+    },
+    {
+      "type": "location",
+      "url": "https://mylocalinfusion.com/location/shrewsbury-ma/",
+      "sitemap": "https://mylocalinfusion.com/location-sitemap.xml"
+    },
+    {
+      "type": "location",
+      "url": "https://mylocalinfusion.com/location/roanoke-va/",
+      "sitemap": "https://mylocalinfusion.com/location-sitemap.xml"
+    },
+    {
+      "type": "location",
+      "url": "https://mylocalinfusion.com/location/edison-nj/",
+      "sitemap": "https://mylocalinfusion.com/location-sitemap.xml"
+    },
+    {
+      "type": "location",
+      "url": "https://mylocalinfusion.com/location/concord-new-hampshire/",
+      "sitemap": "https://mylocalinfusion.com/location-sitemap.xml"
+    },
+    {
+      "type": "location",
+      "url": "https://mylocalinfusion.com/location/commack-ny/",
+      "sitemap": "https://mylocalinfusion.com/location-sitemap.xml"
+    },
+    {
+      "type": "location",
+      "url": "https://mylocalinfusion.com/location/beavercreek-oh/",
+      "sitemap": "https://mylocalinfusion.com/location-sitemap.xml"
+    },
+    {
+      "type": "location",
+      "url": "https://mylocalinfusion.com/location/cary-nc/",
+      "sitemap": "https://mylocalinfusion.com/location-sitemap.xml"
+    },
+    {
+      "type": "location",
+      "url": "https://mylocalinfusion.com/location/durham-nc/",
+      "sitemap": "https://mylocalinfusion.com/location-sitemap.xml"
+    },
+    {
+      "type": "location",
+      "url": "https://mylocalinfusion.com/location/greenville-sc/",
+      "sitemap": "https://mylocalinfusion.com/location-sitemap.xml"
+    },
+    {
+      "type": "location",
+      "url": "https://mylocalinfusion.com/location/somers-point-nj/",
+      "sitemap": "https://mylocalinfusion.com/location-sitemap.xml"
+    },
+    {
+      "type": "location",
+      "url": "https://mylocalinfusion.com/location/spartanburg-sc/",
+      "sitemap": "https://mylocalinfusion.com/location-sitemap.xml"
+    },
+    {
+      "type": "location",
+      "url": "https://mylocalinfusion.com/location/charlottesville-va/",
+      "sitemap": "https://mylocalinfusion.com/location-sitemap.xml"
+    },
+    {
+      "type": "location",
+      "url": "https://mylocalinfusion.com/location/stoneham-ma/",
+      "sitemap": "https://mylocalinfusion.com/location-sitemap.xml"
+    },
+    {
+      "type": "location",
+      "url": "https://mylocalinfusion.com/location/charlotte-nc/",
+      "sitemap": "https://mylocalinfusion.com/location-sitemap.xml"
+    },
+    {
+      "type": "location",
+      "url": "https://mylocalinfusion.com/location/freehold-township-nj/",
+      "sitemap": "https://mylocalinfusion.com/location-sitemap.xml"
+    },
+    {
+      "type": "location",
+      "url": "https://mylocalinfusion.com/location/waltham-ma/",
+      "sitemap": "https://mylocalinfusion.com/location-sitemap.xml"
+    },
+    {
+      "type": "location",
+      "url": "https://mylocalinfusion.com/location/east-meadow-ny/",
+      "sitemap": "https://mylocalinfusion.com/location-sitemap.xml"
+    },
+    {
+      "type": "location",
+      "url": "https://mylocalinfusion.com/location/lutz-fl/",
+      "sitemap": "https://mylocalinfusion.com/location-sitemap.xml"
+    },
+    {
+      "type": "location",
+      "url": "https://mylocalinfusion.com/location/orange-park-fl/",
+      "sitemap": "https://mylocalinfusion.com/location-sitemap.xml"
+    },
+    {
+      "type": "location",
+      "url": "https://mylocalinfusion.com/location/paramus-nj/",
+      "sitemap": "https://mylocalinfusion.com/location-sitemap.xml"
+    },
+    {
+      "type": "location",
+      "url": "https://mylocalinfusion.com/location/bel-air-md/",
+      "sitemap": "https://mylocalinfusion.com/location-sitemap.xml"
+    },
+    {
+      "type": "location",
+      "url": "https://mylocalinfusion.com/location/portland-me/",
+      "sitemap": "https://mylocalinfusion.com/location-sitemap.xml"
+    },
+    {
+      "type": "location",
+      "url": "https://mylocalinfusion.com/location/cornelius-nc/",
+      "sitemap": "https://mylocalinfusion.com/location-sitemap.xml"
+    },
+    {
+      "type": "location",
+      "url": "https://mylocalinfusion.com/location/avon-oh/",
+      "sitemap": "https://mylocalinfusion.com/location-sitemap.xml"
+    },
+    {
+      "type": "location",
+      "url": "https://mylocalinfusion.com/location/plainview-ny/",
+      "sitemap": "https://mylocalinfusion.com/location-sitemap.xml"
+    },
+    {
+      "type": "location",
+      "url": "https://mylocalinfusion.com/location/newport-news-va/",
+      "sitemap": "https://mylocalinfusion.com/location-sitemap.xml"
+    },
+    {
+      "type": "location",
+      "url": "https://mylocalinfusion.com/location/winchester-va/",
+      "sitemap": "https://mylocalinfusion.com/location-sitemap.xml"
+    },
+    {
+      "type": "location",
+      "url": "https://mylocalinfusion.com/location/mason-oh/",
+      "sitemap": "https://mylocalinfusion.com/location-sitemap.xml"
+    },
+    {
+      "type": "location",
+      "url": "https://mylocalinfusion.com/location/derry-nh/",
+      "sitemap": "https://mylocalinfusion.com/location-sitemap.xml"
+    },
+    {
+      "type": "location",
+      "url": "https://mylocalinfusion.com/location/rochester-nh/",
+      "sitemap": "https://mylocalinfusion.com/location-sitemap.xml"
+    },
+    {
+      "type": "location",
+      "url": "https://mylocalinfusion.com/location/woodbridge-va/",
+      "sitemap": "https://mylocalinfusion.com/location-sitemap.xml"
+    },
+    {
+      "type": "location",
+      "url": "https://mylocalinfusion.com/location/midlothian-virginia/",
+      "sitemap": "https://mylocalinfusion.com/location-sitemap.xml"
+    },
+    {
+      "type": "location",
+      "url": "https://mylocalinfusion.com/location/pikesville-md/",
+      "sitemap": "https://mylocalinfusion.com/location-sitemap.xml"
+    },
+    {
+      "type": "location",
+      "url": "https://mylocalinfusion.com/location/middletown-nj/",
+      "sitemap": "https://mylocalinfusion.com/location-sitemap.xml"
+    },
+    {
+      "type": "location",
+      "url": "https://mylocalinfusion.com/location/deerwood-fl/",
+      "sitemap": "https://mylocalinfusion.com/location-sitemap.xml"
+    },
+    {
+      "type": "category",
+      "url": "https://mylocalinfusion.com/category/uncategorized/",
+      "sitemap": "https://mylocalinfusion.com/category-sitemap.xml"
+    },
+    {
+      "type": "author",
+      "url": "https://mylocalinfusion.com/author/woodybaum/",
+      "sitemap": "https://mylocalinfusion.com/author-sitemap.xml"
+    },
+    {
+      "type": "author",
+      "url": "https://mylocalinfusion.com/author/local-infusion-editorial/",
+      "sitemap": "https://mylocalinfusion.com/author-sitemap.xml"
+    },
+    {
+      "type": "author",
+      "url": "https://mylocalinfusion.com/author/nicoleconceicao/",
+      "sitemap": "https://mylocalinfusion.com/author-sitemap.xml"
+    },
+    {
+      "type": "author",
+      "url": "https://mylocalinfusion.com/author/jennapaladino/",
+      "sitemap": "https://mylocalinfusion.com/author-sitemap.xml"
+    },
+    {
+      "type": "author",
+      "url": "https://mylocalinfusion.com/author/ashleyknapp/",
+      "sitemap": "https://mylocalinfusion.com/author-sitemap.xml"
+    },
+    {
+      "type": "author",
+      "url": "https://mylocalinfusion.com/author/summerbell/",
+      "sitemap": "https://mylocalinfusion.com/author-sitemap.xml"
+    },
+    {
+      "type": "page",
+      "url": "https://mylocalinfusion.com/locations/long-island-ny/",
+      "sitemap": "https://mylocalinfusion.com/page-sitemap.xml"
+    },
+    {
+      "type": "page",
+      "url": "https://mylocalinfusion.com/locations/jacksonville-fl/",
+      "sitemap": "https://mylocalinfusion.com/page-sitemap.xml"
+    }
+  ]
+}

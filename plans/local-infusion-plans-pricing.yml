@@ -1,0 +1,35 @@
+generated: '2026-08-25'
+method: searched
+source: >-
+  https://mylocalinfusion.com/ site search 2026-08-25 — page-sitemap.xml enumerated in full, plus the
+  patient (/get-started/, /faqs/), payer (/payers/), pharma (/pharma/), employer (/employers/) and
+  health-system (/health-systems/) pages.
+summary: >-
+  No plans, no tiers, no published price of any kind — for the API or for the service. The company's
+  commercial model is insurance-billed clinical care: it states that it accepts most major plans
+  (Anthem, Aetna, Cigna, United Healthcare, Medicare, Humana and regional payers) and promises
+  financial transparency with no surprise bills, but publishes no rate, no self-pay price and no
+  machine-readable pricing surface. Every commercial route on the site is a contact form.
+plan_count: 0
+plans: []
+pricing_page: null
+pricing_url_probed:
+- url: https://mylocalinfusion.com/payers/
+  status: 200
+  note: Payer-facing page. Contracting is by enquiry (/payer-contact-us/); no rates.
+- url: https://mylocalinfusion.com/get-started/
+  status: 200
+  note: Patient intake form. Benefits and cost are determined per patient after insurance verification.
+- url: https://mylocalinfusion.com/faqs/
+  status: 200
+  note: Cost is addressed as a process ("financial assistance for every eligible patient"), not a number.
+api_pricing:
+  published: false
+  note: >-
+    The API surface is a by-product of the CMS. It is neither sold nor rate-carded, and there is no
+    signup, no key issuance and no developer plan. The `mcp` OAuth scope exists but nothing states who
+    may obtain it.
+note: >-
+  A machine-readable price transparency file was NOT expected here and none is claimed: the CMS Hospital
+  Price Transparency rule (45 CFR 180) binds hospitals, not physician-office or ambulatory infusion
+  centres, so its absence is not a compliance gap.

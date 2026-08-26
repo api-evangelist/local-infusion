@@ -1,0 +1,28 @@
+# Local Infusion AI discovery
+Sitemap: https://mylocalinfusion.com/sitemap_index.xml
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+# START YOAST BLOCK
+# ---------------------------
+User-agent: *
+Disallow:
+
+Sitemap: https://mylocalinfusion.com/sitemap_index.xml
+# ---------------------------
+# END YOAST BLOCK

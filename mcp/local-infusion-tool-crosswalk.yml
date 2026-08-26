@@ -1,0 +1,67 @@
+generated: '2026-08-25'
+method: derived
+source: >-
+  mcp/local-infusion-mcp.yml (probed 2026-08-25) + openapi/_original/local-infusion-wp-rest-openapi.yml
+  (derived from https://mylocalinfusion.com/wp-json/, HTTP 200)
+summary: >-
+  Local Infusion has both an MCP surface and an OpenAPI surface, so the crosswalk is emitted — but the
+  MCP side of it is empty and that is the finding. Both MCP servers answer tools/list with HTTP 401,
+  and the WordPress Abilities registry they project tools from is gated the same way, so not one tool
+  name is publicly observable. Nothing is mapped by guesswork: the crosswalk[] rows below are zero and
+  the entire REST surface lands in rest_only[]. This is the honest shape of a provider that has
+  switched an MCP adapter on without publishing what it exposes.
+surfaces:
+  openapi:
+    path: openapi/_original/local-infusion-wp-rest-openapi.yml
+    operations: 274
+    paths: 134
+    gated: false
+    note: >-
+      Anonymous read works for published content (wp/v2/posts HTTP 200, wp/v2/location HTTP 200);
+      writes and admin routes require WordPress authentication.
+  graphql:
+    endpoint: null
+    note: No /graphql surface. https://mylocalinfusion.com/graphql returned HTTP 404.
+  mcp:
+    url: https://mylocalinfusion.com/wp-json/mcp/mcp-oauth-server
+    secondary_url: https://mylocalinfusion.com/wp-json/mcp/mcp-adapter-default-server
+    gated: true
+    gate: OAuth 2.1 bearer, scope `mcp` (RFC 9728 challenge) on the first; WordPress capability check on the second
+    tools_observed: 0
+crosswalk: []
+crosswalk_note: >-
+  No rows. A row here would bind a REAL tool name to a REAL operationId; inventing either would
+  fabricate an agent surface that has never been observed. Re-run this artifact once an authenticated
+  tools/list is possible, or once the provider publishes its ability registry.
+mcp_only: []
+rest_only:
+- operations: 252
+  namespace: wp/v2
+  reason: >-
+    WordPress core content API. The substantive public data is the `location` custom post type
+    (/wp-json/wp/v2/location, 75 published centers, X-WP-Total observed) and `posts` (73 published
+    articles). No MCP tool is known to cover it.
+- operations: 10
+  namespace: wp-abilities/v1
+  reason: >-
+    The ability registry itself. Gated (HTTP 401), which is precisely why the MCP tool set cannot be
+    enumerated — the two are the same data behind the same wall.
+- operations: 7
+  namespace: mcp
+  reason: >-
+    The MCP transport routes as advertised by REST discovery. They are the door, not the tools behind
+    it.
+- operations: 3
+  namespace: oembed/1.0
+  reason: oEmbed discovery and proxy. No MCP tool is known to cover it.
+- operations: 2
+  namespace: root
+  reason: REST index and /batch/v1 request batching. No MCP tool is known to cover it.
+coverage:
+  mcp_tools_total: 0
+  mcp_tools_mapped: 0
+  rest_operations_total: 274
+  rest_operations_mapped: 0
+  rest_only_total: 274
+  mcp_only_total: 0
+  confidence: n/a — nothing mapped

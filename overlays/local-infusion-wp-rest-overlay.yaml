@@ -1,0 +1,85 @@
+overlay: 1.0.0
+info:
+  title: API Evangelist enhancements for the Local Infusion WordPress REST API
+  version: 1.0.0
+extends: openapi/_original/local-infusion-wp-rest-openapi.yml
+x-generated: '2026-08-25'
+x-method: generated
+x-source: >-
+  API Evangelist enrichment pass 2026-08-25. Captures our annotations on top of the derived spec so the
+  derived document itself stays a faithful projection of the provider's live route-discovery output.
+actions:
+- target: $.info
+  update:
+    x-apievangelist-enriched: '2026-08-25'
+    x-apievangelist-surface-class: corporate-cms
+    x-apievangelist-provider-type: outpatient-healthcare-services
+    x-apievangelist-note: >-
+      Local Infusion publishes no developer product API. This contract is the WordPress REST API of its
+      corporate marketing site, derived from the live /wp-json/ discovery document. It is catalogued
+      because it is a real, self-describing, provider-hosted HTTP surface that carries a genuinely
+      useful public dataset (the 75-record `location` centre directory) and fronts two Model Context
+      Protocol servers.
+    x-apievangelist-artifacts:
+      conventions: conventions/local-infusion-conventions.yml
+      errors: errors/local-infusion-problem-types.yml
+      authentication: authentication/local-infusion-authentication.yml
+      scopes: scopes/local-infusion-scopes.yml
+      mcp: mcp/local-infusion-mcp.yml
+      crosswalk: mcp/local-infusion-tool-crosswalk.yml
+      data_model: data-model/local-infusion-data-model.yml
+      lifecycle: lifecycle/local-infusion-lifecycle.yml
+      conformance: conformance/local-infusion-conformance.yml
+      well_known: well-known/local-infusion-well-known.yml
+      rate_limits: rate-limits/local-infusion-rate-limits.yml
+- target: $.info
+  update:
+    contact:
+      name: Local Infusion
+      url: https://mylocalinfusion.com/get-started/
+    license:
+      name: Proprietary — no published API terms
+      url: https://mylocalinfusion.com/privacy-policy/
+- target: $
+  update:
+    x-agent-access-posture:
+      stance: permissive
+      source: https://mylocalinfusion.com/robots.txt
+      allowed_agents: [GPTBot, ChatGPT-User, PerplexityBot, ClaudeBot, anthropic-ai, Google-Extended]
+      disallowed_agents: []
+      note: >-
+        The provider explicitly ALLOWS the major AI crawlers by name and asserts no opt-out anywhere on
+        the host. It further publishes /llms.txt, /llms-full.txt and three .well-known agent-discovery
+        documents that state claim boundaries in prose: no guaranteed outcomes, no medical advice, and
+        no inferring that a medication is available at a given centre. Honour those boundaries — they
+        are the provider's stated terms for agent use even though they are not machine-enforced.
+- target: $.paths['/wp-json/wp/v2/location'].get
+  update:
+    x-apievangelist-use-case: >-
+      The infusion-centre directory — 75 published records covering thirteen states, readable without
+      credentials. Slugs are city-state. Paginate with page/per_page, read X-WP-Total and
+      X-WP-TotalPages, and narrow the payload with _fields=id,slug,title,link. This is the one
+      endpoint on this host worth an integration.
+- target: $.paths['/wp-json/wp/v2/posts'].get
+  update:
+    x-apievangelist-use-case: >-
+      The company blog — 73 posts including therapy launches and clinical-service announcements.
+      Filter with categories/tags/after; use _embed to inline the featured image and author.
+- target: $.paths['/wp-json/mcp/mcp-oauth-server'].post
+  update:
+    x-apievangelist-note: >-
+      Live MCP JSON-RPC endpoint. Anonymous tools/list returns HTTP 401 with a correct RFC 9728 Bearer
+      challenge; the tool set requires scope `mcp` via authorization_code + PKCE. Token endpoint auth
+      is `none` and client_id_metadata_document is supported.
+- target: $.paths['/wp-json/wp-abilities/v1/abilities'].get
+  update:
+    x-apievangelist-note: >-
+      WordPress Abilities registry — the surface MCP tools are projected from. Gated (HTTP 401
+      anonymously), so the ability names and input schemas behind the MCP servers are not publicly
+      discoverable.
+- target: $.paths['/wp-json/batch/v1'].post
+  update:
+    x-apievangelist-note: >-
+      Request batching. `validation=require-all-validate` validates every sub-request before any
+      executes. It is a pre-flight guard, not a transaction: there is no rollback once writes apply.
+      See the reversibility block in conventions/local-infusion-conventions.yml.

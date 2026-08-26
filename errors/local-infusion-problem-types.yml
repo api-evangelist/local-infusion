@@ -1,0 +1,80 @@
+generated: '2026-08-25'
+method: derived
+source: >-
+  openapi/_original/local-infusion-wp-rest-openapi.yml, plus error bodies observed verbatim on live
+  requests to https://mylocalinfusion.com/wp-json/ on 2026-08-25. Local Infusion publishes no error
+  reference; there was no docs page to enrich these from.
+format: wordpress
+rfc9457: false
+content_type: application/json
+envelope:
+  shape: '{"code": "<machine string>", "message": "<human string>", "data": {"status": <int>, ...}}'
+  fields:
+  - name: code
+    type: string
+    note: The machine-readable identifier. Stable across WordPress versions; this is what to branch on.
+  - name: message
+    type: string
+    note: Human sentence, localised to the site language (en-US here). Do not parse.
+  - name: data.status
+    type: integer
+    note: Mirrors the HTTP status.
+  - name: data.params
+    type: object
+    note: Present on 400 rest_invalid_param — maps the offending parameter name to why it failed.
+  note: >-
+    This is NOT RFC 9457 application/problem+json. There is no `type` URI, no `title`, no `instance`.
+    An agent written against problem+json will not find its fields here.
+problem_types:
+- code: rest_forbidden
+  status: 401
+  title: Capability missing
+  observed_at:
+  - https://mylocalinfusion.com/wp-json/wp-abilities/v1/abilities
+  - https://mylocalinfusion.com/wp-json/mcp/mcp-adapter-default-server
+  observed_body: '{"code":"rest_forbidden","message":"Sorry, you are not allowed to do that.","data":{"status":401}}'
+  remediation: >-
+    Authenticate as a WordPress user holding the required capability. There is no public credential
+    path — Local Infusion issues no API keys and runs no developer signup.
+- code: mcp_unauthorized
+  status: 401
+  title: MCP authentication required
+  observed_at:
+  - https://mylocalinfusion.com/wp-json/mcp/mcp-oauth-server
+  observed_body: '{"code":"mcp_unauthorized","message":"MCP authentication required.","data":{"status":401}}'
+  www_authenticate: >-
+    Bearer realm="https://mylocalinfusion.com",
+    resource_metadata="https://mylocalinfusion.com/.well-known/oauth-protected-resource"
+  remediation: >-
+    Follow the RFC 9728 pointer in the WWW-Authenticate header to the protected-resource metadata,
+    then the RFC 8414 authorization-server metadata, and complete authorization_code + PKCE for scope
+    `mcp`. Token endpoint auth is `none`, and client_id_metadata_document is supported, so a client can
+    register itself without an out-of-band secret.
+- code: rest_no_route
+  status: 404
+  title: No route matched
+  derived_from: Declared as a 404 response on every operation in the derived contract.
+  remediation: Check the namespace segment; the site advertises 15 and only 5 are WordPress core.
+- code: rest_post_invalid_id
+  status: 404
+  title: Resource id not found
+  derived_from: Standard WordPress core response on single-resource routes.
+- code: rest_invalid_param
+  status: 400
+  title: Parameter failed validation
+  derived_from: >-
+    Standard WordPress core response wherever the derived contract declares an enum, type or default
+    on a parameter.
+  remediation: Read `data.params` — it names the parameter and the reason.
+- code: rest_cookie_invalid_nonce
+  status: 403
+  title: Nonce missing or stale
+  derived_from: >-
+    Implied by the X-WP-Nonce scheme the host advertises in Access-Control-Allow-Headers. Applies to
+    cookie-authenticated writes only.
+coverage_note: >-
+  The two 401 entries are OBSERVED — status, code and body were read off live responses. The remaining
+  four are WordPress core error codes that this contract's declared 400/404 responses correspond to;
+  they are marked `derived_from` rather than `observed_at` for exactly that reason, and none was
+  triggered deliberately, because doing so would mean sending malformed traffic at a healthcare
+  provider's production site.

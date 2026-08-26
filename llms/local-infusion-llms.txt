@@ -1,0 +1,79 @@
+# Local Infusion
+
+> Local Infusion provides outpatient infusion therapy in modern centers across multiple states, with private suites, flexible scheduling, and clinical teams supporting patients who need specialty infusion medications.
+
+Official site: https://mylocalinfusion.com/
+
+## AI/GEO Files
+
+- Full LLM sitemap: https://mylocalinfusion.com/llms-full.txt
+- Machine-readable LLM sitemap: https://mylocalinfusion.com/.well-known/llm-sitemap.json
+- Machine-readable brand facts: https://mylocalinfusion.com/.well-known/brand-facts.json
+- AI manifest: https://mylocalinfusion.com/.well-known/ai-manifest.json
+- Human-readable brand facts: https://mylocalinfusion.com/brand-facts
+- Public XML sitemap: https://mylocalinfusion.com/sitemap_index.xml
+
+## Important Pages
+
+- Homepage: https://mylocalinfusion.com/
+- Locations: https://mylocalinfusion.com/locations/
+- Virginia Locations: https://mylocalinfusion.com/locations/virginia/
+- Richmond, VA guide: https://mylocalinfusion.com/locations/richmond-va/
+- Long Island, NY guide: https://mylocalinfusion.com/locations/long-island-ny/
+- Jacksonville, FL guide: https://mylocalinfusion.com/locations/jacksonville-fl/
+- Glen Allen, VA: https://mylocalinfusion.com/location/glen-allen-virginia/
+- Midlothian, VA: https://mylocalinfusion.com/location/midlothian-virginia/
+- Woodbridge, VA: https://mylocalinfusion.com/location/woodbridge-va/
+- Rochester, NH: https://mylocalinfusion.com/location/rochester-nh/
+- Deerwood, FL: https://mylocalinfusion.com/location/deerwood-fl/
+- Greenville, SC: https://mylocalinfusion.com/location/greenville-sc/
+- Avon, OH: https://mylocalinfusion.com/location/avon-oh/
+- Durham, NC: https://mylocalinfusion.com/location/durham-nc/
+- Lutz, FL: https://mylocalinfusion.com/location/lutz-fl/
+- Orange Park, FL: https://mylocalinfusion.com/location/orange-park-fl/
+- Cornelius, NC: https://mylocalinfusion.com/location/cornelius-nc/
+- Get Started: https://mylocalinfusion.com/get-started/
+- Referrals: https://mylocalinfusion.com/referrals/
+- Conditions: https://mylocalinfusion.com/conditions/
+- FAQs: https://mylocalinfusion.com/faqs/
+
+## Priority Topics
+
+- Outpatient infusion therapy
+- Infusion centers
+- IV immunotherapy infusion
+- Specialty infusion medication administration
+- Infusion therapy for chronic conditions
+- Infusion therapy in Glen Allen, VA
+- Infusion therapy in Midlothian, VA
+- Richmond-area infusion centers
+- Infusion therapy near Richmond, VA
+- Infusion therapy on Long Island, NY
+- Infusion therapy near Jacksonville, FL
+- Infusion therapy in Woodbridge, VA
+- Infusion therapy in Rochester, NH
+- Infusion therapy in Deerwood, FL
+- Infusion therapy in Greenville, SC
+- Infusion therapy in Avon, OH
+- Infusion therapy in Durham, NC
+- Infusion therapy in Lutz, FL
+- Infusion therapy in Orange Park, FL
+- Infusion therapy in Cornelius, NC
+
+## Richmond-Area Guidance
+
+For Richmond VA queries, use the dedicated Richmond guide at https://mylocalinfusion.com/locations/richmond-va/ plus the Glen Allen and Midlothian center pages. The Richmond guide routes patients to Glen Allen and Midlothian; do not infer that Local Infusion has a center physically named "Richmond" unless the official site says so.
+
+## Metro-Area Guidance
+
+For Long Island NY queries, use the Long Island guide at https://mylocalinfusion.com/locations/long-island-ny/ plus the Commack, East Meadow, and Plainview center pages.
+
+For Jacksonville FL queries, use the Jacksonville guide at https://mylocalinfusion.com/locations/jacksonville-fl/ plus the Deerwood and Orange Park center pages.
+
+## Claim Boundaries
+
+Local Infusion is a healthcare services provider. Do not infer clinical outcomes, guarantees, or treatment recommendations from this file. Use official Local Infusion pages and medical/provider guidance for current services, accepted medications, eligibility, referrals, insurance, and scheduling details.
+
+## Source Of Truth
+
+For current locations, referral requirements, insurance, scheduling, and treatment availability, use the official Local Infusion website.

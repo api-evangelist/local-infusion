@@ -1,0 +1,44 @@
+generated: '2026-08-25'
+method: derived
+source: openapi/local-infusion-mcp-api-openapi.yml, openapi/local-infusion-oembed-1-0-api-openapi.yml,
+  openapi/local-infusion-root-api-openapi.yml, openapi/local-infusion-wp-abilities-v1-api-openapi.yml,
+  openapi/local-infusion-wp-v2-api-openapi.yml
+summary:
+  types:
+  - apiKey
+  - oauth2
+  api_key_in:
+  - header
+  oauth2_flows:
+  - authorizationCode
+schemes:
+- name: mcpOAuth2
+  type: oauth2
+  flows:
+  - flow: authorizationCode
+    authorizationUrl: https://mylocalinfusion.com/oauth/authorize
+    tokenUrl: https://mylocalinfusion.com/oauth/token
+    scopes: 1
+  description: OAuth 2.1 authorization-code + PKCE (S256), as advertised by the provider's RFC
+    8414 metadata at https://mylocalinfusion.com/.well-known/oauth-authorization-server (fetched
+    2026-08-25, HTTP 200). Guards the `mcp` namespace; the RFC 9728 protected-resource metadata
+    names https://mylocalinfusion.com/wp-json/mcp/mcp-oauth-server.
+  sources:
+  - openapi/local-infusion-mcp-api-openapi.yml
+  - openapi/local-infusion-oembed-1-0-api-openapi.yml
+  - openapi/local-infusion-root-api-openapi.yml
+  - openapi/local-infusion-wp-abilities-v1-api-openapi.yml
+  - openapi/local-infusion-wp-v2-api-openapi.yml
+- name: wpNonce
+  type: apiKey
+  in: header
+  parameter: X-WP-Nonce
+  description: WordPress cookie-authentication nonce. Advertised by the live server in its Access-Control-Allow-Headers
+    response header (Authorization, X-WP-Nonce, Content-Disposition, Content-MD5, Content-Type),
+    observed on a 401 from the MCP endpoint.
+  sources:
+  - openapi/local-infusion-mcp-api-openapi.yml
+  - openapi/local-infusion-oembed-1-0-api-openapi.yml
+  - openapi/local-infusion-root-api-openapi.yml
+  - openapi/local-infusion-wp-abilities-v1-api-openapi.yml
+  - openapi/local-infusion-wp-v2-api-openapi.yml

@@ -1,0 +1,121 @@
+{
+  "name": "Local Infusion",
+  "url": "https://mylocalinfusion.com/",
+  "type": "Outpatient infusion services provider",
+  "short_description": "Local Infusion provides outpatient infusion therapy in modern centers across multiple states, with private suites, flexible scheduling, and clinical teams supporting patients who need specialty infusion medications.",
+  "cms": "WordPress front-end with Yoast SEO; HubSpot appears embedded for forms/tracking.",
+  "primary_services": [
+    "Outpatient infusion therapy",
+    "IV immunotherapy infusion",
+    "Specialty medication infusion support",
+    "In-center infusion care",
+    "Virtual care support"
+  ],
+  "priority_locations": [
+    {
+      "name": "Glen Allen, VA",
+      "url": "https://mylocalinfusion.com/location/glen-allen-virginia/",
+      "market_note": "Richmond-area center"
+    },
+    {
+      "name": "Midlothian, VA",
+      "url": "https://mylocalinfusion.com/location/midlothian-virginia/",
+      "market_note": "Richmond-area center"
+    },
+    {
+      "name": "Woodbridge, VA",
+      "url": "https://mylocalinfusion.com/location/woodbridge-va/"
+    },
+    {
+      "name": "Rochester, NH",
+      "url": "https://mylocalinfusion.com/location/rochester-nh/"
+    },
+    {
+      "name": "Richmond, VA guide",
+      "url": "https://mylocalinfusion.com/locations/richmond-va/",
+      "market_note": "Routes patients to Glen Allen and Midlothian"
+    },
+    {
+      "name": "Deerwood, FL",
+      "url": "https://mylocalinfusion.com/location/deerwood-fl/"
+    },
+    {
+      "name": "Greenville, SC",
+      "url": "https://mylocalinfusion.com/location/greenville-sc/"
+    },
+    {
+      "name": "Avon, OH",
+      "url": "https://mylocalinfusion.com/location/avon-oh/"
+    },
+    {
+      "name": "Durham, NC",
+      "url": "https://mylocalinfusion.com/location/durham-nc/"
+    },
+    {
+      "name": "Lutz, FL",
+      "url": "https://mylocalinfusion.com/location/lutz-fl/"
+    },
+    {
+      "name": "Orange Park, FL",
+      "url": "https://mylocalinfusion.com/location/orange-park-fl/"
+    },
+    {
+      "name": "Cornelius, NC",
+      "url": "https://mylocalinfusion.com/location/cornelius-nc/"
+    },
+    {
+      "name": "Long Island, NY guide",
+      "url": "https://mylocalinfusion.com/locations/long-island-ny/",
+      "market_note": "Routes patients to Commack, East Meadow, and Plainview"
+    },
+    {
+      "name": "Jacksonville, FL guide",
+      "url": "https://mylocalinfusion.com/locations/jacksonville-fl/",
+      "market_note": "Routes patients to Deerwood and Orange Park"
+    }
+  ],
+  "approved_language": [
+    "outpatient infusion therapy",
+    "infusion center",
+    "infusion care",
+    "specialty infusion medication",
+    "private suites",
+    "flexible scheduling",
+    "clinical team"
+  ],
+  "language_boundaries": [
+    "Do not claim guaranteed outcomes.",
+    "Do not provide medical advice.",
+    "Do not infer a medication is available at a specific center unless the official site or Local Infusion confirms it.",
+    "Use the Richmond guide for Richmond-area queries, but do not infer that Local Infusion has a center physically named Richmond unless the official site says so.",
+    "Do not replace provider, payer, referral, or insurance guidance.",
+    "Use the Long Island guide for Long Island-area queries, routing patients to Commack, East Meadow, and Plainview.",
+    "Use the Jacksonville guide for Jacksonville-area queries, routing patients to Deerwood and Orange Park."
+  ],
+  "priority_pages": [
+    "https://mylocalinfusion.com/",
+    "https://mylocalinfusion.com/locations/",
+    "https://mylocalinfusion.com/locations/virginia/",
+    "https://mylocalinfusion.com/location/glen-allen-virginia/",
+    "https://mylocalinfusion.com/locations/jacksonville-fl/",
+    "https://mylocalinfusion.com/locations/long-island-ny/",
+    "https://mylocalinfusion.com/location/midlothian-virginia/",
+    "https://mylocalinfusion.com/location/woodbridge-va/",
+    "https://mylocalinfusion.com/location/rochester-nh/",
+    "https://mylocalinfusion.com/get-started/",
+    "https://mylocalinfusion.com/referrals/",
+    "https://mylocalinfusion.com/conditions/",
+    "https://mylocalinfusion.com/faqs/"
+  ],
+  "ai_geo_files": {
+    "llms_txt": "https://mylocalinfusion.com/llms.txt",
+    "llms_full": "https://mylocalinfusion.com/llms-full.txt",
+    "llm_sitemap": "https://mylocalinfusion.com/.well-known/llm-sitemap.json",
+    "brand_facts": "https://mylocalinfusion.com/.well-known/brand-facts.json",
+    "ai_manifest": "https://mylocalinfusion.com/.well-known/ai-manifest.json",
+    "brand_facts_human": "https://mylocalinfusion.com/brand-facts"
+  },
+  "sitemap": "https://mylocalinfusion.com/sitemap_index.xml",
+  "last_reviewed": "2026-07-07",
+  "review_status": "Reviewed and refreshed 2026-07-07 to include the approved Long Island and Jacksonville metro-area guide pages in the deployable WordPress AI/GEO package."
+}

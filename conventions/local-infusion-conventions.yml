@@ -1,0 +1,178 @@
+generated: '2026-08-25'
+method: derived
+source: >-
+  openapi/_original/local-infusion-wp-rest-openapi.yml plus live response headers observed on
+  https://mylocalinfusion.com/wp-json/wp/v2/location (HTTP 200, 2026-08-25). Local Infusion publishes
+  no developer documentation, so every convention below was read off the contract or off the wire —
+  none is quoted from a docs page, because there is no docs page.
+summary: >-
+  The cross-cutting semantics of a stock WordPress REST API as this host actually serves it. These are
+  WordPress conventions, not Local Infusion's: the provider has made no API design decisions, it has
+  switched on a CMS that ships with them.
+auth_style:
+  anonymous_read: true
+  note: >-
+    Published content reads without credentials. Writes and admin routes use WordPress cookie auth
+    with an X-WP-Nonce header (advertised in Access-Control-Allow-Headers); the `mcp` namespace uses
+    OAuth 2.1 bearer with scope `mcp`. See authentication/local-infusion-authentication.yml.
+idempotency:
+  supported: false
+  header: null
+  scope: null
+  retention: null
+  note: >-
+    No idempotency key, no request-deduplication contract, no Idempotency-Key header in any of the 274
+    operations and none advertised in Access-Control-Allow-Headers. WordPress core does not provide
+    one. Repeating a POST to /wp-json/wp/v2/<type> creates a second record.
+pagination:
+  style: page-number
+  params:
+  - name: page
+    default: 1
+    note: Current page of the collection.
+  - name: per_page
+    default: 10
+    maximum: 100
+  - name: offset
+    note: Alternative to page; offsets the result set by a specific number of items.
+  - name: order
+    enum: [asc, desc]
+  - name: orderby
+    note: Per-resource enum, e.g. author/date/id/include/modified/parent/relevance/slug/title.
+  response_headers:
+  - name: X-WP-Total
+    observed: '75'
+    note: Total items in the collection. Observed on /wp-json/wp/v2/location.
+  - name: X-WP-TotalPages
+    observed: '75'
+  - name: Link
+    note: 'RFC 8288 rel="next" / rel="prev" cursor links. Observed: <...?per_page=1&page=2>; rel="next".'
+  cors_note: >-
+    Access-Control-Expose-Headers on every response is `X-WP-Total, X-WP-TotalPages, Link`, so a
+    browser client can read all three.
+field_selection:
+  supported: true
+  param: _fields
+  note: >-
+    Comma-separated projection, e.g. /wp-json/wp/v2/location?_fields=id,slug,title. Verified live on
+    2026-08-25. `_embed` inlines linked resources; `context=view|embed|edit` switches the field set.
+filtering:
+  params: [search, slug, include, exclude, after, before, modified_after, modified_before, status, categories, tags]
+  note: Per-resource; read the operation's parameters[] in the derived spec rather than assuming.
+metadata:
+  supported: true
+  note: >-
+    `meta` object on content types, subject to registered-meta whitelisting. Not a general-purpose
+    customer metadata facility.
+request_id_tracing:
+  supported: false
+  note: >-
+    No request-id header is returned. The only correlatable identifier on a response is Cloudflare's
+    `cf-ray`, which is edge infrastructure, not an API contract, and the provider cannot look it up
+    for a caller.
+versioning:
+  style: namespace-in-path
+  current: wp/v2
+  note: >-
+    WordPress versions its REST API by namespace segment (`/wp-json/wp/v2/...`). The site currently
+    advertises 15 namespaces; see lifecycle/local-infusion-lifecycle.yml.
+error_envelope:
+  format: wordpress
+  rfc9457: false
+  shape: '{"code": "<string>", "message": "<human string>", "data": {"status": <int>}}'
+  observed:
+  - '{"code":"rest_forbidden","message":"Sorry, you are not allowed to do that.","data":{"status":401}}'
+  - '{"code":"mcp_unauthorized","message":"MCP authentication required.","data":{"status":401}}'
+  content_type: application/json
+  note: >-
+    Not application/problem+json. See errors/local-infusion-problem-types.yml.
+rate_limit_signaling:
+  supported: false
+  headers_observed: []
+  note: >-
+    No X-RateLimit-*, no RateLimit-*, no Retry-After on a 200 or a 401. The host sits behind Cloudflare
+    (a `__cf_bm` bot-management cookie is set on every response), so an aggressive client will meet an
+    edge challenge rather than a documented quota. See rate-limits/local-infusion-rate-limits.yml.
+caching:
+  headers_observed:
+    cache-control: max-age=0
+    cf-cache-status: DYNAMIC
+  conditional_requests: >-
+    ETag / If-None-Match were not returned on the collection endpoints probed on 2026-08-25.
+batching:
+  supported: true
+  endpoint: POST /wp-json/batch/v1
+  note: >-
+    WordPress core request batching. `validation` is `normal` or `require-all-validate`; the latter
+    validates every sub-request before executing any. It is a pre-flight guard, not a transaction —
+    there is no rollback of already-applied writes.
+reversibility:
+  grade: documented
+  applicable: true
+  note: >-
+    The write surface is a CMS, and WordPress provides real reversal paths for it — but Local Infusion
+    publishes no documentation of any kind, so no window below is quoted from a provider page. Every
+    entry is read from the contract; where a window exists in WordPress it is a site configuration
+    value this provider has not published, and it is therefore recorded as unknown rather than
+    guessed. NOTHING BELOW IS AN ASSERTED WINDOW.
+  surfaces:
+  - write_operation: deleteWpV2PostsById
+    path: /wp-json/wp/v2/posts/{id}
+    method: DELETE
+    reversal: >-
+      Soft delete by default — the record moves to `trash` status and can be restored by PATCHing
+      status back to `publish` or `draft` via patchWpV2PostsById. Passing `force=true` deletes
+      permanently and is NOT reversible.
+    reversal_operation: patchWpV2PostsById
+    window: unknown
+    window_source: null
+    window_note: >-
+      WordPress purges trash on a site-configurable schedule (EMPTY_TRASH_DAYS). Local Infusion has not
+      published its value, so the retention window is genuinely unknown and is not stated here.
+  - write_operation: postWpV2PostsById
+    path: /wp-json/wp/v2/posts/{id}
+    method: POST/PUT/PATCH
+    reversal: >-
+      Revisions. Every update writes a revision retrievable at /wp-json/wp/v2/posts/{parent}/revisions
+      and the prior content can be re-applied by PATCHing it back.
+    reversal_operation: getWpV2PostsByParentRevisions
+    window: unknown
+    window_source: null
+    window_note: Revision retention is site-configurable (WP_POST_REVISIONS) and unpublished here.
+  - write_operation: deleteWpV2LocationById
+    path: /wp-json/wp/v2/location/{id}
+    method: DELETE
+    reversal: Same trash/restore semantics as posts; `force=true` is permanent.
+    reversal_operation: patchWpV2LocationById
+    window: unknown
+    window_source: null
+  - write_operation: deleteWpV2MediaById
+    path: /wp-json/wp/v2/media/{id}
+    method: DELETE
+    reversal: >-
+      NONE. Media deletion in WordPress core is immediate and permanent — the route requires
+      `force=true` and there is no trash state for attachments.
+    reversal_operation: null
+    window: none
+    window_source: null
+  - write_operation: postBatchV1
+    path: /wp-json/batch/v1
+    method: POST
+    reversal: >-
+      None. `validation=require-all-validate` prevents a partial batch from starting, but once
+      sub-requests execute there is no rollback.
+    reversal_operation: null
+    window: none
+    window_source: null
+dry_run_mode:
+  supported: partial
+  note: >-
+    /wp-json/batch/v1 with `validation=require-all-validate` is the only rehearsal facility on this
+    surface, and it validates rather than simulates. No operation accepts a dry-run flag.
+cross_links:
+  errors: errors/local-infusion-problem-types.yml
+  lifecycle: lifecycle/local-infusion-lifecycle.yml
+  authentication: authentication/local-infusion-authentication.yml
+  scopes: scopes/local-infusion-scopes.yml
+  rate_limits: rate-limits/local-infusion-rate-limits.yml
+  data_model: data-model/local-infusion-data-model.yml

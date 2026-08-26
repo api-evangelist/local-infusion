@@ -1,0 +1,130 @@
+generated: '2026-08-25'
+method: derived
+source: >-
+  openapi/_original/local-infusion-wp-rest-openapi.yml, well-known/local-infusion-well-known.yml, and
+  live probes of mylocalinfusion.com on 2026-08-25. Docs were searched for compliance claims; the site
+  publishes a privacy policy and an accessibility statement and nothing else of this kind.
+summary: >-
+  A short list, and the shape of it is the point. Local Infusion conforms to the OAuth/MCP discovery
+  standards it inherited by installing a WordPress MCP adapter, and to nothing in its own market. It
+  is a HIPAA-covered healthcare provider that publishes no FHIR surface, no SMART configuration and no
+  security attestation.
+standards:
+- id: oauth2
+  conforms: true
+  evidence: >-
+    /.well-known/oauth-authorization-server returns RFC 8414 metadata (HTTP 200, 2026-08-25) declaring
+    authorization_code + refresh_token, response_types [code], and PKCE S256 in
+    code_challenge_methods_supported. Authorization, token and revocation endpoints are all named.
+  file: well-known/local-infusion-oauth-authorization-server.json
+- id: rfc8414
+  name: OAuth 2.0 Authorization Server Metadata
+  conforms: true
+  evidence: /.well-known/oauth-authorization-server, HTTP 200, valid JSON object with issuer + endpoints.
+- id: rfc9728
+  name: OAuth 2.0 Protected Resource Metadata
+  conforms: true
+  evidence: >-
+    /.well-known/oauth-protected-resource returns HTTP 200 naming the resource
+    (https://mylocalinfusion.com/wp-json/mcp/mcp-oauth-server), its authorization_servers,
+    bearer_methods_supported [header] and scopes_supported [mcp]. The 401 from the MCP endpoint also
+    carries the correct `resource_metadata=` parameter in WWW-Authenticate — the challenge and the
+    document agree.
+- id: rfc7636
+  name: PKCE
+  conforms: true
+  evidence: code_challenge_methods_supported ["S256"] in the authorization-server metadata.
+- id: mcp
+  name: Model Context Protocol
+  conforms: partial
+  evidence: >-
+    Two JSON-RPC endpoints are advertised under the `mcp` namespace and both answer with a
+    protocol-correct 401 challenge, so transport and auth conform. Capability conformance is
+    unverifiable: tools/list is gated and returned no tool set on 2026-08-25.
+- id: oidc
+  conforms: false
+  evidence: /.well-known/openid-configuration returned HTTP 404 on 2026-08-25. OAuth without OIDC.
+- id: rfc9457
+  name: Problem Details for HTTP APIs
+  conforms: false
+  evidence: >-
+    Errors use the WordPress envelope {code,message,data.status} with content-type application/json,
+    not application/problem+json. Observed verbatim on two live 401s.
+- id: pagination
+  conforms: true
+  evidence: >-
+    page/per_page/offset parameters plus X-WP-Total, X-WP-TotalPages and RFC 8288 Link rel="next",
+    observed on /wp-json/wp/v2/location. All three headers are in Access-Control-Expose-Headers.
+- id: rfc8288
+  name: Web Linking
+  conforms: true
+  evidence: 'Link: <...&page=2>; rel="next" observed on collection responses.'
+- id: idempotency
+  conforms: false
+  evidence: >-
+    No Idempotency-Key header in any of 274 operations and none advertised in
+    Access-Control-Allow-Headers. See conventions/local-infusion-conventions.yml.
+- id: rfc8594
+  name: Sunset / Deprecation headers
+  conforms: false
+  evidence: Neither header observed on any probed response; no deprecation policy published.
+- id: rfc9116
+  name: security.txt
+  conforms: false
+  evidence: /.well-known/security.txt returned HTTP 404 on 2026-08-25.
+- id: rfc9309
+  name: Robots Exclusion Protocol
+  conforms: true
+  evidence: >-
+    /robots.txt HTTP 200 with per-agent groups. Notable for its direction: it explicitly ALLOWS
+    GPTBot, ChatGPT-User, PerplexityBot, ClaudeBot, anthropic-ai and Google-Extended, then leaves
+    `User-agent: * / Disallow:` open. No AI opt-out is asserted.
+- id: llmstxt
+  name: llms.txt
+  conforms: true
+  evidence: >-
+    /llms.txt HTTP 200, correct llms.txt shape (H1, blockquote summary, H2 link sections). Linked from
+    the homepage alongside /llms-full.txt.
+- id: schema-org
+  conforms: true
+  evidence: >-
+    JSON-LD @graph on the homepage with Organization, WebSite, WebPage, FAQPage, ImageObject and
+    BreadcrumbList nodes, emitted by Yoast SEO.
+domain_standards:
+  regime: health
+  regime_source: industry_regulatory.health in api-search/signals/_data/scoring.yml
+  declared_in_contract: false
+  shortlist_probed: [fhir, smart-on-fhir, us-core, uscdi, da-vinci, carin-blue-button, fhir-bulk-data, cds-hooks, c-cda, hl7-v2, dicom]
+  findings:
+  - standard: fhir
+    present: false
+    evidence: >-
+      No FHIR base found. https://mylocalinfusion.com/fhir, /fhir/metadata, /api/fhir/metadata and
+      /r4/metadata all returned HTTP 404 on 2026-08-25. No FHIR resource type, no CapabilityStatement,
+      no `application/fhir+json` anywhere in the 274-operation contract.
+  - standard: smart-on-fhir
+    present: false
+    evidence: /.well-known/smart-configuration returned HTTP 404 on 2026-08-25.
+  - standard: hl7-v2
+    present: false
+    evidence: No message-type identifier or MLLP surface on any public host.
+  - standard: x12
+    present: false
+    evidence: >-
+      Probed because the company does its own benefits investigation and prior authorization — the
+      work 270/271 and 278 transactions exist for. Nothing public. That integration, if it exists,
+      runs through a clearinghouse behind the wall, not through a contract this company publishes.
+  note: >-
+    REWARD-ONLY, so nothing is deducted for this. Recording it anyway because the gap is the
+    interesting fact: a multi-state infusion provider that coordinates referrals, prior auth and
+    payer benefits is squarely inside FHIR/US Core and X12 territory, and its only public
+    machine-readable surface is a marketing CMS.
+compliance_programs:
+  published: false
+  certifications: []
+  trust_center: false
+  note: >-
+    No SOC 2, ISO 27001, HITRUST or HIPAA attestation is published on the site, and there is no trust
+    center (trust.mylocalinfusion.com NXDOMAIN). The privacy policy is a website privacy policy; no
+    HIPAA Notice of Privacy Practices was found at /notice-of-privacy-practices/ or /hipaa/ (both
+    HTTP 404). No `Compliance` pointer is emitted, because nothing was found to point at.

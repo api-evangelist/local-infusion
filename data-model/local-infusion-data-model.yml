@@ -1,0 +1,130 @@
+generated: '2026-08-25'
+method: derived
+source: >-
+  openapi/_original/local-infusion-wp-rest-openapi.yml (derived from
+  https://mylocalinfusion.com/wp-json/, HTTP 200 on 2026-08-25) plus live GETs against
+  /wp-json/wp/v2/location, /wp-json/wp/v2/posts and /wp-json/wp/v2/types.
+summary: >-
+  The WordPress content graph as this site configures it. One entity here is not stock WordPress and
+  is the reason the surface matters: `location`, a custom post type carrying the company's 75-center
+  directory, publicly readable without credentials.
+entities:
+- name: location
+  rest_base: location
+  path: /wp-json/wp/v2/location
+  type: custom-post-type
+  public_read: true
+  observed_count: 75
+  observed_via: X-WP-Total header on GET /wp-json/wp/v2/location, 2026-08-25
+  fields_observed: [id, slug, title, status, type, link, date, modified, content, excerpt, featured_media, template, meta, class_list]
+  note: >-
+    The company's infusion-center directory. Slugs are city-state (warrensville-heights-oh,
+    south-portland-maine, glen-allen-virginia). This is the only genuinely useful public dataset on
+    the host, and it is fresher than anything else on it — location-sitemap.xml carried a lastmod of
+    2026-08-25.
+- name: post
+  rest_base: posts
+  path: /wp-json/wp/v2/posts
+  type: core-post-type
+  public_read: true
+  observed_count: 73
+  observed_via: X-WP-Total header on GET /wp-json/wp/v2/posts, 2026-08-25
+  note: The company blog. Most recent published item observed 2026-07-22.
+- name: page
+  rest_base: pages
+  path: /wp-json/wp/v2/pages
+  type: core-post-type
+  public_read: true
+  note: >-
+    Site pages: locations indexes, market guides, conditions, our-story, careers, press, payers,
+    pharma, employers, physicians, order-forms, privacy-policy, accessibility.
+- name: media
+  rest_base: media
+  path: /wp-json/wp/v2/media
+  type: core-post-type
+  public_read: true
+- name: category
+  rest_base: categories
+  path: /wp-json/wp/v2/categories
+  type: taxonomy
+  public_read: true
+- name: tag
+  rest_base: tags
+  path: /wp-json/wp/v2/tags
+  type: taxonomy
+  public_read: true
+- name: user
+  rest_base: users
+  path: /wp-json/wp/v2/users
+  type: core
+  public_read: partial
+  note: Author records only, in `view` context.
+- name: block
+  rest_base: blocks
+  path: /wp-json/wp/v2/blocks
+  type: core-post-type
+- name: visibility_preset
+  rest_base: visibility_preset
+  path: /wp-json/wp/v2/visibility_preset
+  type: custom-post-type
+  note: Belongs to the Block Visibility plugin, not to the company's own model.
+- name: ability
+  rest_base: abilities
+  path: /wp-json/wp-abilities/v1/abilities
+  type: registry
+  public_read: false
+  note: >-
+    Gated (HTTP 401 anonymously). The registry the MCP adapter projects tools from — the shape of the
+    agent surface lives here and is not observable.
+relationships:
+- from: post
+  to: category
+  type: has_many
+  via: categories
+- from: post
+  to: tag
+  type: has_many
+  via: tags
+- from: post
+  to: user
+  type: belongs_to
+  via: author
+- from: post
+  to: media
+  type: has_one
+  via: featured_media
+- from: post
+  to: revision
+  type: has_many
+  via: /wp-json/wp/v2/posts/{parent}/revisions
+- from: page
+  to: page
+  type: belongs_to
+  via: parent
+- from: page
+  to: media
+  type: has_one
+  via: featured_media
+- from: location
+  to: media
+  type: has_one
+  via: featured_media
+- from: location
+  to: revision
+  type: has_many
+  via: /wp-json/wp/v2/location/{parent}/revisions
+- from: media
+  to: post
+  type: belongs_to
+  via: post
+id_scheme:
+  style: integer
+  note: >-
+    WordPress uses unprefixed integer post IDs shared across every post type — a `location` id and a
+    `post` id come from the same sequence, so an id alone does not identify its type. Address records
+    by `slug` where you can; it is stable and human-legible.
+not_modelled:
+  note: >-
+    There is no patient, appointment, referral, prior-authorization, therapy, medication, payer or
+    claim entity anywhere on this surface. Those are the company's actual business objects and none of
+    them is exposed. Everything above is the marketing website's content model.

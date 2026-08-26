@@ -1,0 +1,25 @@
+generated: '2026-08-25'
+method: generated
+source: openapi/_original/local-infusion-wp-rest-openapi.yml
+note: >-
+  Local Infusion publishes no product API, so these skills are grounded in the only live contract it
+  operates — the WordPress REST API of its corporate site. Every operationId referenced was verified
+  by grep against the derived spec. Both skills lead with the provider's own stated agent posture: its
+  robots.txt explicitly allows the major AI crawlers, and its llms.txt and .well-known documents state
+  claim boundaries that an agent should honour. Both also carry an explicit scope limit, because the
+  most likely misuse of this surface is treating a marketing CMS as a clinical or scheduling API.
+skills:
+- file: local-infusion-read-center-directory.md
+  name: Read the Local Infusion center directory
+  description: >-
+    Retrieve the 75-record infusion-center directory from the public `location` custom post type, with
+    correct pagination, sparse fields and slug normalisation.
+  api: openapi/_original/local-infusion-wp-rest-openapi.yml
+  operations: [getWpV2Location, getWpV2LocationById, getWpV2Media]
+- file: local-infusion-discover-surface.md
+  name: Discover the Local Infusion API and MCP surface
+  description: >-
+    Enumerate the route-discovery document, content model and page inventory, then establish that both
+    MCP servers and the Abilities registry are authenticated and must not be guessed at.
+  api: openapi/_original/local-infusion-wp-rest-openapi.yml
+  operations: [get, getWpV2Types, getWpV2Taxonomies, getWpV2Pages, getMcp, postMcpMcpOauthServer, getWpAbilitiesV1Abilities]

@@ -1,0 +1,66 @@
+generated: '2026-08-25'
+method: searched
+source: >-
+  registry.npmjs.org (direct lookup + text search), pypi.org, rubygems.org, crates.io, api.nuget.org,
+  search.maven.org, proxy.golang.org, and the provider's own site. Searched 2026-08-25.
+summary: >-
+  No first-party client library exists on any registry, because there is no API programme to write one
+  for. This is a verified absence, not an unchecked field.
+packages: []
+package_count: 0
+official_count: 0
+searched:
+- registry: npm
+  queries: [local-infusion, mylocalinfusion, "local infusion"]
+  result: >-
+    404 on both direct lookups. The text search returns only unrelated packages (infusion,
+    complex-esm, import-local, kettle, @expo/local-build-cache-provider). No first-party package.
+  version: null
+  published: null
+- registry: pypi
+  queries: [local-infusion, mylocalinfusion]
+  result: No package.
+  version: null
+  published: null
+- registry: rubygems
+  result: No package.
+  version: null
+  published: null
+- registry: crates.io
+  result: No package.
+  version: null
+  published: null
+- registry: nuget
+  result: No package.
+  version: null
+  published: null
+- registry: maven-central
+  result: No package.
+  version: null
+  published: null
+- registry: go
+  result: No module.
+  version: null
+  published: null
+- registry: cdn
+  result: >-
+    No first-party CDN-distributed build. The site loads WordPress core, Yoast, Block Visibility, WP
+    Rocket, Wordfence and a HubSpot tracker — all third-party vendor assets, none of them a Local
+    Infusion client library.
+  version: null
+  published: null
+source_code:
+  github_org_probed:
+  - url: https://api.github.com/orgs/local-infusion
+    status: 404
+  - url: https://api.github.com/orgs/mylocalinfusion
+    status: 404
+  result: >-
+    No GitHub organisation under either name. No SDK, CLI or SourceCode link exists in apis.yml to
+    derive candidates from.
+  checked: '2026-08-25'
+note: >-
+  A consumer of the one useful endpoint here (/wp-json/wp/v2/location) does not need an SDK — any
+  WordPress REST client works, and there are mature third-party ones on npm and PyPI. Those are not
+  listed as packages for this provider because they are not this provider's, which is exactly the
+  distinction `official` exists to draw. No `SDKs` pointer is emitted.

@@ -1,0 +1,93 @@
+generated: '2026-08-25'
+method: probed
+source: https://mylocalinfusion.com/.well-known/
+summary: >-
+  Every /.well-known/ path in the pipeline's standard probe set was requested against the single host
+  Local Infusion operates. Two returned real documents: RFC 8414 OAuth 2.0 authorization-server
+  metadata and RFC 9728 OAuth 2.0 protected-resource metadata, both emitted by the WordPress MCP
+  adapter that fronts the site's Model Context Protocol servers. security.txt, openid-configuration,
+  api-catalog and ai-plugin.json all 404. Beyond the standard set the site serves three non-standard
+  agent-discovery documents of its own — ai-manifest.json, brand-facts.json and llm-sitemap.json —
+  which are linked from the homepage and from /llms.txt; those are captured here too because they are
+  the provider's own machine-readable statements about how agents should read the site.
+hosts:
+- host: mylocalinfusion.com
+  documents:
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    file: local-infusion-oauth-authorization-server.json
+    content_type: application/json
+    standard: RFC 8414
+    note: >-
+      issuer https://mylocalinfusion.com; authorization_code + refresh_token; PKCE S256 required;
+      scopes_supported [mcp]; token_endpoint_auth_methods_supported [none];
+      client_id_metadata_document_supported true.
+  - path: /.well-known/oauth-protected-resource
+    status: 200
+    file: local-infusion-oauth-protected-resource.json
+    content_type: application/json
+    standard: RFC 9728
+    note: >-
+      resource https://mylocalinfusion.com/wp-json/mcp/mcp-oauth-server; authorization_servers
+      [https://mylocalinfusion.com]; bearer_methods_supported [header]; scopes_supported [mcp].
+  - path: /.well-known/ai-manifest.json
+    status: 200
+    file: local-infusion-ai-manifest.json
+    content_type: application/json
+    standard: none — provider-defined
+    note: >-
+      Names the site type (healthcare_services_provider) and 21 preferred entry points typed as
+      homepage / location_index / market_guide / location / conversion / provider_referrals /
+      conditions / faq.
+  - path: /.well-known/brand-facts.json
+    status: 200
+    file: local-infusion-brand-facts.json
+    content_type: application/json
+    standard: none — provider-defined
+    note: >-
+      Approved language, language boundaries and priority locations the provider asks answer engines
+      to use. Explicitly declares its own stack ("WordPress front-end with Yoast SEO; HubSpot appears
+      embedded for forms/tracking").
+  - path: /.well-known/llm-sitemap.json
+    status: 200
+    file: local-infusion-llm-sitemap.json
+    content_type: application/json
+    standard: none — provider-defined
+    note: >-
+      generated 2026-07-07. Machine-readable priority-page list with per-page topics and a
+      crawl_guidance block carrying seven claim boundaries (no guaranteed outcomes, no medical advice,
+      no inferring medication availability per center).
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+  other_documents:
+  - path: /robots.txt
+    status: 200
+    file: local-infusion-robots.txt
+    note: >-
+      Explicit per-agent allow block for GPTBot, ChatGPT-User, PerplexityBot, ClaudeBot, anthropic-ai
+      and Google-Extended, then a Yoast block with `User-agent: * / Disallow:` (empty disallow = allow
+      all). No AI opt-out is asserted anywhere on this host.
+  - path: /llms.txt
+    status: 200
+    file: ../llms/local-infusion-llms.txt
+  - path: /llms-full.txt
+    status: 200
+    note: >-
+      Served, and linked from the homepage and /llms.txt. Not committed — `*-llms-full.txt` is
+      gitignored per the pipeline contract.
+x-evidence:
+  fetched: '2026-08-25'
+  probe_method: HTTP GET with a browser User-Agent, redirects followed
+  host_note: >-
+    mylocalinfusion.com is the only host. localinfusion.com and www.localinfusion.com both 301 to it;
+    there is no api., docs., developer., status. or trust. subdomain (all NXDOMAIN on 2026-08-25).

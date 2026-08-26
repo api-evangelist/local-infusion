@@ -1,0 +1,40 @@
+generated: '2026-08-25'
+method: probed
+source: >-
+  Live response headers observed on https://mylocalinfusion.com/wp-json/wp/v2/location?per_page=1
+  (HTTP 200) and on https://mylocalinfusion.com/wp-json/mcp/mcp-oauth-server (HTTP 401), 2026-08-25.
+  The site publishes no developer documentation, so there was no limits page to read.
+summary: >-
+  No rate limits are published and none are signalled at runtime. An agent calling this API has no way
+  to know how much is too much until an edge challenge stops it.
+limit_count: 0
+limits: []
+response_headers:
+  observed: []
+  absent:
+  - X-RateLimit-Limit
+  - X-RateLimit-Remaining
+  - X-RateLimit-Reset
+  - RateLimit-Limit
+  - RateLimit-Remaining
+  - RateLimit-Reset
+  - Retry-After
+  note: >-
+    None of the standard families appeared on a 200 or a 401. The only headers of interest returned are
+    X-WP-Total, X-WP-TotalPages and Link (pagination), and Cloudflare's cf-ray / cf-cache-status.
+exhaustion_status: unknown
+enforcement:
+  layer: cdn
+  provider: Cloudflare
+  evidence: >-
+    `server: cloudflare` and a `__cf_bm` bot-management cookie set on every response, including
+    unauthenticated API responses. Enforcement is therefore bot-management heuristics at the edge, not
+    a per-key quota — the failure mode is an interstitial or a 403/429 from Cloudflare rather than a
+    contract-defined 429 with a Retry-After the caller can honour.
+  note: >-
+    WordPress core itself imposes no request quota. `per_page` is capped at 100 on collection
+    endpoints, which is a page-size bound, not a rate limit.
+guidance: >-
+  Treat the surface as unmetered but unprotected: back off exponentially on any non-2xx, keep
+  concurrency low, and use `_fields` to shrink payloads. The full 75-record location directory is one
+  request at per_page=100 — there is no reason to poll it hard.

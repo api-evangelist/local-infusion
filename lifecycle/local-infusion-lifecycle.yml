@@ -1,0 +1,66 @@
+generated: '2026-08-25'
+method: derived
+source: >-
+  openapi/_original/local-infusion-wp-rest-openapi.yml and live probes of mylocalinfusion.com on
+  2026-08-25. Searched for a versioning policy, deprecation policy, SLA and status page; none exists.
+summary: >-
+  There is no API lifecycle here because there is no API programme. Local Infusion has published no
+  versioning policy, no deprecation policy, no SLA, no status page and no changelog for any machine
+  surface. What lifecycle exists is WordPress's own, inherited by running the CMS.
+versioning:
+  style: namespace-in-path
+  current: wp/v2
+  policy_published: false
+  policy_url: null
+  note: >-
+    WordPress versions its REST API by namespace segment. The host advertises 15 namespaces:
+    oembed/1.0, redirection/v1, wordfence-login-security/v1, wordfence/v1, yoast/v1,
+    block-visibility/v1, duplicate-post/v1, objectcache/v1, wp-rocket/v1, genesis/v1, mcp,
+    wp/v2, wp-site-health/v1, wp-block-editor/v1, wp-abilities/v1. Ten of those are third-party plugin
+    internals whose version cadence the provider does not control and does not document.
+deprecation:
+  policy_published: false
+  policy_url: null
+  sunset_header: false
+  deprecation_header: false
+  rfc8594: false
+  deprecated_operations: []
+  note: >-
+    No RFC 8594 Sunset or Deprecation header was returned on any probed response, and no operation in
+    the derived contract is marked deprecated. /xmlrpc.php is still served, which is the opposite of a
+    deprecation posture.
+sla:
+  published: false
+  url: null
+status_page:
+  published: false
+  url: null
+  probe:
+  - host: status.mylocalinfusion.com
+    result: NXDOMAIN
+    checked: '2026-08-25'
+  note: >-
+    No status page for the website or for the API. Patient-facing service status is communicated per
+    center by phone, not by a machine-readable feed.
+changelog:
+  published: false
+  api_changelog_url: null
+  note: >-
+    The site runs a dated content blog (https://mylocalinfusion.com/blog/, 73 posts, most recent
+    2026-07-22) and a press page, but neither is an API changelog and neither is wired as one. No
+    ChangeLog pointer is emitted, because a company newsroom is not a record of contract change.
+support:
+  developer_support_published: false
+  note: >-
+    Contact routes are patient-, physician-, payer- and pharma-facing (/get-started/,
+    /physicians-contact-us/, /payer-contact-us/, /pharma-contact-us/). There is no developer support
+    channel, no forum and no email address for the API surface.
+observed_freshness:
+  wp_json_discovery_fetched: '2026-08-25'
+  llm_sitemap_generated: '2026-07-07'
+  most_recent_post: '2026-07-22'
+  location_records: 75
+  location_sitemap_lastmod: '2026-08-25'
+  note: >-
+    The location dataset is actively maintained — its sitemap lastmod is today's date. That is the
+    freshest signal on the host and the reason this surface is worth cataloguing at all.

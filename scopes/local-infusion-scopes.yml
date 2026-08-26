@@ -1,0 +1,67 @@
+generated: '2026-08-25'
+method: derived
+source: openapi/local-infusion-mcp-api-openapi.yml, openapi/local-infusion-oembed-1-0-api-openapi.yml,
+  openapi/local-infusion-root-api-openapi.yml, openapi/local-infusion-wp-abilities-v1-api-openapi.yml,
+  openapi/local-infusion-wp-v2-api-openapi.yml
+schemes:
+- name: mcpOAuth2
+  source: openapi/local-infusion-mcp-api-openapi.yml
+  flows:
+  - flow: authorizationCode
+    authorizationUrl: https://mylocalinfusion.com/oauth/authorize
+    tokenUrl: https://mylocalinfusion.com/oauth/token
+  description: OAuth 2.1 authorization-code + PKCE (S256), as advertised by the provider's RFC
+    8414 metadata at https://mylocalinfusion.com/.well-known/oauth-authorization-server (fetched
+    2026-08-25, HTTP 200). Guards the `mcp` namespace; the RFC 9728 protected-resource metadata
+    names https://mylocalinfusion.com/wp-json/mcp/mcp-oauth-server.
+- name: mcpOAuth2
+  source: openapi/local-infusion-oembed-1-0-api-openapi.yml
+  flows:
+  - flow: authorizationCode
+    authorizationUrl: https://mylocalinfusion.com/oauth/authorize
+    tokenUrl: https://mylocalinfusion.com/oauth/token
+  description: OAuth 2.1 authorization-code + PKCE (S256), as advertised by the provider's RFC
+    8414 metadata at https://mylocalinfusion.com/.well-known/oauth-authorization-server (fetched
+    2026-08-25, HTTP 200). Guards the `mcp` namespace; the RFC 9728 protected-resource metadata
+    names https://mylocalinfusion.com/wp-json/mcp/mcp-oauth-server.
+- name: mcpOAuth2
+  source: openapi/local-infusion-root-api-openapi.yml
+  flows:
+  - flow: authorizationCode
+    authorizationUrl: https://mylocalinfusion.com/oauth/authorize
+    tokenUrl: https://mylocalinfusion.com/oauth/token
+  description: OAuth 2.1 authorization-code + PKCE (S256), as advertised by the provider's RFC
+    8414 metadata at https://mylocalinfusion.com/.well-known/oauth-authorization-server (fetched
+    2026-08-25, HTTP 200). Guards the `mcp` namespace; the RFC 9728 protected-resource metadata
+    names https://mylocalinfusion.com/wp-json/mcp/mcp-oauth-server.
+- name: mcpOAuth2
+  source: openapi/local-infusion-wp-abilities-v1-api-openapi.yml
+  flows:
+  - flow: authorizationCode
+    authorizationUrl: https://mylocalinfusion.com/oauth/authorize
+    tokenUrl: https://mylocalinfusion.com/oauth/token
+  description: OAuth 2.1 authorization-code + PKCE (S256), as advertised by the provider's RFC
+    8414 metadata at https://mylocalinfusion.com/.well-known/oauth-authorization-server (fetched
+    2026-08-25, HTTP 200). Guards the `mcp` namespace; the RFC 9728 protected-resource metadata
+    names https://mylocalinfusion.com/wp-json/mcp/mcp-oauth-server.
+- name: mcpOAuth2
+  source: openapi/local-infusion-wp-v2-api-openapi.yml
+  flows:
+  - flow: authorizationCode
+    authorizationUrl: https://mylocalinfusion.com/oauth/authorize
+    tokenUrl: https://mylocalinfusion.com/oauth/token
+  description: OAuth 2.1 authorization-code + PKCE (S256), as advertised by the provider's RFC
+    8414 metadata at https://mylocalinfusion.com/.well-known/oauth-authorization-server (fetched
+    2026-08-25, HTTP 200). Guards the `mcp` namespace; the RFC 9728 protected-resource metadata
+    names https://mylocalinfusion.com/wp-json/mcp/mcp-oauth-server.
+scopes:
+- scope: mcp
+  description: Access the site's Model Context Protocol server.
+  flows:
+  - authorizationCode
+  sources:
+  - openapi/local-infusion-mcp-api-openapi.yml
+  - openapi/local-infusion-oembed-1-0-api-openapi.yml
+  - openapi/local-infusion-root-api-openapi.yml
+  - openapi/local-infusion-wp-abilities-v1-api-openapi.yml
+  - openapi/local-infusion-wp-v2-api-openapi.yml
