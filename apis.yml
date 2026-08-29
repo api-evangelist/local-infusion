@@ -15,6 +15,18 @@ description: >-
   and RFC 9728 metadata, and because the site carries an unusually deliberate agent-discovery layer:
   llms.txt, llms-full.txt, and .well-known ai-manifest, brand-facts and llm-sitemap documents, with a
   robots.txt that explicitly allows GPTBot, ClaudeBot, PerplexityBot and Google-Extended.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: true
+  label: Hosted service · you call their endpoint
+  confidence: high
+  source:
+  - openapi
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://mylocalinfusion.com/wp-content/uploads/2024/11/Local-Infusion-window-logo.jpg
 url: https://raw.githubusercontent.com/api-evangelist/local-infusion/refs/heads/main/apis.yml
 x-type: company
