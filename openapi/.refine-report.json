@@ -1,0 +1,29 @@
+{
+  "provider": "local-infusion",
+  "sources": [
+    "local-infusion-mcp-api-openapi.yml",
+    "local-infusion-oembed-1-0-api-openapi.yml",
+    "local-infusion-root-api-openapi.yml",
+    "local-infusion-wp-abilities-v1-api-openapi.yml",
+    "local-infusion-wp-v2-api-openapi.yml"
+  ],
+  "outputs": [
+    "local-infusion-mcp-api-openapi.yml",
+    "local-infusion-oembed-1-0-api-openapi.yml",
+    "local-infusion-root-api-openapi.yml",
+    "local-infusion-wp-abilities-v1-api-openapi.yml",
+    "local-infusion-wp-v2-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [
+    "local-infusion-mcp-api-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "local-infusion-oembed-1-0-api-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "local-infusion-root-api-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "local-infusion-wp-abilities-v1-api-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "local-infusion-wp-v2-api-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "apis.yml register: already-registered"
+  ],
+  "skipped": []
+}
