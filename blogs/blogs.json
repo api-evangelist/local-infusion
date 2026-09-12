@@ -2,6 +2,13 @@
   "repo": "local-infusion",
   "feeds": [
     {
+      "source": "https://mylocalinfusion.com/blog/",
+      "feed_url": "https://mylocalinfusion.com/blog/",
+      "title": "",
+      "saved": 0,
+      "method": "none"
+    },
+    {
       "source": "https://mylocalinfusion.com/",
       "feed_url": "https://mylocalinfusion.com/feed/",
       "title": "",
@@ -9,13 +16,13 @@
       "method": "discovered"
     },
     {
-      "source": "https://mylocalinfusion.com/blog/",
-      "feed_url": "https://mylocalinfusion.com/blog/",
+      "source": "https://mylocalinfusion.com/feed/",
+      "feed_url": "https://mylocalinfusion.com/feed/",
       "title": "",
       "saved": 0,
-      "method": "none"
+      "method": "feed"
     }
   ],
-  "post_count": 0,
-  "fetched": "2026-08-30T22:33:40Z"
+  "post_count": 10,
+  "fetched": "2026-09-06T19:17:18Z"
 }
