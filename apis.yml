@@ -187,8 +187,6 @@ common:
   url: https://mylocalinfusion.com/accessibility/
 - type: SecondaryMarket
   url: https://www.nasdaqprivatemarket.com/
-- type: OpenAPI
-  url: openapi/_original/local-infusion-wp-rest-openapi.yml
 - type: Overlay
   url: overlays/local-infusion-wp-rest-overlay.yaml
 - type: MCPServer
