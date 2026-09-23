@@ -3,13 +3,7 @@ info:
   title: Local Infusion WordPress REST Oembed/1.0 API
   version: wp/v2
   summary: The live WordPress REST API served by the Local Infusion corporate website.
-  description: 'Derived verbatim from the route-discovery document the Local Infusion web server publishes at https://mylocalinfusion.com/wp-json/ (fetched 2026-08-25, HTTP 200). Every path, method, parameter name, type, default and enum in this document was read from that live response; nothing was invented.
-
-
-    This is the content-management API of the corporate marketing site, not a clinical, patient, scheduling or claims API. Local Infusion is an outpatient infusion-therapy provider and publishes no developer product API. The surface is catalogued because it is a real, live, self-describing HTTP contract on the provider''s own host — one that serves a genuinely useful public dataset, the `location` custom post type carrying the company''s infusion-center directory — and because the same WordPress install fronts two Model Context Protocol servers under the `mcp` namespace (see mcp/local-infusion-mcp.yml).
-
-
-    Only the WordPress core namespaces are represented (`wp/v2`, `wp-abilities/v1`, `mcp`, `oembed/1.0`, and the unnamespaced root). Third-party plugin namespaces advertised by the same discovery document (redirection/v1, wordfence/v1, wordfence-login-security/v1, yoast/v1, block-visibility/v1, duplicate-post/v1, objectcache/v1, wp-rocket/v1, genesis/v1, wp-site-health/v1, wp-block-editor/v1) are intentionally excluded as vendor plugin internals.'
+  description: Derived verbatim from the route-discovery document the Local Infusion web server publishes at https://mylocalinfusion.com/wp-json/ (fetched 2026-08-25, HTTP 200).
   x-derived-from: https://mylocalinfusion.com/wp-json/
   x-derived-on: '2026-08-25'
   x-apievangelist-method: derived

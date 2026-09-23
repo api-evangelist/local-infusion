@@ -3,13 +3,7 @@ info:
   title: Local Infusion WordPress REST Wp/v2 API
   version: wp/v2
   summary: The live WordPress REST API served by the Local Infusion corporate website.
-  description: 'Derived verbatim from the route-discovery document the Local Infusion web server publishes at https://mylocalinfusion.com/wp-json/ (fetched 2026-08-25, HTTP 200). Every path, method, parameter name, type, default and enum in this document was read from that live response; nothing was invented.
-
-
-    This is the content-management API of the corporate marketing site, not a clinical, patient, scheduling or claims API. Local Infusion is an outpatient infusion-therapy provider and publishes no developer product API. The surface is catalogued because it is a real, live, self-describing HTTP contract on the provider''s own host — one that serves a genuinely useful public dataset, the `location` custom post type carrying the company''s infusion-center directory — and because the same WordPress install fronts two Model Context Protocol servers under the `mcp` namespace (see mcp/local-infusion-mcp.yml).
-
-
-    Only the WordPress core namespaces are represented (`wp/v2`, `wp-abilities/v1`, `mcp`, `oembed/1.0`, and the unnamespaced root). Third-party plugin namespaces advertised by the same discovery document (redirection/v1, wordfence/v1, wordfence-login-security/v1, yoast/v1, block-visibility/v1, duplicate-post/v1, objectcache/v1, wp-rocket/v1, genesis/v1, wp-site-health/v1, wp-block-editor/v1) are intentionally excluded as vendor plugin internals.'
+  description: Derived verbatim from the route-discovery document the Local Infusion web server publishes at https://mylocalinfusion.com/wp-json/ (fetched 2026-08-25, HTTP 200).
   x-derived-from: https://mylocalinfusion.com/wp-json/
   x-derived-on: '2026-08-25'
   x-apievangelist-method: derived
@@ -165,8 +159,8 @@ paths:
         type: string
     get:
       operationId: getWpV2BlockRendererByName
-      summary: GET /wp/v2/block-renderer/(?P<name>[a-z0-9-]+/[a-z0-9-]+)
-      description: WordPress REST API route `/wp/v2/block-renderer/(?P<name>[a-z0-9-]+/[a-z0-9-]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: GET /wp/v2/block-renderer/(?P[a-z0-9-]+/[a-z0-9-]+)
+      description: WordPress REST API route `/wp/v2/block-renderer/(?P[a-z0-9-]+/[a-z0-9-]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -209,8 +203,8 @@ paths:
         description: ID of the post context.
     post:
       operationId: postWpV2BlockRendererByName
-      summary: POST /wp/v2/block-renderer/(?P<name>[a-z0-9-]+/[a-z0-9-]+)
-      description: WordPress REST API route `/wp/v2/block-renderer/(?P<name>[a-z0-9-]+/[a-z0-9-]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: POST /wp/v2/block-renderer/(?P[a-z0-9-]+/[a-z0-9-]+)
+      description: WordPress REST API route `/wp/v2/block-renderer/(?P[a-z0-9-]+/[a-z0-9-]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -301,8 +295,8 @@ paths:
         type: string
     get:
       operationId: getWpV2BlockTypesByNamespace
-      summary: GET /wp/v2/block-types/(?P<namespace>[a-zA-Z0-9_-]+)
-      description: WordPress REST API route `/wp/v2/block-types/(?P<namespace>[a-zA-Z0-9_-]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: GET /wp/v2/block-types/(?P[a-zA-Z0-9_-]+)
+      description: WordPress REST API route `/wp/v2/block-types/(?P[a-zA-Z0-9_-]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -348,8 +342,8 @@ paths:
         type: string
     get:
       operationId: getWpV2BlockTypesByNamespaceByName
-      summary: GET /wp/v2/block-types/(?P<namespace>[a-zA-Z0-9_-]+)/(?P<name>[a-zA-Z0-9_-]+)
-      description: WordPress REST API route `/wp/v2/block-types/(?P<namespace>[a-zA-Z0-9_-]+)/(?P<name>[a-zA-Z0-9_-]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: GET /wp/v2/block-types/(?P[a-zA-Z0-9_-]+)/(?P[a-zA-Z0-9_-]+)
+      description: WordPress REST API route `/wp/v2/block-types/(?P[a-zA-Z0-9_-]+)/(?P[a-zA-Z0-9_-]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -657,8 +651,8 @@ paths:
         type: string
     get:
       operationId: getWpV2BlocksById
-      summary: GET /wp/v2/blocks/(?P<id>[\d]+)
-      description: WordPress REST API route `/wp/v2/blocks/(?P<id>[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: GET /wp/v2/blocks/(?P[\d]+)
+      description: WordPress REST API route `/wp/v2/blocks/(?P[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -702,8 +696,8 @@ paths:
         description: The password for the post if it is password protected.
     post:
       operationId: postWpV2BlocksById
-      summary: POST /wp/v2/blocks/(?P<id>[\d]+)
-      description: WordPress REST API route `/wp/v2/blocks/(?P<id>[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: POST /wp/v2/blocks/(?P[\d]+)
+      description: WordPress REST API route `/wp/v2/blocks/(?P[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -777,8 +771,8 @@ paths:
                   description: The terms assigned to the post in the wp_pattern_category taxonomy.
     put:
       operationId: putWpV2BlocksById
-      summary: PUT /wp/v2/blocks/(?P<id>[\d]+)
-      description: WordPress REST API route `/wp/v2/blocks/(?P<id>[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: PUT /wp/v2/blocks/(?P[\d]+)
+      description: WordPress REST API route `/wp/v2/blocks/(?P[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -852,8 +846,8 @@ paths:
                   description: The terms assigned to the post in the wp_pattern_category taxonomy.
     patch:
       operationId: patchWpV2BlocksById
-      summary: PATCH /wp/v2/blocks/(?P<id>[\d]+)
-      description: WordPress REST API route `/wp/v2/blocks/(?P<id>[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: PATCH /wp/v2/blocks/(?P[\d]+)
+      description: WordPress REST API route `/wp/v2/blocks/(?P[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -927,8 +921,8 @@ paths:
                   description: The terms assigned to the post in the wp_pattern_category taxonomy.
     delete:
       operationId: deleteWpV2BlocksById
-      summary: DELETE /wp/v2/blocks/(?P<id>[\d]+)
-      description: WordPress REST API route `/wp/v2/blocks/(?P<id>[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: DELETE /wp/v2/blocks/(?P[\d]+)
+      description: WordPress REST API route `/wp/v2/blocks/(?P[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -965,8 +959,8 @@ paths:
         type: string
     get:
       operationId: getWpV2BlocksByIdAutosaves
-      summary: GET /wp/v2/blocks/(?P<id>[\d]+)/autosaves
-      description: WordPress REST API route `/wp/v2/blocks/(?P<id>[\d]+)/autosaves` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: GET /wp/v2/blocks/(?P[\d]+)/autosaves
+      description: WordPress REST API route `/wp/v2/blocks/(?P[\d]+)/autosaves` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -1005,8 +999,8 @@ paths:
         description: Scope under which the request is made; determines fields present in response.
     post:
       operationId: postWpV2BlocksByIdAutosaves
-      summary: POST /wp/v2/blocks/(?P<id>[\d]+)/autosaves
-      description: WordPress REST API route `/wp/v2/blocks/(?P<id>[\d]+)/autosaves` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: POST /wp/v2/blocks/(?P[\d]+)/autosaves
+      description: WordPress REST API route `/wp/v2/blocks/(?P[\d]+)/autosaves` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -1095,8 +1089,8 @@ paths:
         type: string
     get:
       operationId: getWpV2BlocksByParentAutosavesById
-      summary: GET /wp/v2/blocks/(?P<parent>[\d]+)/autosaves/(?P<id>[\d]+)
-      description: WordPress REST API route `/wp/v2/blocks/(?P<parent>[\d]+)/autosaves/(?P<id>[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: GET /wp/v2/blocks/(?P[\d]+)/autosaves/(?P[\d]+)
+      description: WordPress REST API route `/wp/v2/blocks/(?P[\d]+)/autosaves/(?P[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -1137,8 +1131,8 @@ paths:
         type: string
     get:
       operationId: getWpV2BlocksByParentRevisions
-      summary: GET /wp/v2/blocks/(?P<parent>[\d]+)/revisions
-      description: WordPress REST API route `/wp/v2/blocks/(?P<parent>[\d]+)/revisions` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: GET /wp/v2/blocks/(?P[\d]+)/revisions
+      description: WordPress REST API route `/wp/v2/blocks/(?P[\d]+)/revisions` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -1244,8 +1238,8 @@ paths:
         type: string
     get:
       operationId: getWpV2BlocksByParentRevisionsById
-      summary: GET /wp/v2/blocks/(?P<parent>[\d]+)/revisions/(?P<id>[\d]+)
-      description: WordPress REST API route `/wp/v2/blocks/(?P<parent>[\d]+)/revisions/(?P<id>[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: GET /wp/v2/blocks/(?P[\d]+)/revisions/(?P[\d]+)
+      description: WordPress REST API route `/wp/v2/blocks/(?P[\d]+)/revisions/(?P[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -1279,8 +1273,8 @@ paths:
         description: Scope under which the request is made; determines fields present in response.
     delete:
       operationId: deleteWpV2BlocksByParentRevisionsById
-      summary: DELETE /wp/v2/blocks/(?P<parent>[\d]+)/revisions/(?P<id>[\d]+)
-      description: WordPress REST API route `/wp/v2/blocks/(?P<parent>[\d]+)/revisions/(?P<id>[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: DELETE /wp/v2/blocks/(?P[\d]+)/revisions/(?P[\d]+)
+      description: WordPress REST API route `/wp/v2/blocks/(?P[\d]+)/revisions/(?P[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -1482,8 +1476,8 @@ paths:
         type: string
     get:
       operationId: getWpV2CategoriesById
-      summary: GET /wp/v2/categories/(?P<id>[\d]+)
-      description: WordPress REST API route `/wp/v2/categories/(?P<id>[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: GET /wp/v2/categories/(?P[\d]+)
+      description: WordPress REST API route `/wp/v2/categories/(?P[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -1517,8 +1511,8 @@ paths:
         description: Scope under which the request is made; determines fields present in response.
     post:
       operationId: postWpV2CategoriesById
-      summary: POST /wp/v2/categories/(?P<id>[\d]+)
-      description: WordPress REST API route `/wp/v2/categories/(?P<id>[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: POST /wp/v2/categories/(?P[\d]+)
+      description: WordPress REST API route `/wp/v2/categories/(?P[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -1563,8 +1557,8 @@ paths:
                   description: Meta fields.
     put:
       operationId: putWpV2CategoriesById
-      summary: PUT /wp/v2/categories/(?P<id>[\d]+)
-      description: WordPress REST API route `/wp/v2/categories/(?P<id>[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: PUT /wp/v2/categories/(?P[\d]+)
+      description: WordPress REST API route `/wp/v2/categories/(?P[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -1609,8 +1603,8 @@ paths:
                   description: Meta fields.
     patch:
       operationId: patchWpV2CategoriesById
-      summary: PATCH /wp/v2/categories/(?P<id>[\d]+)
-      description: WordPress REST API route `/wp/v2/categories/(?P<id>[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: PATCH /wp/v2/categories/(?P[\d]+)
+      description: WordPress REST API route `/wp/v2/categories/(?P[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -1655,8 +1649,8 @@ paths:
                   description: Meta fields.
     delete:
       operationId: deleteWpV2CategoriesById
-      summary: DELETE /wp/v2/categories/(?P<id>[\d]+)
-      description: WordPress REST API route `/wp/v2/categories/(?P<id>[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: DELETE /wp/v2/categories/(?P[\d]+)
+      description: WordPress REST API route `/wp/v2/categories/(?P[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -1941,8 +1935,8 @@ paths:
         type: string
     get:
       operationId: getWpV2CommentsById
-      summary: GET /wp/v2/comments/(?P<id>[\d]+)
-      description: WordPress REST API route `/wp/v2/comments/(?P<id>[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: GET /wp/v2/comments/(?P[\d]+)
+      description: WordPress REST API route `/wp/v2/comments/(?P[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -1981,8 +1975,8 @@ paths:
         description: The password for the parent post of the comment (if the post is password protected).
     post:
       operationId: postWpV2CommentsById
-      summary: POST /wp/v2/comments/(?P<id>[\d]+)
-      description: WordPress REST API route `/wp/v2/comments/(?P<id>[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: POST /wp/v2/comments/(?P[\d]+)
+      description: WordPress REST API route `/wp/v2/comments/(?P[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -2056,8 +2050,8 @@ paths:
                   description: Meta fields.
     put:
       operationId: putWpV2CommentsById
-      summary: PUT /wp/v2/comments/(?P<id>[\d]+)
-      description: WordPress REST API route `/wp/v2/comments/(?P<id>[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: PUT /wp/v2/comments/(?P[\d]+)
+      description: WordPress REST API route `/wp/v2/comments/(?P[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -2131,8 +2125,8 @@ paths:
                   description: Meta fields.
     patch:
       operationId: patchWpV2CommentsById
-      summary: PATCH /wp/v2/comments/(?P<id>[\d]+)
-      description: WordPress REST API route `/wp/v2/comments/(?P<id>[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: PATCH /wp/v2/comments/(?P[\d]+)
+      description: WordPress REST API route `/wp/v2/comments/(?P[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -2206,8 +2200,8 @@ paths:
                   description: Meta fields.
     delete:
       operationId: deleteWpV2CommentsById
-      summary: DELETE /wp/v2/comments/(?P<id>[\d]+)
-      description: WordPress REST API route `/wp/v2/comments/(?P<id>[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: DELETE /wp/v2/comments/(?P[\d]+)
+      description: WordPress REST API route `/wp/v2/comments/(?P[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -2297,8 +2291,8 @@ paths:
         type: string
     get:
       operationId: getWpV2FontCollectionsBySlug
-      summary: GET /wp/v2/font-collections/(?P<slug>[\/\w-]+)
-      description: WordPress REST API route `/wp/v2/font-collections/(?P<slug>[\/\w-]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: GET /wp/v2/font-collections/(?P[\/\w-]+)
+      description: WordPress REST API route `/wp/v2/font-collections/(?P[\/\w-]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -2480,8 +2474,8 @@ paths:
         type: string
     get:
       operationId: getWpV2FontFamiliesByFontFamilyIdFontFaces
-      summary: GET /wp/v2/font-families/(?P<font_family_id>[\d]+)/font-faces
-      description: WordPress REST API route `/wp/v2/font-families/(?P<font_family_id>[\d]+)/font-faces` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: GET /wp/v2/font-families/(?P[\d]+)/font-faces
+      description: WordPress REST API route `/wp/v2/font-families/(?P[\d]+)/font-faces` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -2573,8 +2567,8 @@ paths:
         description: Sort collection by post attribute.
     post:
       operationId: postWpV2FontFamiliesByFontFamilyIdFontFaces
-      summary: POST /wp/v2/font-families/(?P<font_family_id>[\d]+)/font-faces
-      description: WordPress REST API route `/wp/v2/font-families/(?P<font_family_id>[\d]+)/font-faces` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: POST /wp/v2/font-families/(?P[\d]+)/font-faces
+      description: WordPress REST API route `/wp/v2/font-families/(?P[\d]+)/font-faces` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -2625,8 +2619,8 @@ paths:
         type: string
     get:
       operationId: getWpV2FontFamiliesByFontFamilyIdFontFacesById
-      summary: GET /wp/v2/font-families/(?P<font_family_id>[\d]+)/font-faces/(?P<id>[\d]+)
-      description: WordPress REST API route `/wp/v2/font-families/(?P<font_family_id>[\d]+)/font-faces/(?P<id>[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: GET /wp/v2/font-families/(?P[\d]+)/font-faces/(?P[\d]+)
+      description: WordPress REST API route `/wp/v2/font-families/(?P[\d]+)/font-faces/(?P[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -2660,8 +2654,8 @@ paths:
         description: Scope under which the request is made; determines fields present in response.
     delete:
       operationId: deleteWpV2FontFamiliesByFontFamilyIdFontFacesById
-      summary: DELETE /wp/v2/font-families/(?P<font_family_id>[\d]+)/font-faces/(?P<id>[\d]+)
-      description: WordPress REST API route `/wp/v2/font-families/(?P<font_family_id>[\d]+)/font-faces/(?P<id>[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: DELETE /wp/v2/font-families/(?P[\d]+)/font-faces/(?P[\d]+)
+      description: WordPress REST API route `/wp/v2/font-families/(?P[\d]+)/font-faces/(?P[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -2698,8 +2692,8 @@ paths:
         type: string
     get:
       operationId: getWpV2FontFamiliesById
-      summary: GET /wp/v2/font-families/(?P<id>[\d]+)
-      description: WordPress REST API route `/wp/v2/font-families/(?P<id>[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: GET /wp/v2/font-families/(?P[\d]+)
+      description: WordPress REST API route `/wp/v2/font-families/(?P[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -2733,8 +2727,8 @@ paths:
         description: Scope under which the request is made; determines fields present in response.
     post:
       operationId: postWpV2FontFamiliesById
-      summary: POST /wp/v2/font-families/(?P<id>[\d]+)
-      description: WordPress REST API route `/wp/v2/font-families/(?P<id>[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: POST /wp/v2/font-families/(?P[\d]+)
+      description: WordPress REST API route `/wp/v2/font-families/(?P[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -2773,8 +2767,8 @@ paths:
               - font_family_settings
     put:
       operationId: putWpV2FontFamiliesById
-      summary: PUT /wp/v2/font-families/(?P<id>[\d]+)
-      description: WordPress REST API route `/wp/v2/font-families/(?P<id>[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: PUT /wp/v2/font-families/(?P[\d]+)
+      description: WordPress REST API route `/wp/v2/font-families/(?P[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -2813,8 +2807,8 @@ paths:
               - font_family_settings
     patch:
       operationId: patchWpV2FontFamiliesById
-      summary: PATCH /wp/v2/font-families/(?P<id>[\d]+)
-      description: WordPress REST API route `/wp/v2/font-families/(?P<id>[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: PATCH /wp/v2/font-families/(?P[\d]+)
+      description: WordPress REST API route `/wp/v2/font-families/(?P[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -2853,8 +2847,8 @@ paths:
               - font_family_settings
     delete:
       operationId: deleteWpV2FontFamiliesById
-      summary: DELETE /wp/v2/font-families/(?P<id>[\d]+)
-      description: WordPress REST API route `/wp/v2/font-families/(?P<id>[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: DELETE /wp/v2/font-families/(?P[\d]+)
+      description: WordPress REST API route `/wp/v2/font-families/(?P[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -2891,8 +2885,8 @@ paths:
         type: string
     get:
       operationId: getWpV2GlobalStylesById
-      summary: GET /wp/v2/global-styles/(?P<id>[\/\d+]+)
-      description: WordPress REST API route `/wp/v2/global-styles/(?P<id>[\/\d+]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: GET /wp/v2/global-styles/(?P[\/\d+]+)
+      description: WordPress REST API route `/wp/v2/global-styles/(?P[\/\d+]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -2915,8 +2909,8 @@ paths:
                 $ref: '#/components/schemas/WPError'
     post:
       operationId: postWpV2GlobalStylesById
-      summary: POST /wp/v2/global-styles/(?P<id>[\/\d+]+)
-      description: WordPress REST API route `/wp/v2/global-styles/(?P<id>[\/\d+]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: POST /wp/v2/global-styles/(?P[\/\d+]+)
+      description: WordPress REST API route `/wp/v2/global-styles/(?P[\/\d+]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -2955,8 +2949,8 @@ paths:
                   description: Title of the global styles variation.
     put:
       operationId: putWpV2GlobalStylesById
-      summary: PUT /wp/v2/global-styles/(?P<id>[\/\d+]+)
-      description: WordPress REST API route `/wp/v2/global-styles/(?P<id>[\/\d+]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: PUT /wp/v2/global-styles/(?P[\/\d+]+)
+      description: WordPress REST API route `/wp/v2/global-styles/(?P[\/\d+]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -2995,8 +2989,8 @@ paths:
                   description: Title of the global styles variation.
     patch:
       operationId: patchWpV2GlobalStylesById
-      summary: PATCH /wp/v2/global-styles/(?P<id>[\/\d+]+)
-      description: WordPress REST API route `/wp/v2/global-styles/(?P<id>[\/\d+]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: PATCH /wp/v2/global-styles/(?P[\/\d+]+)
+      description: WordPress REST API route `/wp/v2/global-styles/(?P[\/\d+]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -3042,8 +3036,8 @@ paths:
         type: string
     get:
       operationId: getWpV2GlobalStylesByParentRevisions
-      summary: GET /wp/v2/global-styles/(?P<parent>[\d]+)/revisions
-      description: WordPress REST API route `/wp/v2/global-styles/(?P<parent>[\d]+)/revisions` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: GET /wp/v2/global-styles/(?P[\d]+)/revisions
+      description: WordPress REST API route `/wp/v2/global-styles/(?P[\d]+)/revisions` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -3105,8 +3099,8 @@ paths:
         type: string
     get:
       operationId: getWpV2GlobalStylesByParentRevisionsById
-      summary: GET /wp/v2/global-styles/(?P<parent>[\d]+)/revisions/(?P<id>[\d]+)
-      description: WordPress REST API route `/wp/v2/global-styles/(?P<parent>[\d]+)/revisions/(?P<id>[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: GET /wp/v2/global-styles/(?P[\d]+)/revisions/(?P[\d]+)
+      description: WordPress REST API route `/wp/v2/global-styles/(?P[\d]+)/revisions/(?P[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -3147,8 +3141,8 @@ paths:
         type: string
     get:
       operationId: getWpV2GlobalStylesThemesByStylesheetVariations
-      summary: GET /wp/v2/global-styles/themes/(?P<stylesheet>[\/\s%\w\.\(\)\[\]\@_\-]+)/variations
-      description: WordPress REST API route `/wp/v2/global-styles/themes/(?P<stylesheet>[\/\s%\w\.\(\)\[\]\@_\-]+)/variations` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: GET /wp/v2/global-styles/themes/(?P[\/\s%\w\.\(\)\[\]\@_\-]+)/variations
+      description: WordPress REST API route `/wp/v2/global-styles/themes/(?P[\/\s%\w\.\(\)\[\]\@_\-]+)/variations` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -3178,8 +3172,8 @@ paths:
         type: string
     get:
       operationId: getWpV2GlobalStylesThemesByStylesheet
-      summary: GET /wp/v2/global-styles/themes/(?P<stylesheet>[^\/:<>\*\?"\|]+(?:\/[^\/:<>\*\?"\|]+)?)
-      description: WordPress REST API route `/wp/v2/global-styles/themes/(?P<stylesheet>[^\/:<>\*\?"\|]+(?:\/[^\/:<>\*\?"\|]+)?)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: GET /wp/v2/global-styles/themes/(?P[^\/:<>\*\?"\|]+(?:\/[^\/:<>\*\?"\|]+)?)
+      description: WordPress REST API route `/wp/v2/global-styles/themes/(?P[^\/:<>\*\?"\|]+(?:\/[^\/:<>\*\?"\|]+)?)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -3262,8 +3256,8 @@ paths:
         type: string
     get:
       operationId: getWpV2IconCollectionsBySlug
-      summary: GET /wp/v2/icon-collections/(?P<slug>[a-z0-9](?:[a-z0-9_-]*[a-z0-9])?)
-      description: WordPress REST API route `/wp/v2/icon-collections/(?P<slug>[a-z0-9](?:[a-z0-9_-]*[a-z0-9])?)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: GET /wp/v2/icon-collections/(?Pa-z0-9?)
+      description: WordPress REST API route `/wp/v2/icon-collections/(?Pa-z0-9?)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -3362,8 +3356,8 @@ paths:
         type: string
     get:
       operationId: getWpV2IconsByCollection
-      summary: GET /wp/v2/icons/(?P<collection>[a-z0-9](?:[a-z0-9_-]*[a-z0-9])?)
-      description: WordPress REST API route `/wp/v2/icons/(?P<collection>[a-z0-9](?:[a-z0-9_-]*[a-z0-9])?)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: GET /wp/v2/icons/(?Pa-z0-9?)
+      description: WordPress REST API route `/wp/v2/icons/(?Pa-z0-9?)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -3421,8 +3415,8 @@ paths:
         type: string
     get:
       operationId: getWpV2IconsByName
-      summary: GET /wp/v2/icons/(?P<name>[a-z0-9](?:[a-z0-9_-]*[a-z0-9])?/[a-z0-9](?:[a-z0-9_-]*[a-z0-9])?)
-      description: WordPress REST API route `/wp/v2/icons/(?P<name>[a-z0-9](?:[a-z0-9_-]*[a-z0-9])?/[a-z0-9](?:[a-z0-9_-]*[a-z0-9])?)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: GET /wp/v2/icons/(?Pa-z0-9?/a-z0-9?)
+      description: WordPress REST API route `/wp/v2/icons/(?Pa-z0-9?/a-z0-9?)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -3738,8 +3732,8 @@ paths:
         type: string
     get:
       operationId: getWpV2LocationById
-      summary: GET /wp/v2/location/(?P<id>[\d]+)
-      description: WordPress REST API route `/wp/v2/location/(?P<id>[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: GET /wp/v2/location/(?P[\d]+)
+      description: WordPress REST API route `/wp/v2/location/(?P[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -3783,8 +3777,8 @@ paths:
         description: The password for the post if it is password protected.
     post:
       operationId: postWpV2LocationById
-      summary: POST /wp/v2/location/(?P<id>[\d]+)
-      description: WordPress REST API route `/wp/v2/location/(?P<id>[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: POST /wp/v2/location/(?P[\d]+)
+      description: WordPress REST API route `/wp/v2/location/(?P[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -3862,8 +3856,8 @@ paths:
                   description: The theme file to use to display the post.
     put:
       operationId: putWpV2LocationById
-      summary: PUT /wp/v2/location/(?P<id>[\d]+)
-      description: WordPress REST API route `/wp/v2/location/(?P<id>[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: PUT /wp/v2/location/(?P[\d]+)
+      description: WordPress REST API route `/wp/v2/location/(?P[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -3941,8 +3935,8 @@ paths:
                   description: The theme file to use to display the post.
     patch:
       operationId: patchWpV2LocationById
-      summary: PATCH /wp/v2/location/(?P<id>[\d]+)
-      description: WordPress REST API route `/wp/v2/location/(?P<id>[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: PATCH /wp/v2/location/(?P[\d]+)
+      description: WordPress REST API route `/wp/v2/location/(?P[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -4020,8 +4014,8 @@ paths:
                   description: The theme file to use to display the post.
     delete:
       operationId: deleteWpV2LocationById
-      summary: DELETE /wp/v2/location/(?P<id>[\d]+)
-      description: WordPress REST API route `/wp/v2/location/(?P<id>[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: DELETE /wp/v2/location/(?P[\d]+)
+      description: WordPress REST API route `/wp/v2/location/(?P[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -4058,8 +4052,8 @@ paths:
         type: string
     get:
       operationId: getWpV2LocationByIdAutosaves
-      summary: GET /wp/v2/location/(?P<id>[\d]+)/autosaves
-      description: WordPress REST API route `/wp/v2/location/(?P<id>[\d]+)/autosaves` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: GET /wp/v2/location/(?P[\d]+)/autosaves
+      description: WordPress REST API route `/wp/v2/location/(?P[\d]+)/autosaves` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -4098,8 +4092,8 @@ paths:
         description: Scope under which the request is made; determines fields present in response.
     post:
       operationId: postWpV2LocationByIdAutosaves
-      summary: POST /wp/v2/location/(?P<id>[\d]+)/autosaves
-      description: WordPress REST API route `/wp/v2/location/(?P<id>[\d]+)/autosaves` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: POST /wp/v2/location/(?P[\d]+)/autosaves
+      description: WordPress REST API route `/wp/v2/location/(?P[\d]+)/autosaves` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -4189,8 +4183,8 @@ paths:
         type: string
     get:
       operationId: getWpV2LocationByParentAutosavesById
-      summary: GET /wp/v2/location/(?P<parent>[\d]+)/autosaves/(?P<id>[\d]+)
-      description: WordPress REST API route `/wp/v2/location/(?P<parent>[\d]+)/autosaves/(?P<id>[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: GET /wp/v2/location/(?P[\d]+)/autosaves/(?P[\d]+)
+      description: WordPress REST API route `/wp/v2/location/(?P[\d]+)/autosaves/(?P[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -4231,8 +4225,8 @@ paths:
         type: string
     get:
       operationId: getWpV2LocationByParentRevisions
-      summary: GET /wp/v2/location/(?P<parent>[\d]+)/revisions
-      description: WordPress REST API route `/wp/v2/location/(?P<parent>[\d]+)/revisions` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: GET /wp/v2/location/(?P[\d]+)/revisions
+      description: WordPress REST API route `/wp/v2/location/(?P[\d]+)/revisions` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -4338,8 +4332,8 @@ paths:
         type: string
     get:
       operationId: getWpV2LocationByParentRevisionsById
-      summary: GET /wp/v2/location/(?P<parent>[\d]+)/revisions/(?P<id>[\d]+)
-      description: WordPress REST API route `/wp/v2/location/(?P<parent>[\d]+)/revisions/(?P<id>[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: GET /wp/v2/location/(?P[\d]+)/revisions/(?P[\d]+)
+      description: WordPress REST API route `/wp/v2/location/(?P[\d]+)/revisions/(?P[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -4373,8 +4367,8 @@ paths:
         description: Scope under which the request is made; determines fields present in response.
     delete:
       operationId: deleteWpV2LocationByParentRevisionsById
-      summary: DELETE /wp/v2/location/(?P<parent>[\d]+)/revisions/(?P<id>[\d]+)
-      description: WordPress REST API route `/wp/v2/location/(?P<parent>[\d]+)/revisions/(?P<id>[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: DELETE /wp/v2/location/(?P[\d]+)/revisions/(?P[\d]+)
+      description: WordPress REST API route `/wp/v2/location/(?P[\d]+)/revisions/(?P[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -4730,8 +4724,8 @@ paths:
         type: string
     get:
       operationId: getWpV2MediaById
-      summary: GET /wp/v2/media/(?P<id>[\d]+)
-      description: WordPress REST API route `/wp/v2/media/(?P<id>[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: GET /wp/v2/media/(?P[\d]+)
+      description: WordPress REST API route `/wp/v2/media/(?P[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -4765,8 +4759,8 @@ paths:
         description: Scope under which the request is made; determines fields present in response.
     post:
       operationId: postWpV2MediaById
-      summary: POST /wp/v2/media/(?P<id>[\d]+)
-      description: WordPress REST API route `/wp/v2/media/(?P<id>[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: POST /wp/v2/media/(?P[\d]+)
+      description: WordPress REST API route `/wp/v2/media/(?P[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -4856,8 +4850,8 @@ paths:
                   description: The ID for the associated post of the attachment.
     put:
       operationId: putWpV2MediaById
-      summary: PUT /wp/v2/media/(?P<id>[\d]+)
-      description: WordPress REST API route `/wp/v2/media/(?P<id>[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: PUT /wp/v2/media/(?P[\d]+)
+      description: WordPress REST API route `/wp/v2/media/(?P[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -4947,8 +4941,8 @@ paths:
                   description: The ID for the associated post of the attachment.
     patch:
       operationId: patchWpV2MediaById
-      summary: PATCH /wp/v2/media/(?P<id>[\d]+)
-      description: WordPress REST API route `/wp/v2/media/(?P<id>[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: PATCH /wp/v2/media/(?P[\d]+)
+      description: WordPress REST API route `/wp/v2/media/(?P[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -5038,8 +5032,8 @@ paths:
                   description: The ID for the associated post of the attachment.
     delete:
       operationId: deleteWpV2MediaById
-      summary: DELETE /wp/v2/media/(?P<id>[\d]+)
-      description: WordPress REST API route `/wp/v2/media/(?P<id>[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: DELETE /wp/v2/media/(?P[\d]+)
+      description: WordPress REST API route `/wp/v2/media/(?P[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -5076,8 +5070,8 @@ paths:
         type: string
     post:
       operationId: postWpV2MediaByIdEdit
-      summary: POST /wp/v2/media/(?P<id>[\d]+)/edit
-      description: WordPress REST API route `/wp/v2/media/(?P<id>[\d]+)/edit` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: POST /wp/v2/media/(?P[\d]+)/edit
+      description: WordPress REST API route `/wp/v2/media/(?P[\d]+)/edit` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -5155,8 +5149,8 @@ paths:
         type: string
     post:
       operationId: postWpV2MediaByIdFinalize
-      summary: POST /wp/v2/media/(?P<id>[\d]+)/finalize
-      description: WordPress REST API route `/wp/v2/media/(?P<id>[\d]+)/finalize` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: POST /wp/v2/media/(?P[\d]+)/finalize
+      description: WordPress REST API route `/wp/v2/media/(?P[\d]+)/finalize` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -5199,8 +5193,8 @@ paths:
         type: string
     post:
       operationId: postWpV2MediaByIdPostProcess
-      summary: POST /wp/v2/media/(?P<id>[\d]+)/post-process
-      description: WordPress REST API route `/wp/v2/media/(?P<id>[\d]+)/post-process` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: POST /wp/v2/media/(?P[\d]+)/post-process
+      description: WordPress REST API route `/wp/v2/media/(?P[\d]+)/post-process` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -5243,8 +5237,8 @@ paths:
         type: string
     post:
       operationId: postWpV2MediaByIdSideload
-      summary: POST /wp/v2/media/(?P<id>[\d]+)/sideload
-      description: WordPress REST API route `/wp/v2/media/(?P<id>[\d]+)/sideload` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: POST /wp/v2/media/(?P[\d]+)/sideload
+      description: WordPress REST API route `/wp/v2/media/(?P[\d]+)/sideload` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -5589,8 +5583,8 @@ paths:
         type: string
     get:
       operationId: getWpV2MenuItemsById
-      summary: GET /wp/v2/menu-items/(?P<id>[\d]+)
-      description: WordPress REST API route `/wp/v2/menu-items/(?P<id>[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: GET /wp/v2/menu-items/(?P[\d]+)
+      description: WordPress REST API route `/wp/v2/menu-items/(?P[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -5624,8 +5618,8 @@ paths:
         description: Scope under which the request is made; determines fields present in response.
     post:
       operationId: postWpV2MenuItemsById
-      summary: POST /wp/v2/menu-items/(?P<id>[\d]+)
-      description: WordPress REST API route `/wp/v2/menu-items/(?P<id>[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: POST /wp/v2/menu-items/(?P[\d]+)
+      description: WordPress REST API route `/wp/v2/menu-items/(?P[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -5720,8 +5714,8 @@ paths:
                   description: Meta fields.
     put:
       operationId: putWpV2MenuItemsById
-      summary: PUT /wp/v2/menu-items/(?P<id>[\d]+)
-      description: WordPress REST API route `/wp/v2/menu-items/(?P<id>[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: PUT /wp/v2/menu-items/(?P[\d]+)
+      description: WordPress REST API route `/wp/v2/menu-items/(?P[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -5816,8 +5810,8 @@ paths:
                   description: Meta fields.
     patch:
       operationId: patchWpV2MenuItemsById
-      summary: PATCH /wp/v2/menu-items/(?P<id>[\d]+)
-      description: WordPress REST API route `/wp/v2/menu-items/(?P<id>[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: PATCH /wp/v2/menu-items/(?P[\d]+)
+      description: WordPress REST API route `/wp/v2/menu-items/(?P[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -5912,8 +5906,8 @@ paths:
                   description: Meta fields.
     delete:
       operationId: deleteWpV2MenuItemsById
-      summary: DELETE /wp/v2/menu-items/(?P<id>[\d]+)
-      description: WordPress REST API route `/wp/v2/menu-items/(?P<id>[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: DELETE /wp/v2/menu-items/(?P[\d]+)
+      description: WordPress REST API route `/wp/v2/menu-items/(?P[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -5950,8 +5944,8 @@ paths:
         type: string
     get:
       operationId: getWpV2MenuItemsByIdAutosaves
-      summary: GET /wp/v2/menu-items/(?P<id>[\d]+)/autosaves
-      description: WordPress REST API route `/wp/v2/menu-items/(?P<id>[\d]+)/autosaves` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: GET /wp/v2/menu-items/(?P[\d]+)/autosaves
+      description: WordPress REST API route `/wp/v2/menu-items/(?P[\d]+)/autosaves` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -5990,8 +5984,8 @@ paths:
         description: Scope under which the request is made; determines fields present in response.
     post:
       operationId: postWpV2MenuItemsByIdAutosaves
-      summary: POST /wp/v2/menu-items/(?P<id>[\d]+)/autosaves
-      description: WordPress REST API route `/wp/v2/menu-items/(?P<id>[\d]+)/autosaves` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: POST /wp/v2/menu-items/(?P[\d]+)/autosaves
+      description: WordPress REST API route `/wp/v2/menu-items/(?P[\d]+)/autosaves` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -6098,8 +6092,8 @@ paths:
         type: string
     get:
       operationId: getWpV2MenuItemsByParentAutosavesById
-      summary: GET /wp/v2/menu-items/(?P<parent>[\d]+)/autosaves/(?P<id>[\d]+)
-      description: WordPress REST API route `/wp/v2/menu-items/(?P<parent>[\d]+)/autosaves/(?P<id>[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: GET /wp/v2/menu-items/(?P[\d]+)/autosaves/(?P[\d]+)
+      description: WordPress REST API route `/wp/v2/menu-items/(?P[\d]+)/autosaves/(?P[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -6176,8 +6170,8 @@ paths:
         type: string
     get:
       operationId: getWpV2MenuLocationsByLocation
-      summary: GET /wp/v2/menu-locations/(?P<location>[\w-]+)
-      description: WordPress REST API route `/wp/v2/menu-locations/(?P<location>[\w-]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: GET /wp/v2/menu-locations/(?P[\w-]+)
+      description: WordPress REST API route `/wp/v2/menu-locations/(?P[\w-]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -6388,8 +6382,8 @@ paths:
         type: string
     get:
       operationId: getWpV2MenusById
-      summary: GET /wp/v2/menus/(?P<id>[\d]+)
-      description: WordPress REST API route `/wp/v2/menus/(?P<id>[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: GET /wp/v2/menus/(?P[\d]+)
+      description: WordPress REST API route `/wp/v2/menus/(?P[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -6423,8 +6417,8 @@ paths:
         description: Scope under which the request is made; determines fields present in response.
     post:
       operationId: postWpV2MenusById
-      summary: POST /wp/v2/menus/(?P<id>[\d]+)
-      description: WordPress REST API route `/wp/v2/menus/(?P<id>[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: POST /wp/v2/menus/(?P[\d]+)
+      description: WordPress REST API route `/wp/v2/menus/(?P[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -6474,8 +6468,8 @@ paths:
                   description: Whether to automatically add top level pages to this menu.
     put:
       operationId: putWpV2MenusById
-      summary: PUT /wp/v2/menus/(?P<id>[\d]+)
-      description: WordPress REST API route `/wp/v2/menus/(?P<id>[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: PUT /wp/v2/menus/(?P[\d]+)
+      description: WordPress REST API route `/wp/v2/menus/(?P[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -6525,8 +6519,8 @@ paths:
                   description: Whether to automatically add top level pages to this menu.
     patch:
       operationId: patchWpV2MenusById
-      summary: PATCH /wp/v2/menus/(?P<id>[\d]+)
-      description: WordPress REST API route `/wp/v2/menus/(?P<id>[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: PATCH /wp/v2/menus/(?P[\d]+)
+      description: WordPress REST API route `/wp/v2/menus/(?P[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -6576,8 +6570,8 @@ paths:
                   description: Whether to automatically add top level pages to this menu.
     delete:
       operationId: deleteWpV2MenusById
-      summary: DELETE /wp/v2/menus/(?P<id>[\d]+)
-      description: WordPress REST API route `/wp/v2/menus/(?P<id>[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: DELETE /wp/v2/menus/(?P[\d]+)
+      description: WordPress REST API route `/wp/v2/menus/(?P[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -6852,8 +6846,8 @@ paths:
         type: string
     get:
       operationId: getWpV2NavigationById
-      summary: GET /wp/v2/navigation/(?P<id>[\d]+)
-      description: WordPress REST API route `/wp/v2/navigation/(?P<id>[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: GET /wp/v2/navigation/(?P[\d]+)
+      description: WordPress REST API route `/wp/v2/navigation/(?P[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -6892,8 +6886,8 @@ paths:
         description: The password for the post if it is password protected.
     post:
       operationId: postWpV2NavigationById
-      summary: POST /wp/v2/navigation/(?P<id>[\d]+)
-      description: WordPress REST API route `/wp/v2/navigation/(?P<id>[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: POST /wp/v2/navigation/(?P[\d]+)
+      description: WordPress REST API route `/wp/v2/navigation/(?P[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -6956,8 +6950,8 @@ paths:
                   description: The theme file to use to display the post.
     put:
       operationId: putWpV2NavigationById
-      summary: PUT /wp/v2/navigation/(?P<id>[\d]+)
-      description: WordPress REST API route `/wp/v2/navigation/(?P<id>[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: PUT /wp/v2/navigation/(?P[\d]+)
+      description: WordPress REST API route `/wp/v2/navigation/(?P[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -7020,8 +7014,8 @@ paths:
                   description: The theme file to use to display the post.
     patch:
       operationId: patchWpV2NavigationById
-      summary: PATCH /wp/v2/navigation/(?P<id>[\d]+)
-      description: WordPress REST API route `/wp/v2/navigation/(?P<id>[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: PATCH /wp/v2/navigation/(?P[\d]+)
+      description: WordPress REST API route `/wp/v2/navigation/(?P[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -7084,8 +7078,8 @@ paths:
                   description: The theme file to use to display the post.
     delete:
       operationId: deleteWpV2NavigationById
-      summary: DELETE /wp/v2/navigation/(?P<id>[\d]+)
-      description: WordPress REST API route `/wp/v2/navigation/(?P<id>[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: DELETE /wp/v2/navigation/(?P[\d]+)
+      description: WordPress REST API route `/wp/v2/navigation/(?P[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -7122,8 +7116,8 @@ paths:
         type: string
     get:
       operationId: getWpV2NavigationByIdAutosaves
-      summary: GET /wp/v2/navigation/(?P<id>[\d]+)/autosaves
-      description: WordPress REST API route `/wp/v2/navigation/(?P<id>[\d]+)/autosaves` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: GET /wp/v2/navigation/(?P[\d]+)/autosaves
+      description: WordPress REST API route `/wp/v2/navigation/(?P[\d]+)/autosaves` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -7162,8 +7156,8 @@ paths:
         description: Scope under which the request is made; determines fields present in response.
     post:
       operationId: postWpV2NavigationByIdAutosaves
-      summary: POST /wp/v2/navigation/(?P<id>[\d]+)/autosaves
-      description: WordPress REST API route `/wp/v2/navigation/(?P<id>[\d]+)/autosaves` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: POST /wp/v2/navigation/(?P[\d]+)/autosaves
+      description: WordPress REST API route `/wp/v2/navigation/(?P[\d]+)/autosaves` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -7241,8 +7235,8 @@ paths:
         type: string
     get:
       operationId: getWpV2NavigationByParentAutosavesById
-      summary: GET /wp/v2/navigation/(?P<parent>[\d]+)/autosaves/(?P<id>[\d]+)
-      description: WordPress REST API route `/wp/v2/navigation/(?P<parent>[\d]+)/autosaves/(?P<id>[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: GET /wp/v2/navigation/(?P[\d]+)/autosaves/(?P[\d]+)
+      description: WordPress REST API route `/wp/v2/navigation/(?P[\d]+)/autosaves/(?P[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -7283,8 +7277,8 @@ paths:
         type: string
     get:
       operationId: getWpV2NavigationByParentRevisions
-      summary: GET /wp/v2/navigation/(?P<parent>[\d]+)/revisions
-      description: WordPress REST API route `/wp/v2/navigation/(?P<parent>[\d]+)/revisions` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: GET /wp/v2/navigation/(?P[\d]+)/revisions
+      description: WordPress REST API route `/wp/v2/navigation/(?P[\d]+)/revisions` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -7390,8 +7384,8 @@ paths:
         type: string
     get:
       operationId: getWpV2NavigationByParentRevisionsById
-      summary: GET /wp/v2/navigation/(?P<parent>[\d]+)/revisions/(?P<id>[\d]+)
-      description: WordPress REST API route `/wp/v2/navigation/(?P<parent>[\d]+)/revisions/(?P<id>[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: GET /wp/v2/navigation/(?P[\d]+)/revisions/(?P[\d]+)
+      description: WordPress REST API route `/wp/v2/navigation/(?P[\d]+)/revisions/(?P[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -7425,8 +7419,8 @@ paths:
         description: Scope under which the request is made; determines fields present in response.
     delete:
       operationId: deleteWpV2NavigationByParentRevisionsById
-      summary: DELETE /wp/v2/navigation/(?P<parent>[\d]+)/revisions/(?P<id>[\d]+)
-      description: WordPress REST API route `/wp/v2/navigation/(?P<parent>[\d]+)/revisions/(?P<id>[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: DELETE /wp/v2/navigation/(?P[\d]+)/revisions/(?P[\d]+)
+      description: WordPress REST API route `/wp/v2/navigation/(?P[\d]+)/revisions/(?P[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -7769,8 +7763,8 @@ paths:
         type: string
     get:
       operationId: getWpV2PagesById
-      summary: GET /wp/v2/pages/(?P<id>[\d]+)
-      description: WordPress REST API route `/wp/v2/pages/(?P<id>[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: GET /wp/v2/pages/(?P[\d]+)
+      description: WordPress REST API route `/wp/v2/pages/(?P[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -7814,8 +7808,8 @@ paths:
         description: The password for the post if it is password protected.
     post:
       operationId: postWpV2PagesById
-      summary: POST /wp/v2/pages/(?P<id>[\d]+)
-      description: WordPress REST API route `/wp/v2/pages/(?P<id>[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: POST /wp/v2/pages/(?P[\d]+)
+      description: WordPress REST API route `/wp/v2/pages/(?P[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -7908,8 +7902,8 @@ paths:
                   description: The theme file to use to display the post.
     put:
       operationId: putWpV2PagesById
-      summary: PUT /wp/v2/pages/(?P<id>[\d]+)
-      description: WordPress REST API route `/wp/v2/pages/(?P<id>[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: PUT /wp/v2/pages/(?P[\d]+)
+      description: WordPress REST API route `/wp/v2/pages/(?P[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -8002,8 +7996,8 @@ paths:
                   description: The theme file to use to display the post.
     patch:
       operationId: patchWpV2PagesById
-      summary: PATCH /wp/v2/pages/(?P<id>[\d]+)
-      description: WordPress REST API route `/wp/v2/pages/(?P<id>[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: PATCH /wp/v2/pages/(?P[\d]+)
+      description: WordPress REST API route `/wp/v2/pages/(?P[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -8096,8 +8090,8 @@ paths:
                   description: The theme file to use to display the post.
     delete:
       operationId: deleteWpV2PagesById
-      summary: DELETE /wp/v2/pages/(?P<id>[\d]+)
-      description: WordPress REST API route `/wp/v2/pages/(?P<id>[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: DELETE /wp/v2/pages/(?P[\d]+)
+      description: WordPress REST API route `/wp/v2/pages/(?P[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -8134,8 +8128,8 @@ paths:
         type: string
     get:
       operationId: getWpV2PagesByIdAutosaves
-      summary: GET /wp/v2/pages/(?P<id>[\d]+)/autosaves
-      description: WordPress REST API route `/wp/v2/pages/(?P<id>[\d]+)/autosaves` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: GET /wp/v2/pages/(?P[\d]+)/autosaves
+      description: WordPress REST API route `/wp/v2/pages/(?P[\d]+)/autosaves` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -8174,8 +8168,8 @@ paths:
         description: Scope under which the request is made; determines fields present in response.
     post:
       operationId: postWpV2PagesByIdAutosaves
-      summary: POST /wp/v2/pages/(?P<id>[\d]+)/autosaves
-      description: WordPress REST API route `/wp/v2/pages/(?P<id>[\d]+)/autosaves` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: POST /wp/v2/pages/(?P[\d]+)/autosaves
+      description: WordPress REST API route `/wp/v2/pages/(?P[\d]+)/autosaves` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -8280,8 +8274,8 @@ paths:
         type: string
     get:
       operationId: getWpV2PagesByParentAutosavesById
-      summary: GET /wp/v2/pages/(?P<parent>[\d]+)/autosaves/(?P<id>[\d]+)
-      description: WordPress REST API route `/wp/v2/pages/(?P<parent>[\d]+)/autosaves/(?P<id>[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: GET /wp/v2/pages/(?P[\d]+)/autosaves/(?P[\d]+)
+      description: WordPress REST API route `/wp/v2/pages/(?P[\d]+)/autosaves/(?P[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -8322,8 +8316,8 @@ paths:
         type: string
     get:
       operationId: getWpV2PagesByParentRevisions
-      summary: GET /wp/v2/pages/(?P<parent>[\d]+)/revisions
-      description: WordPress REST API route `/wp/v2/pages/(?P<parent>[\d]+)/revisions` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: GET /wp/v2/pages/(?P[\d]+)/revisions
+      description: WordPress REST API route `/wp/v2/pages/(?P[\d]+)/revisions` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -8429,8 +8423,8 @@ paths:
         type: string
     get:
       operationId: getWpV2PagesByParentRevisionsById
-      summary: GET /wp/v2/pages/(?P<parent>[\d]+)/revisions/(?P<id>[\d]+)
-      description: WordPress REST API route `/wp/v2/pages/(?P<parent>[\d]+)/revisions/(?P<id>[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: GET /wp/v2/pages/(?P[\d]+)/revisions/(?P[\d]+)
+      description: WordPress REST API route `/wp/v2/pages/(?P[\d]+)/revisions/(?P[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -8464,8 +8458,8 @@ paths:
         description: Scope under which the request is made; determines fields present in response.
     delete:
       operationId: deleteWpV2PagesByParentRevisionsById
-      summary: DELETE /wp/v2/pages/(?P<parent>[\d]+)/revisions/(?P<id>[\d]+)
-      description: WordPress REST API route `/wp/v2/pages/(?P<parent>[\d]+)/revisions/(?P<id>[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: DELETE /wp/v2/pages/(?P[\d]+)/revisions/(?P[\d]+)
+      description: WordPress REST API route `/wp/v2/pages/(?P[\d]+)/revisions/(?P[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -8697,8 +8691,8 @@ paths:
         type: string
     get:
       operationId: getWpV2PluginsByPlugin
-      summary: GET /wp/v2/plugins/(?P<plugin>[^.\/]+(?:\/[^.\/]+)?)
-      description: WordPress REST API route `/wp/v2/plugins/(?P<plugin>[^.\/]+(?:\/[^.\/]+)?)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: GET /wp/v2/plugins/(?P[^.\/]+(?:\/[^.\/]+)?)
+      description: WordPress REST API route `/wp/v2/plugins/(?P[^.\/]+(?:\/[^.\/]+)?)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -8732,8 +8726,8 @@ paths:
         description: Scope under which the request is made; determines fields present in response.
     post:
       operationId: postWpV2PluginsByPlugin
-      summary: POST /wp/v2/plugins/(?P<plugin>[^.\/]+(?:\/[^.\/]+)?)
-      description: WordPress REST API route `/wp/v2/plugins/(?P<plugin>[^.\/]+(?:\/[^.\/]+)?)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: POST /wp/v2/plugins/(?P[^.\/]+(?:\/[^.\/]+)?)
+      description: WordPress REST API route `/wp/v2/plugins/(?P[^.\/]+(?:\/[^.\/]+)?)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -8777,8 +8771,8 @@ paths:
                   description: The plugin activation status.
     put:
       operationId: putWpV2PluginsByPlugin
-      summary: PUT /wp/v2/plugins/(?P<plugin>[^.\/]+(?:\/[^.\/]+)?)
-      description: WordPress REST API route `/wp/v2/plugins/(?P<plugin>[^.\/]+(?:\/[^.\/]+)?)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: PUT /wp/v2/plugins/(?P[^.\/]+(?:\/[^.\/]+)?)
+      description: WordPress REST API route `/wp/v2/plugins/(?P[^.\/]+(?:\/[^.\/]+)?)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -8822,8 +8816,8 @@ paths:
                   description: The plugin activation status.
     patch:
       operationId: patchWpV2PluginsByPlugin
-      summary: PATCH /wp/v2/plugins/(?P<plugin>[^.\/]+(?:\/[^.\/]+)?)
-      description: WordPress REST API route `/wp/v2/plugins/(?P<plugin>[^.\/]+(?:\/[^.\/]+)?)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: PATCH /wp/v2/plugins/(?P[^.\/]+(?:\/[^.\/]+)?)
+      description: WordPress REST API route `/wp/v2/plugins/(?P[^.\/]+(?:\/[^.\/]+)?)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -8867,8 +8861,8 @@ paths:
                   description: The plugin activation status.
     delete:
       operationId: deleteWpV2PluginsByPlugin
-      summary: DELETE /wp/v2/plugins/(?P<plugin>[^.\/]+(?:\/[^.\/]+)?)
-      description: WordPress REST API route `/wp/v2/plugins/(?P<plugin>[^.\/]+(?:\/[^.\/]+)?)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: DELETE /wp/v2/plugins/(?P[^.\/]+(?:\/[^.\/]+)?)
+      description: WordPress REST API route `/wp/v2/plugins/(?P[^.\/]+(?:\/[^.\/]+)?)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -9271,8 +9265,8 @@ paths:
         type: string
     get:
       operationId: getWpV2PostsById
-      summary: GET /wp/v2/posts/(?P<id>[\d]+)
-      description: WordPress REST API route `/wp/v2/posts/(?P<id>[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: GET /wp/v2/posts/(?P[\d]+)
+      description: WordPress REST API route `/wp/v2/posts/(?P[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -9316,8 +9310,8 @@ paths:
         description: The password for the post if it is password protected.
     post:
       operationId: postWpV2PostsById
-      summary: POST /wp/v2/posts/(?P<id>[\d]+)
-      description: WordPress REST API route `/wp/v2/posts/(?P<id>[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: POST /wp/v2/posts/(?P[\d]+)
+      description: WordPress REST API route `/wp/v2/posts/(?P[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -9431,8 +9425,8 @@ paths:
                   description: The terms assigned to the post in the post_tag taxonomy.
     put:
       operationId: putWpV2PostsById
-      summary: PUT /wp/v2/posts/(?P<id>[\d]+)
-      description: WordPress REST API route `/wp/v2/posts/(?P<id>[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: PUT /wp/v2/posts/(?P[\d]+)
+      description: WordPress REST API route `/wp/v2/posts/(?P[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -9546,8 +9540,8 @@ paths:
                   description: The terms assigned to the post in the post_tag taxonomy.
     patch:
       operationId: patchWpV2PostsById
-      summary: PATCH /wp/v2/posts/(?P<id>[\d]+)
-      description: WordPress REST API route `/wp/v2/posts/(?P<id>[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: PATCH /wp/v2/posts/(?P[\d]+)
+      description: WordPress REST API route `/wp/v2/posts/(?P[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -9661,8 +9655,8 @@ paths:
                   description: The terms assigned to the post in the post_tag taxonomy.
     delete:
       operationId: deleteWpV2PostsById
-      summary: DELETE /wp/v2/posts/(?P<id>[\d]+)
-      description: WordPress REST API route `/wp/v2/posts/(?P<id>[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: DELETE /wp/v2/posts/(?P[\d]+)
+      description: WordPress REST API route `/wp/v2/posts/(?P[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -9699,8 +9693,8 @@ paths:
         type: string
     get:
       operationId: getWpV2PostsByIdAutosaves
-      summary: GET /wp/v2/posts/(?P<id>[\d]+)/autosaves
-      description: WordPress REST API route `/wp/v2/posts/(?P<id>[\d]+)/autosaves` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: GET /wp/v2/posts/(?P[\d]+)/autosaves
+      description: WordPress REST API route `/wp/v2/posts/(?P[\d]+)/autosaves` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -9739,8 +9733,8 @@ paths:
         description: Scope under which the request is made; determines fields present in response.
     post:
       operationId: postWpV2PostsByIdAutosaves
-      summary: POST /wp/v2/posts/(?P<id>[\d]+)/autosaves
-      description: WordPress REST API route `/wp/v2/posts/(?P<id>[\d]+)/autosaves` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: POST /wp/v2/posts/(?P[\d]+)/autosaves
+      description: WordPress REST API route `/wp/v2/posts/(?P[\d]+)/autosaves` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -9869,8 +9863,8 @@ paths:
         type: string
     get:
       operationId: getWpV2PostsByParentAutosavesById
-      summary: GET /wp/v2/posts/(?P<parent>[\d]+)/autosaves/(?P<id>[\d]+)
-      description: WordPress REST API route `/wp/v2/posts/(?P<parent>[\d]+)/autosaves/(?P<id>[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: GET /wp/v2/posts/(?P[\d]+)/autosaves/(?P[\d]+)
+      description: WordPress REST API route `/wp/v2/posts/(?P[\d]+)/autosaves/(?P[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -9911,8 +9905,8 @@ paths:
         type: string
     get:
       operationId: getWpV2PostsByParentRevisions
-      summary: GET /wp/v2/posts/(?P<parent>[\d]+)/revisions
-      description: WordPress REST API route `/wp/v2/posts/(?P<parent>[\d]+)/revisions` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: GET /wp/v2/posts/(?P[\d]+)/revisions
+      description: WordPress REST API route `/wp/v2/posts/(?P[\d]+)/revisions` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -10018,8 +10012,8 @@ paths:
         type: string
     get:
       operationId: getWpV2PostsByParentRevisionsById
-      summary: GET /wp/v2/posts/(?P<parent>[\d]+)/revisions/(?P<id>[\d]+)
-      description: WordPress REST API route `/wp/v2/posts/(?P<parent>[\d]+)/revisions/(?P<id>[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: GET /wp/v2/posts/(?P[\d]+)/revisions/(?P[\d]+)
+      description: WordPress REST API route `/wp/v2/posts/(?P[\d]+)/revisions/(?P[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -10053,8 +10047,8 @@ paths:
         description: Scope under which the request is made; determines fields present in response.
     delete:
       operationId: deleteWpV2PostsByParentRevisionsById
-      summary: DELETE /wp/v2/posts/(?P<parent>[\d]+)/revisions/(?P<id>[\d]+)
-      description: WordPress REST API route `/wp/v2/posts/(?P<parent>[\d]+)/revisions/(?P<id>[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: DELETE /wp/v2/posts/(?P[\d]+)/revisions/(?P[\d]+)
+      description: WordPress REST API route `/wp/v2/posts/(?P[\d]+)/revisions/(?P[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -10557,8 +10551,8 @@ paths:
         type: string
     get:
       operationId: getWpV2SidebarsById
-      summary: GET /wp/v2/sidebars/(?P<id>[\w-]+)
-      description: WordPress REST API route `/wp/v2/sidebars/(?P<id>[\w-]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: GET /wp/v2/sidebars/(?P[\w-]+)
+      description: WordPress REST API route `/wp/v2/sidebars/(?P[\w-]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -10592,8 +10586,8 @@ paths:
         description: Scope under which the request is made; determines fields present in response.
     post:
       operationId: postWpV2SidebarsById
-      summary: POST /wp/v2/sidebars/(?P<id>[\w-]+)
-      description: WordPress REST API route `/wp/v2/sidebars/(?P<id>[\w-]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: POST /wp/v2/sidebars/(?P[\w-]+)
+      description: WordPress REST API route `/wp/v2/sidebars/(?P[\w-]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -10628,8 +10622,8 @@ paths:
                   description: Nested widgets.
     put:
       operationId: putWpV2SidebarsById
-      summary: PUT /wp/v2/sidebars/(?P<id>[\w-]+)
-      description: WordPress REST API route `/wp/v2/sidebars/(?P<id>[\w-]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: PUT /wp/v2/sidebars/(?P[\w-]+)
+      description: WordPress REST API route `/wp/v2/sidebars/(?P[\w-]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -10664,8 +10658,8 @@ paths:
                   description: Nested widgets.
     patch:
       operationId: patchWpV2SidebarsById
-      summary: PATCH /wp/v2/sidebars/(?P<id>[\w-]+)
-      description: WordPress REST API route `/wp/v2/sidebars/(?P<id>[\w-]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: PATCH /wp/v2/sidebars/(?P[\w-]+)
+      description: WordPress REST API route `/wp/v2/sidebars/(?P[\w-]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -10743,8 +10737,8 @@ paths:
         type: string
     get:
       operationId: getWpV2StatusesByStatus
-      summary: GET /wp/v2/statuses/(?P<status>[\w-]+)
-      description: WordPress REST API route `/wp/v2/statuses/(?P<status>[\w-]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: GET /wp/v2/statuses/(?P[\w-]+)
+      description: WordPress REST API route `/wp/v2/statuses/(?P[\w-]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -10947,8 +10941,8 @@ paths:
         type: string
     get:
       operationId: getWpV2TagsById
-      summary: GET /wp/v2/tags/(?P<id>[\d]+)
-      description: WordPress REST API route `/wp/v2/tags/(?P<id>[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: GET /wp/v2/tags/(?P[\d]+)
+      description: WordPress REST API route `/wp/v2/tags/(?P[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -10982,8 +10976,8 @@ paths:
         description: Scope under which the request is made; determines fields present in response.
     post:
       operationId: postWpV2TagsById
-      summary: POST /wp/v2/tags/(?P<id>[\d]+)
-      description: WordPress REST API route `/wp/v2/tags/(?P<id>[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: POST /wp/v2/tags/(?P[\d]+)
+      description: WordPress REST API route `/wp/v2/tags/(?P[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -11025,8 +11019,8 @@ paths:
                   description: Meta fields.
     put:
       operationId: putWpV2TagsById
-      summary: PUT /wp/v2/tags/(?P<id>[\d]+)
-      description: WordPress REST API route `/wp/v2/tags/(?P<id>[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: PUT /wp/v2/tags/(?P[\d]+)
+      description: WordPress REST API route `/wp/v2/tags/(?P[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -11068,8 +11062,8 @@ paths:
                   description: Meta fields.
     patch:
       operationId: patchWpV2TagsById
-      summary: PATCH /wp/v2/tags/(?P<id>[\d]+)
-      description: WordPress REST API route `/wp/v2/tags/(?P<id>[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: PATCH /wp/v2/tags/(?P[\d]+)
+      description: WordPress REST API route `/wp/v2/tags/(?P[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -11111,8 +11105,8 @@ paths:
                   description: Meta fields.
     delete:
       operationId: deleteWpV2TagsById
-      summary: DELETE /wp/v2/tags/(?P<id>[\d]+)
-      description: WordPress REST API route `/wp/v2/tags/(?P<id>[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: DELETE /wp/v2/tags/(?P[\d]+)
+      description: WordPress REST API route `/wp/v2/tags/(?P[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -11190,8 +11184,8 @@ paths:
         type: string
     get:
       operationId: getWpV2TaxonomiesByTaxonomy
-      summary: GET /wp/v2/taxonomies/(?P<taxonomy>[\w-]+)
-      description: WordPress REST API route `/wp/v2/taxonomies/(?P<taxonomy>[\w-]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: GET /wp/v2/taxonomies/(?P[\w-]+)
+      description: WordPress REST API route `/wp/v2/taxonomies/(?P[\w-]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -11354,8 +11348,8 @@ paths:
         type: string
     get:
       operationId: getWpV2TemplatePartsById
-      summary: GET /wp/v2/template-parts/(?P<id>([^\/:<>\*\?"\|]+(?:\/[^\/:<>\*\?"\|]+)?)[\/\w%-]+)
-      description: WordPress REST API route `/wp/v2/template-parts/(?P<id>([^\/:<>\*\?"\|]+(?:\/[^\/:<>\*\?"\|]+)?)[\/\w%-]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: GET /wp/v2/template-parts/(?P([^\/:<>\*\?"\|]+(?:\/[^\/:<>\*\?"\|]+)?)[\/\w%-]+)
+      description: WordPress REST API route `/wp/v2/template-parts/(?P([^\/:<>\*\?"\|]+(?:\/[^\/:<>\*\?"\|]+)?)[\/\w%-]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -11389,8 +11383,8 @@ paths:
         description: Scope under which the request is made; determines fields present in response.
     post:
       operationId: postWpV2TemplatePartsById
-      summary: POST /wp/v2/template-parts/(?P<id>([^\/:<>\*\?"\|]+(?:\/[^\/:<>\*\?"\|]+)?)[\/\w%-]+)
-      description: WordPress REST API route `/wp/v2/template-parts/(?P<id>([^\/:<>\*\?"\|]+(?:\/[^\/:<>\*\?"\|]+)?)[\/\w%-]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: POST /wp/v2/template-parts/(?P([^\/:<>\*\?"\|]+(?:\/[^\/:<>\*\?"\|]+)?)[\/\w%-]+…
+      description: WordPress REST API route `/wp/v2/template-parts/(?P([^\/:<>\*\?"\|]+(?:\/[^\/:<>\*\?"\|]+)?)[\/\w%-]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -11454,8 +11448,8 @@ paths:
                   description: Where the template part is intended for use (header, footer, etc.)
     put:
       operationId: putWpV2TemplatePartsById
-      summary: PUT /wp/v2/template-parts/(?P<id>([^\/:<>\*\?"\|]+(?:\/[^\/:<>\*\?"\|]+)?)[\/\w%-]+)
-      description: WordPress REST API route `/wp/v2/template-parts/(?P<id>([^\/:<>\*\?"\|]+(?:\/[^\/:<>\*\?"\|]+)?)[\/\w%-]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: PUT /wp/v2/template-parts/(?P([^\/:<>\*\?"\|]+(?:\/[^\/:<>\*\?"\|]+)?)[\/\w%-]+)
+      description: WordPress REST API route `/wp/v2/template-parts/(?P([^\/:<>\*\?"\|]+(?:\/[^\/:<>\*\?"\|]+)?)[\/\w%-]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -11519,8 +11513,8 @@ paths:
                   description: Where the template part is intended for use (header, footer, etc.)
     patch:
       operationId: patchWpV2TemplatePartsById
-      summary: PATCH /wp/v2/template-parts/(?P<id>([^\/:<>\*\?"\|]+(?:\/[^\/:<>\*\?"\|]+)?)[\/\w%-]+)
-      description: WordPress REST API route `/wp/v2/template-parts/(?P<id>([^\/:<>\*\?"\|]+(?:\/[^\/:<>\*\?"\|]+)?)[\/\w%-]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: PATCH /wp/v2/template-parts/(?P([^\/:<>\*\?"\|]+(?:\/[^\/:<>\*\?"\|]+)?)[\/\w%-]…
+      description: WordPress REST API route `/wp/v2/template-parts/(?P([^\/:<>\*\?"\|]+(?:\/[^\/:<>\*\?"\|]+)?)[\/\w%-]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -11584,8 +11578,8 @@ paths:
                   description: Where the template part is intended for use (header, footer, etc.)
     delete:
       operationId: deleteWpV2TemplatePartsById
-      summary: DELETE /wp/v2/template-parts/(?P<id>([^\/:<>\*\?"\|]+(?:\/[^\/:<>\*\?"\|]+)?)[\/\w%-]+)
-      description: WordPress REST API route `/wp/v2/template-parts/(?P<id>([^\/:<>\*\?"\|]+(?:\/[^\/:<>\*\?"\|]+)?)[\/\w%-]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: DELETE /wp/v2/template-parts/(?P([^\/:<>\*\?"\|]+(?:\/[^\/:<>\*\?"\|]+)?)[\/\w%…
+      description: WordPress REST API route `/wp/v2/template-parts/(?P([^\/:<>\*\?"\|]+(?:\/[^\/:<>\*\?"\|]+)?)[\/\w%-]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -11622,8 +11616,8 @@ paths:
         type: string
     get:
       operationId: getWpV2TemplatePartsByIdAutosaves
-      summary: GET /wp/v2/template-parts/(?P<id>([^\/:<>\*\?"\|]+(?:\/[^\/:<>\*\?"\|]+)?)[\/\w%-]+)/autosaves
-      description: WordPress REST API route `/wp/v2/template-parts/(?P<id>([^\/:<>\*\?"\|]+(?:\/[^\/:<>\*\?"\|]+)?)[\/\w%-]+)/autosaves` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: GET /wp/v2/template-parts/(?P([^\/:<>\*\?"\|]+(?:\/[^\/:<>\*\?"\|]+)?)[\/\w%-]+)…
+      description: WordPress REST API route `/wp/v2/template-parts/(?P([^\/:<>\*\?"\|]+(?:\/[^\/:<>\*\?"\|]+)?)[\/\w%-]+)/autosaves` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -11657,8 +11651,8 @@ paths:
         description: Scope under which the request is made; determines fields present in response.
     post:
       operationId: postWpV2TemplatePartsByIdAutosaves
-      summary: POST /wp/v2/template-parts/(?P<id>([^\/:<>\*\?"\|]+(?:\/[^\/:<>\*\?"\|]+)?)[\/\w%-]+)/autosaves
-      description: WordPress REST API route `/wp/v2/template-parts/(?P<id>([^\/:<>\*\?"\|]+(?:\/[^\/:<>\*\?"\|]+)?)[\/\w%-]+)/autosaves` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: POST /wp/v2/template-parts/(?P([^\/:<>\*\?"\|]+(?:\/[^\/:<>\*\?"\|]+)?)[\/\w%-]+…
+      description: WordPress REST API route `/wp/v2/template-parts/(?P([^\/:<>\*\?"\|]+(?:\/[^\/:<>\*\?"\|]+)?)[\/\w%-]+)/autosaves` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -11734,8 +11728,8 @@ paths:
         type: string
     get:
       operationId: getWpV2TemplatePartsByParentAutosavesById
-      summary: GET /wp/v2/template-parts/(?P<parent>([^\/:<>\*\?"\|]+(?:\/[^\/:<>\*\?"\|]+)?)[\/\w%-]+)/autosaves/(?P<id>[\d]+)
-      description: WordPress REST API route `/wp/v2/template-parts/(?P<parent>([^\/:<>\*\?"\|]+(?:\/[^\/:<>\*\?"\|]+)?)[\/\w%-]+)/autosaves/(?P<id>[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: GET /wp/v2/template-parts/(?P([^\/:<>\*\?"\|]+(?:\/[^\/:<>\*\?"\|]+)?)[\/\w%-]+)…
+      description: WordPress REST API route `/wp/v2/template-parts/(?P([^\/:<>\*\?"\|]+(?:\/[^\/:<>\*\?"\|]+)?)[\/\w%-]+)/autosaves/(?P[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -11776,8 +11770,8 @@ paths:
         type: string
     get:
       operationId: getWpV2TemplatePartsByParentRevisions
-      summary: GET /wp/v2/template-parts/(?P<parent>([^\/:<>\*\?"\|]+(?:\/[^\/:<>\*\?"\|]+)?)[\/\w%-]+)/revisions
-      description: WordPress REST API route `/wp/v2/template-parts/(?P<parent>([^\/:<>\*\?"\|]+(?:\/[^\/:<>\*\?"\|]+)?)[\/\w%-]+)/revisions` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: GET /wp/v2/template-parts/(?P([^\/:<>\*\?"\|]+(?:\/[^\/:<>\*\?"\|]+)?)[\/\w%-]+)…
+      description: WordPress REST API route `/wp/v2/template-parts/(?P([^\/:<>\*\?"\|]+(?:\/[^\/:<>\*\?"\|]+)?)[\/\w%-]+)/revisions` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -11883,8 +11877,8 @@ paths:
         type: string
     get:
       operationId: getWpV2TemplatePartsByParentRevisionsById
-      summary: GET /wp/v2/template-parts/(?P<parent>([^\/:<>\*\?"\|]+(?:\/[^\/:<>\*\?"\|]+)?)[\/\w%-]+)/revisions/(?P<id>[\d]+)
-      description: WordPress REST API route `/wp/v2/template-parts/(?P<parent>([^\/:<>\*\?"\|]+(?:\/[^\/:<>\*\?"\|]+)?)[\/\w%-]+)/revisions/(?P<id>[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: GET /wp/v2/template-parts/(?P([^\/:<>\*\?"\|]+(?:\/[^\/:<>\*\?"\|]+)?)[\/\w%-]+)…
+      description: WordPress REST API route `/wp/v2/template-parts/(?P([^\/:<>\*\?"\|]+(?:\/[^\/:<>\*\?"\|]+)?)[\/\w%-]+)/revisions/(?P[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -11918,8 +11912,8 @@ paths:
         description: Scope under which the request is made; determines fields present in response.
     delete:
       operationId: deleteWpV2TemplatePartsByParentRevisionsById
-      summary: DELETE /wp/v2/template-parts/(?P<parent>([^\/:<>\*\?"\|]+(?:\/[^\/:<>\*\?"\|]+)?)[\/\w%-]+)/revisions/(?P<id>[\d]+)
-      description: WordPress REST API route `/wp/v2/template-parts/(?P<parent>([^\/:<>\*\?"\|]+(?:\/[^\/:<>\*\?"\|]+)?)[\/\w%-]+)/revisions/(?P<id>[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: DELETE /wp/v2/template-parts/(?P([^\/:<>\*\?"\|]+(?:\/[^\/:<>\*\?"\|]+)?)[\/\w%…
+      description: WordPress REST API route `/wp/v2/template-parts/(?P([^\/:<>\*\?"\|]+(?:\/[^\/:<>\*\?"\|]+)?)[\/\w%-]+)/revisions/(?P[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -12117,8 +12111,8 @@ paths:
         type: string
     get:
       operationId: getWpV2TemplatesById
-      summary: GET /wp/v2/templates/(?P<id>([^\/:<>\*\?"\|]+(?:\/[^\/:<>\*\?"\|]+)?)[\/\w%-]+)
-      description: WordPress REST API route `/wp/v2/templates/(?P<id>([^\/:<>\*\?"\|]+(?:\/[^\/:<>\*\?"\|]+)?)[\/\w%-]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: GET /wp/v2/templates/(?P([^\/:<>\*\?"\|]+(?:\/[^\/:<>\*\?"\|]+)?)[\/\w%-]+)
+      description: WordPress REST API route `/wp/v2/templates/(?P([^\/:<>\*\?"\|]+(?:\/[^\/:<>\*\?"\|]+)?)[\/\w%-]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -12152,8 +12146,8 @@ paths:
         description: Scope under which the request is made; determines fields present in response.
     post:
       operationId: postWpV2TemplatesById
-      summary: POST /wp/v2/templates/(?P<id>([^\/:<>\*\?"\|]+(?:\/[^\/:<>\*\?"\|]+)?)[\/\w%-]+)
-      description: WordPress REST API route `/wp/v2/templates/(?P<id>([^\/:<>\*\?"\|]+(?:\/[^\/:<>\*\?"\|]+)?)[\/\w%-]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: POST /wp/v2/templates/(?P([^\/:<>\*\?"\|]+(?:\/[^\/:<>\*\?"\|]+)?)[\/\w%-]+)
+      description: WordPress REST API route `/wp/v2/templates/(?P([^\/:<>\*\?"\|]+(?:\/[^\/:<>\*\?"\|]+)?)[\/\w%-]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -12214,8 +12208,8 @@ paths:
                   description: The ID for the author of the template.
     put:
       operationId: putWpV2TemplatesById
-      summary: PUT /wp/v2/templates/(?P<id>([^\/:<>\*\?"\|]+(?:\/[^\/:<>\*\?"\|]+)?)[\/\w%-]+)
-      description: WordPress REST API route `/wp/v2/templates/(?P<id>([^\/:<>\*\?"\|]+(?:\/[^\/:<>\*\?"\|]+)?)[\/\w%-]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: PUT /wp/v2/templates/(?P([^\/:<>\*\?"\|]+(?:\/[^\/:<>\*\?"\|]+)?)[\/\w%-]+)
+      description: WordPress REST API route `/wp/v2/templates/(?P([^\/:<>\*\?"\|]+(?:\/[^\/:<>\*\?"\|]+)?)[\/\w%-]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -12276,8 +12270,8 @@ paths:
                   description: The ID for the author of the template.
     patch:
       operationId: patchWpV2TemplatesById
-      summary: PATCH /wp/v2/templates/(?P<id>([^\/:<>\*\?"\|]+(?:\/[^\/:<>\*\?"\|]+)?)[\/\w%-]+)
-      description: WordPress REST API route `/wp/v2/templates/(?P<id>([^\/:<>\*\?"\|]+(?:\/[^\/:<>\*\?"\|]+)?)[\/\w%-]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: PATCH /wp/v2/templates/(?P([^\/:<>\*\?"\|]+(?:\/[^\/:<>\*\?"\|]+)?)[\/\w%-]+)
+      description: WordPress REST API route `/wp/v2/templates/(?P([^\/:<>\*\?"\|]+(?:\/[^\/:<>\*\?"\|]+)?)[\/\w%-]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -12338,8 +12332,8 @@ paths:
                   description: The ID for the author of the template.
     delete:
       operationId: deleteWpV2TemplatesById
-      summary: DELETE /wp/v2/templates/(?P<id>([^\/:<>\*\?"\|]+(?:\/[^\/:<>\*\?"\|]+)?)[\/\w%-]+)
-      description: WordPress REST API route `/wp/v2/templates/(?P<id>([^\/:<>\*\?"\|]+(?:\/[^\/:<>\*\?"\|]+)?)[\/\w%-]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: DELETE /wp/v2/templates/(?P([^\/:<>\*\?"\|]+(?:\/[^\/:<>\*\?"\|]+)?)[\/\w%-]+)
+      description: WordPress REST API route `/wp/v2/templates/(?P([^\/:<>\*\?"\|]+(?:\/[^\/:<>\*\?"\|]+)?)[\/\w%-]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -12376,8 +12370,8 @@ paths:
         type: string
     get:
       operationId: getWpV2TemplatesByIdAutosaves
-      summary: GET /wp/v2/templates/(?P<id>([^\/:<>\*\?"\|]+(?:\/[^\/:<>\*\?"\|]+)?)[\/\w%-]+)/autosaves
-      description: WordPress REST API route `/wp/v2/templates/(?P<id>([^\/:<>\*\?"\|]+(?:\/[^\/:<>\*\?"\|]+)?)[\/\w%-]+)/autosaves` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: GET /wp/v2/templates/(?P([^\/:<>\*\?"\|]+(?:\/[^\/:<>\*\?"\|]+)?)[\/\w%-]+)/auto…
+      description: WordPress REST API route `/wp/v2/templates/(?P([^\/:<>\*\?"\|]+(?:\/[^\/:<>\*\?"\|]+)?)[\/\w%-]+)/autosaves` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -12411,8 +12405,8 @@ paths:
         description: Scope under which the request is made; determines fields present in response.
     post:
       operationId: postWpV2TemplatesByIdAutosaves
-      summary: POST /wp/v2/templates/(?P<id>([^\/:<>\*\?"\|]+(?:\/[^\/:<>\*\?"\|]+)?)[\/\w%-]+)/autosaves
-      description: WordPress REST API route `/wp/v2/templates/(?P<id>([^\/:<>\*\?"\|]+(?:\/[^\/:<>\*\?"\|]+)?)[\/\w%-]+)/autosaves` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: POST /wp/v2/templates/(?P([^\/:<>\*\?"\|]+(?:\/[^\/:<>\*\?"\|]+)?)[\/\w%-]+)/aut…
+      description: WordPress REST API route `/wp/v2/templates/(?P([^\/:<>\*\?"\|]+(?:\/[^\/:<>\*\?"\|]+)?)[\/\w%-]+)/autosaves` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -12485,8 +12479,8 @@ paths:
         type: string
     get:
       operationId: getWpV2TemplatesByParentAutosavesById
-      summary: GET /wp/v2/templates/(?P<parent>([^\/:<>\*\?"\|]+(?:\/[^\/:<>\*\?"\|]+)?)[\/\w%-]+)/autosaves/(?P<id>[\d]+)
-      description: WordPress REST API route `/wp/v2/templates/(?P<parent>([^\/:<>\*\?"\|]+(?:\/[^\/:<>\*\?"\|]+)?)[\/\w%-]+)/autosaves/(?P<id>[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: GET /wp/v2/templates/(?P([^\/:<>\*\?"\|]+(?:\/[^\/:<>\*\?"\|]+)?)[\/\w%-]+)/auto…
+      description: WordPress REST API route `/wp/v2/templates/(?P([^\/:<>\*\?"\|]+(?:\/[^\/:<>\*\?"\|]+)?)[\/\w%-]+)/autosaves/(?P[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -12527,8 +12521,8 @@ paths:
         type: string
     get:
       operationId: getWpV2TemplatesByParentRevisions
-      summary: GET /wp/v2/templates/(?P<parent>([^\/:<>\*\?"\|]+(?:\/[^\/:<>\*\?"\|]+)?)[\/\w%-]+)/revisions
-      description: WordPress REST API route `/wp/v2/templates/(?P<parent>([^\/:<>\*\?"\|]+(?:\/[^\/:<>\*\?"\|]+)?)[\/\w%-]+)/revisions` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: GET /wp/v2/templates/(?P([^\/:<>\*\?"\|]+(?:\/[^\/:<>\*\?"\|]+)?)[\/\w%-]+)/revi…
+      description: WordPress REST API route `/wp/v2/templates/(?P([^\/:<>\*\?"\|]+(?:\/[^\/:<>\*\?"\|]+)?)[\/\w%-]+)/revisions` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -12634,8 +12628,8 @@ paths:
         type: string
     get:
       operationId: getWpV2TemplatesByParentRevisionsById
-      summary: GET /wp/v2/templates/(?P<parent>([^\/:<>\*\?"\|]+(?:\/[^\/:<>\*\?"\|]+)?)[\/\w%-]+)/revisions/(?P<id>[\d]+)
-      description: WordPress REST API route `/wp/v2/templates/(?P<parent>([^\/:<>\*\?"\|]+(?:\/[^\/:<>\*\?"\|]+)?)[\/\w%-]+)/revisions/(?P<id>[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: GET /wp/v2/templates/(?P([^\/:<>\*\?"\|]+(?:\/[^\/:<>\*\?"\|]+)?)[\/\w%-]+)/revi…
+      description: WordPress REST API route `/wp/v2/templates/(?P([^\/:<>\*\?"\|]+(?:\/[^\/:<>\*\?"\|]+)?)[\/\w%-]+)/revisions/(?P[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -12669,8 +12663,8 @@ paths:
         description: Scope under which the request is made; determines fields present in response.
     delete:
       operationId: deleteWpV2TemplatesByParentRevisionsById
-      summary: DELETE /wp/v2/templates/(?P<parent>([^\/:<>\*\?"\|]+(?:\/[^\/:<>\*\?"\|]+)?)[\/\w%-]+)/revisions/(?P<id>[\d]+)
-      description: WordPress REST API route `/wp/v2/templates/(?P<parent>([^\/:<>\*\?"\|]+(?:\/[^\/:<>\*\?"\|]+)?)[\/\w%-]+)/revisions/(?P<id>[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: DELETE /wp/v2/templates/(?P([^\/:<>\*\?"\|]+(?:\/[^\/:<>\*\?"\|]+)?)[\/\w%-]+)/r…
+      description: WordPress REST API route `/wp/v2/templates/(?P([^\/:<>\*\?"\|]+(?:\/[^\/:<>\*\?"\|]+)?)[\/\w%-]+)/revisions/(?P[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -12785,8 +12779,8 @@ paths:
         type: string
     get:
       operationId: getWpV2ThemesByStylesheet
-      summary: GET /wp/v2/themes/(?P<stylesheet>[^\/:<>\*\?"\|]+(?:\/[^\/:<>\*\?"\|]+)?)
-      description: WordPress REST API route `/wp/v2/themes/(?P<stylesheet>[^\/:<>\*\?"\|]+(?:\/[^\/:<>\*\?"\|]+)?)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: GET /wp/v2/themes/(?P[^\/:<>\*\?"\|]+(?:\/[^\/:<>\*\?"\|]+)?)
+      description: WordPress REST API route `/wp/v2/themes/(?P[^\/:<>\*\?"\|]+(?:\/[^\/:<>\*\?"\|]+)?)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -12852,8 +12846,8 @@ paths:
         type: string
     get:
       operationId: getWpV2TypesByType
-      summary: GET /wp/v2/types/(?P<type>[\w-]+)
-      description: WordPress REST API route `/wp/v2/types/(?P<type>[\w-]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: GET /wp/v2/types/(?P[\w-]+)
+      description: WordPress REST API route `/wp/v2/types/(?P[\w-]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -13123,8 +13117,8 @@ paths:
         type: string
     get:
       operationId: getWpV2UsersById
-      summary: GET /wp/v2/users/(?P<id>[\d]+)
-      description: WordPress REST API route `/wp/v2/users/(?P<id>[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: GET /wp/v2/users/(?P[\d]+)
+      description: WordPress REST API route `/wp/v2/users/(?P[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -13158,8 +13152,8 @@ paths:
         description: Scope under which the request is made; determines fields present in response.
     post:
       operationId: postWpV2UsersById
-      summary: POST /wp/v2/users/(?P<id>[\d]+)
-      description: WordPress REST API route `/wp/v2/users/(?P<id>[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: POST /wp/v2/users/(?P[\d]+)
+      description: WordPress REST API route `/wp/v2/users/(?P[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -13238,8 +13232,8 @@ paths:
                   description: The users simple local avatar
     put:
       operationId: putWpV2UsersById
-      summary: PUT /wp/v2/users/(?P<id>[\d]+)
-      description: WordPress REST API route `/wp/v2/users/(?P<id>[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: PUT /wp/v2/users/(?P[\d]+)
+      description: WordPress REST API route `/wp/v2/users/(?P[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -13318,8 +13312,8 @@ paths:
                   description: The users simple local avatar
     patch:
       operationId: patchWpV2UsersById
-      summary: PATCH /wp/v2/users/(?P<id>[\d]+)
-      description: WordPress REST API route `/wp/v2/users/(?P<id>[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: PATCH /wp/v2/users/(?P[\d]+)
+      description: WordPress REST API route `/wp/v2/users/(?P[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -13398,8 +13392,8 @@ paths:
                   description: The users simple local avatar
     delete:
       operationId: deleteWpV2UsersById
-      summary: DELETE /wp/v2/users/(?P<id>[\d]+)
-      description: WordPress REST API route `/wp/v2/users/(?P<id>[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: DELETE /wp/v2/users/(?P[\d]+)
+      description: WordPress REST API route `/wp/v2/users/(?P[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -13442,8 +13436,8 @@ paths:
         type: string
     get:
       operationId: getWpV2UsersByUserIdApplicationPasswords
-      summary: GET /wp/v2/users/(?P<user_id>(?:[\d]+|me))/application-passwords
-      description: WordPress REST API route `/wp/v2/users/(?P<user_id>(?:[\d]+|me))/application-passwords` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: GET /wp/v2/users/(?P(?:[\d]+|me))/application-passwords
+      description: WordPress REST API route `/wp/v2/users/(?P(?:[\d]+|me))/application-passwords` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -13477,8 +13471,8 @@ paths:
         description: Scope under which the request is made; determines fields present in response.
     post:
       operationId: postWpV2UsersByUserIdApplicationPasswords
-      summary: POST /wp/v2/users/(?P<user_id>(?:[\d]+|me))/application-passwords
-      description: WordPress REST API route `/wp/v2/users/(?P<user_id>(?:[\d]+|me))/application-passwords` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: POST /wp/v2/users/(?P(?:[\d]+|me))/application-passwords
+      description: WordPress REST API route `/wp/v2/users/(?P(?:[\d]+|me))/application-passwords` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -13516,8 +13510,8 @@ paths:
               - name
     delete:
       operationId: deleteWpV2UsersByUserIdApplicationPasswords
-      summary: DELETE /wp/v2/users/(?P<user_id>(?:[\d]+|me))/application-passwords
-      description: WordPress REST API route `/wp/v2/users/(?P<user_id>(?:[\d]+|me))/application-passwords` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: DELETE /wp/v2/users/(?P(?:[\d]+|me))/application-passwords
+      description: WordPress REST API route `/wp/v2/users/(?P(?:[\d]+|me))/application-passwords` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -13552,8 +13546,8 @@ paths:
         type: string
     get:
       operationId: getWpV2UsersByUserIdApplicationPasswordsByUuid
-      summary: GET /wp/v2/users/(?P<user_id>(?:[\d]+|me))/application-passwords/(?P<uuid>[\w\-]+)
-      description: WordPress REST API route `/wp/v2/users/(?P<user_id>(?:[\d]+|me))/application-passwords/(?P<uuid>[\w\-]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: GET /wp/v2/users/(?P(?:[\d]+|me))/application-passwords/(?P[\w\-]+)
+      description: WordPress REST API route `/wp/v2/users/(?P(?:[\d]+|me))/application-passwords/(?P[\w\-]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -13587,8 +13581,8 @@ paths:
         description: Scope under which the request is made; determines fields present in response.
     post:
       operationId: postWpV2UsersByUserIdApplicationPasswordsByUuid
-      summary: POST /wp/v2/users/(?P<user_id>(?:[\d]+|me))/application-passwords/(?P<uuid>[\w\-]+)
-      description: WordPress REST API route `/wp/v2/users/(?P<user_id>(?:[\d]+|me))/application-passwords/(?P<uuid>[\w\-]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: POST /wp/v2/users/(?P(?:[\d]+|me))/application-passwords/(?P[\w\-]+)
+      description: WordPress REST API route `/wp/v2/users/(?P(?:[\d]+|me))/application-passwords/(?P[\w\-]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -13624,8 +13618,8 @@ paths:
                   description: The name of the application password.
     put:
       operationId: putWpV2UsersByUserIdApplicationPasswordsByUuid
-      summary: PUT /wp/v2/users/(?P<user_id>(?:[\d]+|me))/application-passwords/(?P<uuid>[\w\-]+)
-      description: WordPress REST API route `/wp/v2/users/(?P<user_id>(?:[\d]+|me))/application-passwords/(?P<uuid>[\w\-]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: PUT /wp/v2/users/(?P(?:[\d]+|me))/application-passwords/(?P[\w\-]+)
+      description: WordPress REST API route `/wp/v2/users/(?P(?:[\d]+|me))/application-passwords/(?P[\w\-]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -13661,8 +13655,8 @@ paths:
                   description: The name of the application password.
     patch:
       operationId: patchWpV2UsersByUserIdApplicationPasswordsByUuid
-      summary: PATCH /wp/v2/users/(?P<user_id>(?:[\d]+|me))/application-passwords/(?P<uuid>[\w\-]+)
-      description: WordPress REST API route `/wp/v2/users/(?P<user_id>(?:[\d]+|me))/application-passwords/(?P<uuid>[\w\-]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: PATCH /wp/v2/users/(?P(?:[\d]+|me))/application-passwords/(?P[\w\-]+)
+      description: WordPress REST API route `/wp/v2/users/(?P(?:[\d]+|me))/application-passwords/(?P[\w\-]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -13698,8 +13692,8 @@ paths:
                   description: The name of the application password.
     delete:
       operationId: deleteWpV2UsersByUserIdApplicationPasswordsByUuid
-      summary: DELETE /wp/v2/users/(?P<user_id>(?:[\d]+|me))/application-passwords/(?P<uuid>[\w\-]+)
-      description: WordPress REST API route `/wp/v2/users/(?P<user_id>(?:[\d]+|me))/application-passwords/(?P<uuid>[\w\-]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: DELETE /wp/v2/users/(?P(?:[\d]+|me))/application-passwords/(?P[\w\-]+)
+      description: WordPress REST API route `/wp/v2/users/(?P(?:[\d]+|me))/application-passwords/(?P[\w\-]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -13729,8 +13723,8 @@ paths:
         type: string
     get:
       operationId: getWpV2UsersByUserIdApplicationPasswordsIntrospect
-      summary: GET /wp/v2/users/(?P<user_id>(?:[\d]+|me))/application-passwords/introspect
-      description: WordPress REST API route `/wp/v2/users/(?P<user_id>(?:[\d]+|me))/application-passwords/introspect` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: GET /wp/v2/users/(?P(?:[\d]+|me))/application-passwords/introspect
+      description: WordPress REST API route `/wp/v2/users/(?P(?:[\d]+|me))/application-passwords/introspect` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -14360,8 +14354,8 @@ paths:
         type: string
     get:
       operationId: getWpV2VisibilityPresetById
-      summary: GET /wp/v2/visibility_preset/(?P<id>[\d]+)
-      description: WordPress REST API route `/wp/v2/visibility_preset/(?P<id>[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: GET /wp/v2/visibility_preset/(?P[\d]+)
+      description: WordPress REST API route `/wp/v2/visibility_preset/(?P[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -14400,8 +14394,8 @@ paths:
         description: The password for the post if it is password protected.
     post:
       operationId: postWpV2VisibilityPresetById
-      summary: POST /wp/v2/visibility_preset/(?P<id>[\d]+)
-      description: WordPress REST API route `/wp/v2/visibility_preset/(?P<id>[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: POST /wp/v2/visibility_preset/(?P[\d]+)
+      description: WordPress REST API route `/wp/v2/visibility_preset/(?P[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -14464,8 +14458,8 @@ paths:
                   description: The theme file to use to display the post.
     put:
       operationId: putWpV2VisibilityPresetById
-      summary: PUT /wp/v2/visibility_preset/(?P<id>[\d]+)
-      description: WordPress REST API route `/wp/v2/visibility_preset/(?P<id>[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: PUT /wp/v2/visibility_preset/(?P[\d]+)
+      description: WordPress REST API route `/wp/v2/visibility_preset/(?P[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -14528,8 +14522,8 @@ paths:
                   description: The theme file to use to display the post.
     patch:
       operationId: patchWpV2VisibilityPresetById
-      summary: PATCH /wp/v2/visibility_preset/(?P<id>[\d]+)
-      description: WordPress REST API route `/wp/v2/visibility_preset/(?P<id>[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: PATCH /wp/v2/visibility_preset/(?P[\d]+)
+      description: WordPress REST API route `/wp/v2/visibility_preset/(?P[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -14592,8 +14586,8 @@ paths:
                   description: The theme file to use to display the post.
     delete:
       operationId: deleteWpV2VisibilityPresetById
-      summary: DELETE /wp/v2/visibility_preset/(?P<id>[\d]+)
-      description: WordPress REST API route `/wp/v2/visibility_preset/(?P<id>[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: DELETE /wp/v2/visibility_preset/(?P[\d]+)
+      description: WordPress REST API route `/wp/v2/visibility_preset/(?P[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -14666,8 +14660,8 @@ paths:
         type: string
     get:
       operationId: getWpV2WidgetTypesById
-      summary: GET /wp/v2/widget-types/(?P<id>[a-zA-Z0-9_-]+)
-      description: WordPress REST API route `/wp/v2/widget-types/(?P<id>[a-zA-Z0-9_-]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: GET /wp/v2/widget-types/(?P[a-zA-Z0-9_-]+)
+      description: WordPress REST API route `/wp/v2/widget-types/(?P[a-zA-Z0-9_-]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -14708,8 +14702,8 @@ paths:
         type: string
     post:
       operationId: postWpV2WidgetTypesByIdEncode
-      summary: POST /wp/v2/widget-types/(?P<id>[a-zA-Z0-9_-]+)/encode
-      description: WordPress REST API route `/wp/v2/widget-types/(?P<id>[a-zA-Z0-9_-]+)/encode` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: POST /wp/v2/widget-types/(?P[a-zA-Z0-9_-]+)/encode
+      description: WordPress REST API route `/wp/v2/widget-types/(?P[a-zA-Z0-9_-]+)/encode` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -14752,8 +14746,8 @@ paths:
         type: string
     post:
       operationId: postWpV2WidgetTypesByIdRender
-      summary: POST /wp/v2/widget-types/(?P<id>[a-zA-Z0-9_-]+)/render
-      description: WordPress REST API route `/wp/v2/widget-types/(?P<id>[a-zA-Z0-9_-]+)/render` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: POST /wp/v2/widget-types/(?P[a-zA-Z0-9_-]+)/render
+      description: WordPress REST API route `/wp/v2/widget-types/(?P[a-zA-Z0-9_-]+)/render` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -14883,8 +14877,8 @@ paths:
         type: string
     get:
       operationId: getWpV2WidgetsById
-      summary: GET /wp/v2/widgets/(?P<id>[\w\-]+)
-      description: WordPress REST API route `/wp/v2/widgets/(?P<id>[\w\-]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: GET /wp/v2/widgets/(?P[\w\-]+)
+      description: WordPress REST API route `/wp/v2/widgets/(?P[\w\-]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -14918,8 +14912,8 @@ paths:
         description: Scope under which the request is made; determines fields present in response.
     post:
       operationId: postWpV2WidgetsById
-      summary: POST /wp/v2/widgets/(?P<id>[\w\-]+)
-      description: WordPress REST API route `/wp/v2/widgets/(?P<id>[\w\-]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: POST /wp/v2/widgets/(?P[\w\-]+)
+      description: WordPress REST API route `/wp/v2/widgets/(?P[\w\-]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -14961,8 +14955,8 @@ paths:
                   description: URL-encoded form data from the widget admin form. Used to update a widget that does not support instance. Write only.
     put:
       operationId: putWpV2WidgetsById
-      summary: PUT /wp/v2/widgets/(?P<id>[\w\-]+)
-      description: WordPress REST API route `/wp/v2/widgets/(?P<id>[\w\-]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: PUT /wp/v2/widgets/(?P[\w\-]+)
+      description: WordPress REST API route `/wp/v2/widgets/(?P[\w\-]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -15004,8 +14998,8 @@ paths:
                   description: URL-encoded form data from the widget admin form. Used to update a widget that does not support instance. Write only.
     patch:
       operationId: patchWpV2WidgetsById
-      summary: PATCH /wp/v2/widgets/(?P<id>[\w\-]+)
-      description: WordPress REST API route `/wp/v2/widgets/(?P<id>[\w\-]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: PATCH /wp/v2/widgets/(?P[\w\-]+)
+      description: WordPress REST API route `/wp/v2/widgets/(?P[\w\-]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -15047,8 +15041,8 @@ paths:
                   description: URL-encoded form data from the widget admin form. Used to update a widget that does not support instance. Write only.
     delete:
       operationId: deleteWpV2WidgetsById
-      summary: DELETE /wp/v2/widgets/(?P<id>[\w\-]+)
-      description: WordPress REST API route `/wp/v2/widgets/(?P<id>[\w\-]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: DELETE /wp/v2/widgets/(?P[\w\-]+)
+      description: WordPress REST API route `/wp/v2/widgets/(?P[\w\-]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -15246,8 +15240,8 @@ paths:
         type: string
     get:
       operationId: getWpV2WpPatternCategoryById
-      summary: GET /wp/v2/wp_pattern_category/(?P<id>[\d]+)
-      description: WordPress REST API route `/wp/v2/wp_pattern_category/(?P<id>[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: GET /wp/v2/wp_pattern_category/(?P[\d]+)
+      description: WordPress REST API route `/wp/v2/wp_pattern_category/(?P[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -15281,8 +15275,8 @@ paths:
         description: Scope under which the request is made; determines fields present in response.
     post:
       operationId: postWpV2WpPatternCategoryById
-      summary: POST /wp/v2/wp_pattern_category/(?P<id>[\d]+)
-      description: WordPress REST API route `/wp/v2/wp_pattern_category/(?P<id>[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: POST /wp/v2/wp_pattern_category/(?P[\d]+)
+      description: WordPress REST API route `/wp/v2/wp_pattern_category/(?P[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -15324,8 +15318,8 @@ paths:
                   description: Meta fields.
     put:
       operationId: putWpV2WpPatternCategoryById
-      summary: PUT /wp/v2/wp_pattern_category/(?P<id>[\d]+)
-      description: WordPress REST API route `/wp/v2/wp_pattern_category/(?P<id>[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: PUT /wp/v2/wp_pattern_category/(?P[\d]+)
+      description: WordPress REST API route `/wp/v2/wp_pattern_category/(?P[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -15367,8 +15361,8 @@ paths:
                   description: Meta fields.
     patch:
       operationId: patchWpV2WpPatternCategoryById
-      summary: PATCH /wp/v2/wp_pattern_category/(?P<id>[\d]+)
-      description: WordPress REST API route `/wp/v2/wp_pattern_category/(?P<id>[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: PATCH /wp/v2/wp_pattern_category/(?P[\d]+)
+      description: WordPress REST API route `/wp/v2/wp_pattern_category/(?P[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
@@ -15410,8 +15404,8 @@ paths:
                   description: Meta fields.
     delete:
       operationId: deleteWpV2WpPatternCategoryById
-      summary: DELETE /wp/v2/wp_pattern_category/(?P<id>[\d]+)
-      description: WordPress REST API route `/wp/v2/wp_pattern_category/(?P<id>[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
+      summary: DELETE /wp/v2/wp_pattern_category/(?P[\d]+)
+      description: WordPress REST API route `/wp/v2/wp_pattern_category/(?P[\d]+)` in namespace `wp/v2`, as advertised by the live route-discovery document at https://mylocalinfusion.com/wp-json/.
       tags:
       - wp/v2
       responses:
