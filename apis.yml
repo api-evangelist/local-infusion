@@ -75,26 +75,20 @@ tags_raw:
 - Model Context Protocol
 - WordPress
 apis:
-- aid: local-infusion:local-infusion-wp-v2-api
-  name: Local Infusion WordPress Content API
-  description: >-
-    WordPress core content API (posts, pages, media, taxonomies, settings) plus the site's `location`
-    custom post type, which carries the company's public infusion-center directory. Read access to
-    published content is anonymous — /wp-json/wp/v2/location returned HTTP 200 with 75 centers and
-    /wp-json/wp/v2/posts returned HTTP 200 with 73 posts on 2026-08-25.
-  humanURL: https://mylocalinfusion.com/wp-json/
-  baseURL: https://mylocalinfusion.com/wp-json/
+- aid: local-infusion:mylocalinfusion-com-website-wordpress-rest
+  name: Local Infusion Website (WordPress REST)
+  description: 'The public WordPress REST API (wp-json) of the Local Infusion website at mylocalinfusion.com:
+    the route index of the site''s content management system, catalogued as one site surface rather than
+    as separate APIs.'
+  baseURL: https://mylocalinfusion.com/wp-json
   tags:
-  - wp/v2
-  tags_raw:
-  - wp/v2
+  - WordPress
+  x-surface: platform-generated
   properties:
-  - type: OpenAPI
-    url: openapi/local-infusion-wp-v2-api-openapi.yml
-  - type: DataModel
-    url: data-model/local-infusion-data-model.yml
-  - type: ToolCrosswalk
-    url: mcp/local-infusion-tool-crosswalk.yml
+  - type: Documentation
+    url: https://mylocalinfusion.com/wp-json
+  x-platform: wordpress
+  x-platform-surface: rest
 - aid: local-infusion:local-infusion-mcp-api
   name: Local Infusion MCP API
   description: >-
@@ -114,47 +108,9 @@ apis:
     url: mcp/local-infusion-mcp.yml
   - type: ToolCrosswalk
     url: mcp/local-infusion-tool-crosswalk.yml
-- aid: local-infusion:local-infusion-wp-abilities-v1-api
-  name: Local Infusion WordPress Abilities API
-  description: >-
-    WordPress Abilities API — the named-ability registry the MCP adapter projects tools from. Routes
-    are advertised in the public discovery document but read access is capability-gated
-    (/wp-json/wp-abilities/v1/abilities returned HTTP 401 anonymously on 2026-08-25).
-  humanURL: https://mylocalinfusion.com/wp-json/wp-abilities/v1
-  baseURL: https://mylocalinfusion.com/wp-json/
-  tags:
-  - wp-abilities/v1
-  tags_raw:
-  - wp-abilities/v1
-  properties:
-  - type: OpenAPI
-    url: openapi/local-infusion-wp-abilities-v1-api-openapi.yml
-  - type: ToolCrosswalk
-    url: mcp/local-infusion-tool-crosswalk.yml
-- aid: local-infusion:local-infusion-root-api
-  name: Local Infusion WordPress Root API
-  description: REST API index / namespace discovery, plus the /batch/v1 request batching endpoint.
-  humanURL: https://mylocalinfusion.com/wp-json/
-  baseURL: https://mylocalinfusion.com/wp-json/
-  tags:
-  - Root
-  tags_raw:
-  - root
-  properties:
-  - type: OpenAPI
-    url: openapi/local-infusion-root-api-openapi.yml
-- aid: local-infusion:local-infusion-oembed-1-0-api
-  name: Local Infusion oEmbed API
-  description: oEmbed discovery and proxy endpoints served by the same WordPress install.
-  humanURL: https://mylocalinfusion.com/wp-json/oembed/1.0
-  baseURL: https://mylocalinfusion.com/wp-json/
-  tags:
-  - oembed/1.0
-  tags_raw:
-  - oembed/1.0
-  properties:
-  - type: OpenAPI
-    url: openapi/local-infusion-oembed-1-0-api-openapi.yml
+  x-surface: platform-generated
+  x-platform: wordpress
+  x-platform-surface: rest
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
