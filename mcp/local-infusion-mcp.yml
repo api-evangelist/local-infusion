@@ -97,3 +97,18 @@ deployment:
   note: >-
     No stdio distribution. Nothing first-party exists on npm or PyPI; the server is the WordPress MCP
     adapter running in-process on the provider's own web host, reachable only as an HTTPS endpoint.
+rfc9728:
+  endpoint: https://mylocalinfusion.com/wp-json/mcp/mcp-oauth-server
+  metadata_url: https://mylocalinfusion.com/.well-known/oauth-protected-resource
+  discovered_via: WWW-Authenticate resource_metadata on an anonymous POST initialize
+  fetched: '2026-09-25'
+  http_status: 200
+  content_type: application/json
+  document:
+    resource: https://mylocalinfusion.com/wp-json/mcp/mcp-oauth-server
+    authorization_servers:
+    - https://mylocalinfusion.com
+    scopes_supported:
+    - mcp
+    bearer_methods_supported:
+    - header
