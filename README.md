@@ -64,5 +64,119 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Local Infusion is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://www.nasdaqprivatemarket.com/
+Local Infusion is a tech-enabled outpatient infusion-therapy provider operating ambulatory infusion centers across thirteen US states — Connecticut, Florida, Maine, Maryland, Massachusetts, New Hampshire, New Jersey, New York, North Carolina, Ohio, South Carolina, Texas and Virginia — where patients with autoimmune, neurological, gastrointestinal and other chronic conditions receive specialty biologic infusions in private suites, supported by a dedicated Infusion Guide who handles referrals, prior authorization, benefits investigation and financial assistance. It sells care, not software: there is no developer programme, no product API, no SDK and no published pricing for any machine surface. It is catalogued here because its corporate WordPress site serves a live, self-describing REST API of 282 routes — including a publicly readable `location` custom post type carrying the company's 75-center directory — because the same install fronts two Model Context Protocol servers guarded by an OAuth 2.1 authorization server the host advertises through RFC 8414 and RFC 9728 metadata, and because the site carries an unusually deliberate agent-discovery layer: llms.txt, llms-full.txt, and .well-known ai-manifest, brand-facts and llm-sitemap documents, with a robots.txt that explicitly allows GPTBot, ClaudeBot, PerplexityBot and Google-Extended.
+
+**Areas:** Company · Healthcare · Health Services · Infusion Therapy · Specialty Pharmacy · Ambulatory Care · Patient Services · Autoimmune · Chronic Care · MCP · WordPress
+
+## Local Infusion on APIs.io
+
+Everything profiled for Local Infusion is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/local-infusion/](https://apis.io/providers/local-infusion/)** — or go straight to one of the APIs or properties below.
+
+### APIs (2)
+
+- [Local Infusion Website (WordPress REST)](https://apis.io/apis/local-infusion/mylocalinfusion-com-website-wordpress-rest/) — The public WordPress REST API (wp-json) of the Local Infusion website at mylocalinfusion.com: the route index of the site's content management system,…
+- [Local Infusion MCP API](https://apis.io/apis/local-infusion/local-infusion-mcp-api/) — Two Model Context Protocol servers exposed by the WordPress MCP adapter. Both require authentication — mcp-oauth-server returned HTTP 401 with a correct RFC…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### MCP servers (1)
+
+Model Context Protocol servers that expose the API to agents.
+
+- [local-infusion-mcp.yml](https://apis.io/servers/local-infusion/local-infusion-mcp-yml/)
+
+#### Overlays (1)
+
+OpenAPI overlays, including conversational phrasing for each operation.
+
+- [Local Infusion Wp Rest Overlay](https://apis.io/overlays/local-infusion/local-infusion-wp-rest-overlay/)
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Local Infusion Authentication](https://apis.io/security/local-infusion/local-infusion-authentication/)
+- [Local Infusion Domain Security](https://apis.io/security/local-infusion/local-infusion-domain-security/)
+
+#### OAuth scopes (1)
+
+The permissions the API asks for.
+
+- [Local Infusion Scopes](https://apis.io/scopes/local-infusion/local-infusion-scopes/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Local Infusion Plans Pricing](https://apis.io/plans/local-infusion/local-infusion-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Local Infusion Rate Limits](https://apis.io/rate-limits/local-infusion/local-infusion-rate-limits/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://mylocalinfusion.com/)
+- [Blog](https://mylocalinfusion.com/blog/)
+- [Privacy policy](https://mylocalinfusion.com/privacy-policy/)
+
+## API Evangelist rating
+
+**Kin Score 22.3** — emerging · rubric 0.25.0 · scored 2026-10-23
+
+| Facet | Score |
+|---|---|
+| Discoverability | 67.5 |
+| Contract quality | 17.0 |
+| Contract governance | 4.5 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 25.6 |
+| Access clarity | 10.5 |
+
+**Agent readiness 42.1** — agent-ready (gated down from agent-native)
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | platform (partial credit) |
+| Auth Clarity | served (partial credit) |
+| Idempotency | — |
+| Error Semantics | verified |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | derived (partial credit) |
+| Well Known Catalog | — |
+| Consent Identity | yes |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | served (partial credit) |
+| Protected Resource Metadata | verified |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | distinct |
+
+**Regulatory alignment 40.6** — Health
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/local-infusion/](https://apis.io/providers/local-infusion/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Local Infusion: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/local-infusion/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
